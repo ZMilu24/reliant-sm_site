@@ -1,8 +1,13 @@
 <?php
+    require_once("main_site.php");
 
-    require_once(__DIR__."/../mySQL_functions.php");
-
-    $DB= new Database();
+    if (isset($_POST["Login"])) {
+        if ($_POST["un"] == "Reliant_admin-user" and $_POST["pw"] == "Ba_Zu_189672") {
+            $_SESSION["logged_in_admin"] = true;
+        } else {
+            $_SESSION["logged_in_admin"] = false;
+        }
+    }
 
 ?>
 <!DOCTYPE html>
@@ -32,25 +37,28 @@
         </style>
     </head>
     <body>
-        <main class="container">
-            <caption id="unique-caption-id"><h1>Megrendelések</h1></caption>
-            <div class="table-wrap" role="region" aria-labelledby="unique-caption-id" tabindex="0">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Név</th>
-                            <th scope="col">E-mail</th>
-                            <th scope="col">Telefonszám</th>
-                            <th scope="col">Csomag</th>
-                            <th scope="col">Vásárlás dátuma</th>
-                            <th scope="col">Állapot</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php $DB->get_orders()?>
-                    </tbody>
-                </table>
-            </div>
-        </main>
+    <?php
+    
+        if ($_SESSION["logged_in_admin"] == true) {
+            main();
+        } else {
+            ?>
+            
+            <form method="post">
+
+                <label>Username</label><input type="text" placeholder="username" name="un">
+                <br />
+                <br />
+                <label>Password</label><input type="password" placeholder="password" name="pw">
+                <br />
+                <br />
+                <input type="submit" name="Login" value="Login">
+
+            </form>
+
+            <?php
+        }
+
+    ?>
     </body>
 </html>

@@ -1,5 +1,9 @@
 <?php
 
+    session_start();
+
+    $_SESSION["logged_in_admin"] = false;
+
     class Database {
 
         private $DB;
