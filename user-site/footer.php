@@ -8,7 +8,7 @@
             </h3>
             <div class="col-lg-6">
                 <p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" style="color:black; text-decoration: none;">E-mail: <b>reliant.service.management</b></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" style="color:black; text-decoration: none;">E-mail: <b>reliant.service.management</b></a>
                 </p>
             </div>
             <div class="col-lg-6">
