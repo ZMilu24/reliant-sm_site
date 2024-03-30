@@ -9,12 +9,22 @@
             body {
                 background-color: white;
                 background-image: linear-gradient(white, #959595);
-                width: auto;
+            }
+            footer {
+                background-color: white;
+                background-image: linear-gradient(to right, white, #868686);
+                width: 100%;
+            }
+            main,header {
+                width: 100%;
+            }
+            img {
+                width: 50%;
             }
         </style>
     </head>
     <body>
-        <header class="row">
+        <header>
             <div class="text-center">
                 <h1>
                     <img src="imgs/logo.png" style="width: 30%;
@@ -23,7 +33,6 @@
                                                     border: 10px solid #808080;
                                                     margin:5px;
                                                     ">
-                    <!--<b>SINEX</b>-->
                 </h1>
             </div>
         </header>
