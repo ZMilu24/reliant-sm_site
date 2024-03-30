@@ -31,7 +31,16 @@
             }
         }
 
+        function add_to_orders($data) {
+            try {
+                $out=$data["email"].", ".$data["type"].", ".$data["name"].", ".$data["phone"].", ".$data["Date"].", ".
+                $this->DB->query("INSERT INTO orders (`email`, `type`, `name`, `phone`, `Date`) VALUES (".$out.")");
+                return(200);
+            } catch {
+                return(400)
+            }
+        }
+
     }
-    $DB= new Database();
 
 ?>
