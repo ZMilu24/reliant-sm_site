@@ -1,16 +1,29 @@
 <?php
     require_once("footer.php");
+    require_once("header.php");
+
+    $themes = array();
+    $themes["basic"] = [
+        "name" => "Basic",
+        "Main price" => "150",
+        "theme color" => "9AEBB1"
+    ];
+    $themes["premium"] = [];
+
+    $package = null;
+
+    if ($_GET["p"] = "basic") {
+        $package = $themes["basic"];
+    }
+
 ?>
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <?php footer()?>
+
+    <?php header_fnc($package["theme color"])?>
+
+    <main>
+
+    </main>
+
+    <?php footer_fnc()?>
 </body>
 </html>

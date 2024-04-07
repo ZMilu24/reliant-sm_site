@@ -1,6 +1,6 @@
 <?php
-function footer($color="868686") { ?>
-    <footer class="w-100 container-fluid" style="background-image: linear-gradient(to left, white, #<?php echo($color)?>);">
+function footer_fnc() { ?>
+    <footer class="w-100 container-fluid" style="background-image: linear-gradient(to left, white, #868686);">
         <div class="row">
             <div class="col p-3 px-5">
                 <div class="row">
@@ -63,8 +63,8 @@ function footer($color="868686") { ?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col text-center w-100">
-                                <img src="imgs/logo.png" class="w-100 rounded-circle" id="footer_logo">
+                            <div class="col text-center">
+                                <img src="imgs/logo.png" class="rounded-circle" height="100">
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-#footer_home, #email_link {
+#email_link {
     color:black;
 }
 
@@ -8,12 +8,11 @@
 
 footer {
     padding: 0%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-#footer_home {
+#footer_home, #header_home {
     text-decoration: underline;
-}
-
-#footer_logo {
-    max-height: 200px;
 }
