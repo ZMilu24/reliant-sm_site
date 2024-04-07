@@ -1,19 +1,76 @@
-<footer class="row" style="background-image: linear-gradient(to left, white, #868686);">
-                <div class="col">
-                    <h4>
-                        <a id="footer_home" href="">Reliant Service Management</a>
-                    </h4>
+<?php
+function footer($color="868686") { ?>
+    <footer class="w-100 container-fluid" style="background-image: linear-gradient(to left, white, #<?php echo($color)?>);">
+        <div class="row">
+            <div class="col p-3 px-5">
+                <div class="row">
+                    <div class="col text-left">
+                        <h4>
+                            <b id="footer_home">Reliant Service Management</b>
+                        </h4>
+                    </div>
+                    <div class="col text-end">
+                        <div class="row">
+                            <div class="col">
+                                <h4>
+                                    Social Media
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    linkek
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <h4>
-                        Reliant Service Management
-                    </h4>
+            </div>
+            <div class="col p-3 px-5">
+                <div class="row">
+                    <div class="col text-left">
+                        <div class="row">
+                            <div class="col">
+                                <h4>
+                                    Telefonszámunk
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    telószám
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="row">
+                            <div class="col text-left">
+                                <div class="row text-left">
+                                    <div class="col text-left">
+                                        <h4>
+                                            E-mail
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row text-left">
+                                    <div class="col text-left">
+                                        <p>
+                                            <a id="email_link" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">reliant.service.management@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col text-center w-100">
+                                <img src="imgs/logo.png" class="w-100 rounded-circle" id="footer_logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <h4>
-                        Reliant Service Management
-                    </h4>
-                </div>
-        </footer>
-    </body>
-</html>
+            </div>
+        </div>
+    </div>
+</footer>
+<?php } ?>

@@ -1,3 +1,19 @@
-#footer_home {
+#footer_home, #email_link {
     color:black;
+}
+
+#email_link {
+    text-decoration: none;
+}
+
+footer {
+    padding: 0%;
+}
+
+#footer_home {
+    text-decoration: underline;
+}
+
+#footer_logo {
+    max-height: 200px;
 }
