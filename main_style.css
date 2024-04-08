@@ -1,0 +1,43 @@
+main, header {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#title {
+    text-decoration: underline;
+    color: black;
+}
+
+#email_link {
+    color:black;
+    text-decoration: none;
+}
+
+footer {
+    padding: 0%;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+#footer_home, #header_home {
+    text-decoration: underline;
+}
+
+.main_imgs {
+    border-radius: 20%;
+}
+
+#secund_img {
+    transform: rotate(13deg);
+}
+
+#third_img {
+    transform: rotate(13deg);
+}
+
+#fourth_img {
+    border-radius: 30%;
+    transform: rotate(-13deg);
+}
