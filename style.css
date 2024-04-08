@@ -16,3 +16,11 @@ footer {
 #footer_home, #header_home {
     text-decoration: underline;
 }
+
+td div {
+    background-color: white;
+}
+
+#package_main {
+    width: 50%;
+}
