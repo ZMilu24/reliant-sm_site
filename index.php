@@ -1,8 +1,9 @@
 <?php
-
     require_once("footer.php");
-
+    require_once("navbar.php");
+    require_once("cards.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="hu">
     <head>
@@ -11,74 +12,50 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="main_style.css" rel="stylesheet">
         <title>Reliant Service Management</title>
+        <style>
+            #logo {
+                box-shadow: 0 0 99px;
+            }
+        </style>
     </head>
     <body>
-        <header class="w-100 container-fluid" style="background-image: linear-gradient(to top right, white, #424478);">
-            <div class="row">
-                <div class="col text-left p-3 px-5 fs-6">
-                    <h1 id="title">Reliant Service Management</h1>
-                </div>
+        <header class="container-fluid p-3 px-5" style="background-image: radial-gradient(circle, #868686, white);">
+            <div class="row p-3 px-5">
+                <div class="col text-center"></div>
                 <div class="col text-center">
-                    <h2 class="fs-1" style="position:relative; top:50%;">
-                        Üdvözöljük a
-                    </h2>
+                    <img src="imgs/logo.png" class="rounded-circle w-50" id="logo">
                 </div>
-                <div class="col text-end p-3 px-5">
-                    <div class="btn-group">
-                        <a href="index.html"><button class="btn btn-light">Cégunk</button></a>
-                        <a href="offers.php"><button class="btn btn-light">Kínálatunk</button></a>
-                    </div>
+                <div class="col text-center"></div>
+            </div>
+            <div class="row p-5">
+                <div class="col text-left">
+                    <?php main_navbar(); ?>
                 </div>
             </div>
         </header>
-        <main class="w-100 container-fluid" style="background-image: linear-gradient(to bottom right, white, #424478);">
-            <div class="row">
+        <main class="container-fluid p-3 px-5" style="background-image: linear-gradient(to top left, white, #868686);">
+            <div class="row p-5">
                 <div class="col text-center">
-                    <h2 class="fs-1">Reliant Service Management oldalán!</h2>
+                    <h2>
+                        Üdvözöljük a <h1>Reliant Service Management</h1> <b>oldalán!</b>
+                    </h2>
                 </div>
             </div>
-            <ul>
-                <div class="row">
-                    <div class="col">
-                        <h3>
-                            <li>Rólunk:</li>
-                        </h3>
-                        <p>
-                            alsó szöveg
-                        </p>
-                    </div>
-                    <div class="col text-center">
-                        <img class="main_imgs" src="imgs/img1.jpeg" height="100">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-end">
-                        <img class="main_imgs" id="secund_img" src="imgs/img3.jpg" height="100">
-                    </div>
-                    <div class="col"></div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h3>
-                            <li>Tapasztalataink:</li>
-                        </h3>
-                        <p>
-                            alsó szöveg
-                        </p>
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="col text-left">
-                                <img class="main_imgs" id="third_img" src="imgs/img1.jpeg" height="100">
-                            </div>
-                            <div class="col text-end">
-                                <img class="main_imgs" id="fourth_img" src="imgs/img4.jpg" height="100">
-                            </div>
+            <div class="row p-5">
+                <div class="col text-center"></div>
+                <div class="col text-center">
+                    <div class="row p-5">
+                        <div class="col text-center">
+                            <?php CEO_card("gergo") ?>
+                        </div>
+                        <div class="col text-center">
+                            <?php CEO_card("zupan") ?>
                         </div>
                     </div>
                 </div>
-            </ul>
+                <div class="col text-center"></div>
+            </div>
         </main>
-        <?php footer_fnc("424478"); ?>
+        <?php footer_fnc(); ?>
     </body>
 </html>

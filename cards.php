@@ -75,4 +75,56 @@
                 </a>
             </div>
         </div>
-<?php } ?>
+<?php
+    }
+    function CEO_card($name) {
+        $ceos = array();
+
+        $ceos["gergo"] = [
+            "name" => "Bakalár Gergő",
+            "role" => "CO-CEO",
+            "dec" => "gaygaygay"
+        ];
+
+        $ceos["zupan"] = [
+            "name" => "Zupán Milán",
+            "role" => "CO-CEO",
+            "dec" => "POG POG POG"
+        ];
+
+        $ceo = $ceos[$name];
+
+        ?>
+        
+        <div class="card w-100 h-100 bg-dark text-white" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme"]); ?>);">
+            <div class="card-header text-center">
+                <div class="row">
+                    <div class="col">
+                        <h2>
+                            <?php echo($ceo["name"]); ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body text-left">
+                <div class="row">
+                    <div class="col">
+                        <h3>
+                            <?php echo($ceo["role"]); ?>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            <?php echo($ceo["dec"]); ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?php
+    }?>

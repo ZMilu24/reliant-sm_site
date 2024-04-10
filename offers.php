@@ -2,6 +2,7 @@
 
     require_once("footer.php");
     require_once("cards.php");
+    require_once("navbar.php");
 
 ?>
 <!DOCTYPE html>
@@ -19,11 +20,10 @@
                 <div class="col text-left p-3 px-5">
                     <b id="title">Reliant Service Management</b>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col text-end p-3 px-5">
-                    <div class="btn-group">
-                        <a href="index.html"><button class="btn btn-light">Cégunk</button></a>
-                        <a href="offers.php"><button class="btn btn-light">Kínálatunk</button></a>
-                    </div>
+                    <?php main_navbar(); ?>
                 </div>
             </div>
         </header>
@@ -71,6 +71,6 @@
                 <div class="col-lg-3"></div>
             </div>
         </main>
-        <?php footer_fnc()?>
+        <?php footer_fnc(); ?>
     </body>
 </html>
