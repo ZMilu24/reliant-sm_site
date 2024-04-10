@@ -14,13 +14,6 @@ main, header {
     text-decoration: none;
 }
 
-footer {
-    padding: 0%;
-    bottom: 0;
-    width: 100%;
-    position: relative;
-}
-
 #footer_home, #header_home {
     text-decoration: underline;
 }
@@ -40,11 +33,4 @@ footer {
 #fourth_img {
     border-radius: 30%;
     transform: rotate(-13deg);
-}
-
-html, body
-{
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }

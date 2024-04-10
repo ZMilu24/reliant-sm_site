@@ -3,13 +3,6 @@
     text-decoration: none;
 }
 
-footer {
-    padding: 0%;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
 #footer_home, #header_home {
     text-decoration: underline;
 }
@@ -26,8 +19,4 @@ main, header {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-}
-
-html, body {
-    min-height: 100%;
 }

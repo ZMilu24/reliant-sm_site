@@ -27,8 +27,8 @@
             "utilities" => [
                 "weboldal",
                 "email services",
-                "google review",
-                "kölnyveléssegítő kiegészítők"
+                "adatbázis",
+                "google review"
             ],
             "url" => "u",
             "theme" => "424478"
