@@ -9,14 +9,33 @@ function header_fnc($color="868686") { ?>
     <link href="packages_style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Reliant Service Management</title>
+    <style>
+        a {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        a:hover {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        a:active {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        a:visited {
+            color: rgba(0, 0, 0, 1);
+        }
+    </style>
 </head>
 <body>
 <header class="container-fluid" style="background-image: linear-gradient(to right, white, #<?php echo($color); ?>);">
     <div class="row p-3 px-5">
         <div class="col text-left">
-            <h4>
-                <b id="header_home">Reliant Service Management</b>
-            </h4>
+            <a href="offers.php">
+                <h4>
+                    <b id="header_home">Reliant Service Management</b>
+                </h4>
+            </a>
         </div>
         <div class="col text-end">
             <img class="rounded-circle" src="imgs/login.png" height="50">

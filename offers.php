@@ -16,17 +16,8 @@
         <title>Reliant Service Management</title>
     </head>
     <body>
-        <header class="w-100 container-fluid" style="background-image: linear-gradient(to right, white, aqua);">
-            <div class="row">
-                <div class="col text-left p-3 px-5">
-                    <b id="title">Reliant Service Management</b>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-end p-3 px-5">
-                    <?php main_navbar(); ?>
-                </div>
-            </div>
+        <header class="container-fluid p-0" style="background-image: linear-gradient(to right, white, aqua);">
+            <?php main_navbar(); ?>
         </header>
         <main class="w-100 container-fluid" style="background-image: linear-gradient(to right, white, aqua);">
             <div class="row mx-5">

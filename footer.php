@@ -1,7 +1,7 @@
 <?php
 function footer_fnc($color = "868686") { ?>
-    <footer class="w-100 container-fluid" style="background-image: linear-gradient(to left, white, #<?php echo($color); ?>);">
-        <div class="row">
+    <footer class="container-fluid p-0" style="background-image: linear-gradient(to left, white, #<?php echo($color); ?>);">
+        <div class="row w-100">
             <div class="col p-3 px-5">
                 <div class="row">
                     <div class="col text-left">

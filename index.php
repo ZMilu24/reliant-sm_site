@@ -19,42 +19,48 @@
             }
         </style>
     </head>
-    <body>
-        <header class="container-fluid p-3 px-5" style="background-image: radial-gradient(circle, #868686, white);">
-            <div class="row p-3 px-5">
+    <body class="container-fluid p-0">
+        <header class="container-fluid pt-5" style="background-image: radial-gradient(circle, #868686, white);">
+            <?php main_navbar(); ?>
+            <div class="py-3">
+                <br class="py-3">
+                <br class="py-3">
+                <br class="py-3">
+            </div>
+            <div class="row p-3 px-5 pt-5">
                 <div class="col text-center"></div>
                 <div class="col text-center">
                     <img src="imgs/logo.png" class="rounded-circle w-50" id="logo">
                 </div>
                 <div class="col text-center"></div>
             </div>
-            <div class="row p-5">
-                <div class="col text-left">
-                    <?php main_navbar(); ?>
-                </div>
+            <div class="py-3">
+                <br class="py-3">
+                <br class="py-3">
+                <br class="py-3">
             </div>
         </header>
         <main class="container-fluid p-3 px-5" style="background-image: linear-gradient(to top left, white, #868686);">
-            <div class="row p-3 px-5">
-                <div class="col text-center">
-                    <h2>
-                        Üdvözöljük a <h1>Reliant Service Management</h1> <b>oldalán!</b>
-                    </h2>
+            <div class="container">
+                <div class="row p-3 px-5">
+                    <div class="col text-center">
+                        <h2>
+                            Üdvözöljük a <h1>Reliant Service Management</h1> <b>oldalán!</b>
+                        </h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row p-5">
-                <div class="col text-center"></div>
-                <div class="col text-center">
-                    <div class="row p-5">
-                        <div class="col text-center">
-                            <?php CEO_card("gergo") ?>
-                        </div>
-                        <div class="col text-center">
-                            <?php CEO_card("zupan") ?>
+                <div class="row p-5">
+                    <div class="col text-center">
+                        <div class="row p-5">
+                            <div class="col text-center">
+                                <?php CEO_card("gergo") ?>
+                            </div>
+                            <div class="col text-center">
+                                <?php CEO_card("zupan") ?>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col text-center"></div>
             </div>
         </main>
         <?php footer_fnc(); ?>
