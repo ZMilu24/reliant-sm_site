@@ -109,18 +109,18 @@
             <div class="card-body text-left">
                 <div class="row">
                     <div class="col">
-                        <h3>
-                            <?php echo($ceo["role"]); ?>
-                        </h3>
+                        <p>
+                            <?php echo($ceo["dec"]); ?>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="card-footer text-center">
                 <div class="row">
                     <div class="col">
-                        <p>
-                            <?php echo($ceo["dec"]); ?>
-                        </p>
+                        <h3>
+                            <?php echo($ceo["role"]); ?>
+                        </h3>
                     </div>
                 </div>
             </div>

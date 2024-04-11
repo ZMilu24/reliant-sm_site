@@ -34,3 +34,12 @@ main, header {
     border-radius: 30%;
     transform: rotate(-13deg);
 }
+
+.card {
+    margin: 5%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #000000;
+}

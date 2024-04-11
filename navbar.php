@@ -12,23 +12,12 @@
             
             @keyframes logo-hover {
                     0% {
-                        box-shadow: 0 0 0 #FF0000;
                         box-shadow: 0 0 0 #000000;
-                    }
-                    25% {
-                        box-shadow: 0 0 0 #FF0000;
-                        box-shadow: 0 0 99px #000000;
                     }
                     50% {
-                        box-shadow: 0 0 99px #FF0000;
-                        box-shadow: 0 0 0 #000000;
-                    }
-                    75% {
-                        box-shadow: 0 0 0 #FF0000;
                         box-shadow: 0 0 99px #000000;
                     }
                     100% {
-                        box-shadow: 0 0 0 #FF0000;
                         box-shadow: 0 0 0 #000000;
                     }
                 }
