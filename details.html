@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="packages_style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <main class="container-fluid p-3" style="background-image: linear-gradient(to bottom right, white, black);">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Basic</h1>
+                        <h3 id="mainPrice">$150</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <style>
+                            #btn-group-bg {
+                                background: rgba(0, 0, 0, 0.2);
+                            }
+                        </style>
+                        <script src="main.js"></script>
+                        <div class="btn-group m-3 my-5" id="btn-group-bg">
+                            <button class="btn btn-light m-1" onclick=month_set()>Havi</button>
+                            <button class="btn btn-light m-1" onclick=halfy_set()>Féléves</button>
+                            <button class="btn btn-light m-1" onclick=year_set()>Éves</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="p-3 m-3">
+                            <ul>
+                                <li><h3>Csomag tartalmának részletei</h3></li>
+                                <p>abrakadabra</p>
+                                <hr>
+                                <li><h3>Fizetési részletek</h3></li>
+                                <p>ba-dum-cs</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="bg-light p-3 m-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3>Igényelhető specifikációk</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <form method="post">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="input-group mb-3 rounded-4">
+                                                                <div class="input-group-text">
+                                                                    <input type="radio" name="type" value="handMade">
+                                                                </div>
+                                                                <label>Kézzel készített</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-text">
+                                                                    <input type="radio" name="type" value="wordpress">
+                                                                </div>
+                                                                <label>Wordpress-ben készített</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-text">
+                                                            <input type="checkbox">
+                                                            </div>
+                                                            <label>Adatbázis</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-floating">
+                                                            <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                                                            <label for="comment">Megjegyzés</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-danger">
+                                        Ábelesz kábelesz rákmegesz
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="container">
+                            <div class="bg-light p-3 m-3">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3>Személyes információk</h3>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="tel" class="form-control" placeholder="Enter name" name="name" required>
+                                                <label for="name">Teljes név</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="email" class="form-control" placeholder="Enter email" name="email" required>
+                                                <label for="email">Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="tel" class="form-control" placeholder="Enter telefon" name="phone" required>
+                                                <label for="phone">Telefon</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <form method="post">
+                            <input class="btn btn-dark w-25" type="submit" name="pleased" value="Ajánlat kérés">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

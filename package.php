@@ -41,7 +41,7 @@
 
 ?>
 
-    <?php header_fnc($package["theme color"])?>
+    <?php package_header($package["theme color"])?>
 
     <main class="container-fluid" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
         <div class="container">
@@ -162,14 +162,18 @@
                 </div>
                 <div class="row">
                     <div class="col text-end mx-5 px-5">
-                        <button type="button" class="btn btn-dark btn-lg">
-                            <b class="w-100">Sablon megtekintése</b>
-                        </button>
+                        <a>
+                            <button type="button" class="btn btn-dark btn-lg">
+                                <b class="w-100">Sablon megtekintése</b>
+                            </button>
+                        </a>
                     </div>
                     <div class="col text-left mx-5 px-5">
-                        <button type="button" class="btn btn-dark btn-lg">
-                            <b class="w-100">Fizetés</b>
-                        </button>
+                        <a href="details.php?pac=<?php echo($_GET["p"]); ?>&pay=m">
+                            <button type="button" class="btn btn-dark btn-lg">
+                                <b class="w-100">Részletek</b>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
