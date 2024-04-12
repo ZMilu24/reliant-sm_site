@@ -1,20 +1,44 @@
-<!DOCTYPE html>
-<html lang="hu">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="packages_style.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <title>Document</title>
-    </head>
+<?php
+
+    require_once("header.php");
+    require_once("footer.php");
+    
+    $themes["basic"] = [
+        "name" => "Basic",
+        "price" => "150",
+        "theme color" => "9AEBB1"
+    ];
+    $themes["premium"] = [
+        "name" => "Premium",
+        "price" => "350",
+        "theme color" => "DBF5F5"
+    ];
+    $themes["ultra"] = [
+        "name" => "Ultra",
+        "price" => "500",
+        "theme color" => "424478"
+    ];
+
+    $package = null;
+
+    if ($_GET["pac"] == "b") {
+        $package = $themes["basic"];
+    } else if ($_GET["pac"] == "p") {
+        $package = $themes["premium"];
+    } else if ($_GET["pac"] == "u") {
+        $package = $themes["ultra"];
+    }
+
+?>
+
+        <?php package_header($package["theme color"]); ?>
     <body>
-        <main class="container-fluid p-3" style="background-image: linear-gradient(to bottom right, white, black);">
+        <main class="container-fluid p-3" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1>Basic</h1>
-                        <h3 id="mainPrice">$150</h3>
+                        <h1><?php echo($package["name"]); ?></h1>
+                        <h3 id="mainPrice">$<?php echo($package["price"]); ?></h3>
                     </div>
                 </div>
                 <div class="row">
@@ -26,9 +50,9 @@
                         </style>
                         <script src="main.js"></script>
                         <div class="btn-group m-3 my-5" id="btn-group-bg">
-                            <button class="btn btn-light m-1" onclick=month_set()>Havi</button>
-                            <button class="btn btn-light m-1" onclick=halfy_set()>Féléves</button>
-                            <button class="btn btn-light m-1" onclick=year_set()>Éves</button>
+                            <button class="btn btn-light m-1" id="monthButton" onclick=month_set() style="background-image: linear-gradient(to left, white, #868686)">Havi</button>
+                            <button class="btn btn-light m-1" id="halfyButton" onclick=halfy_set()>Féléves</button>
+                            <button class="btn btn-light m-1" id="yearButton" onclick=year_set()>Éves</button>
                         </div>
                     </div>
                 </div>
@@ -61,7 +85,7 @@
                                                         <div class="col">
                                                             <div class="input-group mb-3 rounded-4">
                                                                 <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="handMade">
+                                                                    <input type="radio" name="type" value="handMade" onclick=handMade()>
                                                                 </div>
                                                                 <label>Kézzel készített</label>
                                                             </div>
@@ -69,7 +93,7 @@
                                                         <div class="col">
                                                             <div class="input-group mb-3">
                                                                 <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="wordpress">
+                                                                    <input type="radio" name="type" value="wordpress" onclick=wp()>
                                                                 </div>
                                                                 <label>Wordpress-ben készített</label>
                                                             </div>
@@ -78,10 +102,11 @@
                                                     <div class="row">
                                                         <div class="input-group mb-3">
                                                             <div class="input-group-text">
-                                                            <input type="checkbox">
+                                                            <input type="checkbox" id="DB">
                                                             </div>
                                                             <label>Adatbázis</label>
                                                         </div>
+                                                        <p id="sign"></p>
                                                     </div>
                                                     <div class="row">
                                                         <div class="form-floating">
@@ -153,5 +178,6 @@
                 </div>
             </div>
         </main>
+        <?php footer_fnc(); ?>
     </body>
 </html>

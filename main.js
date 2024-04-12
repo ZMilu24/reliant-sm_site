@@ -17,6 +17,9 @@ function month_set() {
             price = "unkown"
             break;
     }
+    document.getElementById("monthButton").style.backgroundImage = "linear-gradient(to left, white, #868686)";
+    document.getElementById("halfyButton").style.backgroundImage = "";
+    document.getElementById("yearButton").style.backgroundImage = "";
     document.getElementById("mainPrice").innerHTML = price;
 }
 
@@ -39,6 +42,9 @@ function halfy_set() {
             price = "unkown"
             break;
     }
+    document.getElementById("monthButton").style.backgroundImage = "";
+    document.getElementById("halfyButton").style.backgroundImage = "linear-gradient(to left, white, #868686)";
+    document.getElementById("yearButton").style.backgroundImage = "";
     document.getElementById("mainPrice").innerHTML = price;
 }
 
@@ -61,5 +67,22 @@ function year_set() {
             price = "unkown"
             break;
     }
+    document.getElementById("monthButton").style.backgroundImage = "";
+    document.getElementById("halfyButton").style.backgroundImage = "";
+    document.getElementById("yearButton").style.backgroundImage = "linear-gradient(to left, white, #868686)";
     document.getElementById("mainPrice").innerHTML = price;
+}
+
+function wp() {
+    let DB = document.getElementById("DB");
+    DB.setAttribute("checked", '');
+    DB.setAttribute("disabled", '');
+    document.getElementById("sign").innerHTML = "(Wordpress esetén kötelező az adatbázis)";
+}
+
+function handMade() {
+    let DB = document.getElementById("DB");
+    DB.removeAttribute("disabled", '');
+    DB.removeAttribute("checked", '');
+    document.getElementById("sign").innerHTML = "";
 }

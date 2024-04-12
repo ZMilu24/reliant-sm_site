@@ -4,10 +4,15 @@
     require_once("header.php");
 
 ?>
-    <?php main_header(); ?>
+        <?php main_header(); ?>
+        <style>
+            .img-container {
+                min-height:10vh;
+            }
+        </style>
         </header>
         <main class="w-100 container-fluid" style="background-image: linear-gradient(to bottom right, white, #0059ff);">
-            <div class="container">
+            <div class="container p-5">
                 <ul>
                     <div class="row">
                         <div class="col">
@@ -18,13 +23,13 @@
                                 alsó szöveg
                             </p>
                         </div>
-                        <div class="col text-center">
-                            <img class="main_imgs" src="imgs/img1.jpeg" height="100">
+                        <div class="col text-center img-container">
+                            <img class="main_imgs" src="imgs/img1.jpeg" height="300">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col text-end">
-                            <img class="main_imgs" id="secund_img" src="imgs/img3.jpg" height="100">
+                        <div class="col text-end img-container">
+                            <img class="main_imgs" id="secund_img" src="imgs/img3.jpg" height="150">
                         </div>
                         <div class="col"></div>
                     </div>
@@ -39,11 +44,11 @@
                         </div>
                         <div class="col">
                             <div class="row">
-                                <div class="col text-left">
-                                    <img class="main_imgs" id="third_img" src="imgs/img1.jpeg" height="100">
+                                <div class="col text-left img-container">
+                                    <img class="main_imgs" id="third_img" src="imgs/img1.jpeg" height="150">
                                 </div>
-                                <div class="col text-end">
-                                    <img class="main_imgs" id="fourth_img" src="imgs/img4.jpg" height="100">
+                                <div class="col text-end img-container">
+                                    <img class="main_imgs" id="fourth_img" src="imgs/img4.jpg" height="150">
                                 </div>
                             </div>
                         </div>
