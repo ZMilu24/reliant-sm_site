@@ -169,7 +169,7 @@
                         </a>
                     </div>
                     <div class="col text-left mx-5 px-5">
-                        <a href="details.php?pac=<?php echo($_GET["p"]); ?>&pay=m">
+                        <a href="details.php?pac=<?php echo($_GET["p"]); ?>">
                             <button type="button" class="btn btn-dark btn-lg">
                                 <b class="w-100">Részletek</b>
                             </button>

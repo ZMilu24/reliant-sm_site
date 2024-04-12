@@ -26,3 +26,7 @@ footer {
     width: 100%;
     position: relative;
 }
+
+a:hover {
+    color: #000000;
+}

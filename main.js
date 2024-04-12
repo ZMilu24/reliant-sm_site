@@ -18,7 +18,6 @@ function month_set() {
             break;
     }
     document.getElementById("mainPrice").innerHTML = price;
-    urlParams.set('pay', 'm');
 }
 
 function halfy_set() {
@@ -41,7 +40,6 @@ function halfy_set() {
             break;
     }
     document.getElementById("mainPrice").innerHTML = price;
-    urlParams.set('pay', 'hy');
 }
 
 function year_set() {
@@ -64,5 +62,4 @@ function year_set() {
             break;
     }
     document.getElementById("mainPrice").innerHTML = price;
-    urlParams.set('pay', 'hy');
 }

@@ -68,19 +68,19 @@
             }
 
             .nav-link {
-                color: rgba(0, 0, 0, 1);
+                color: #000000;
             }
 
             .nav-link:hover {
-                color: rgba(0, 0, 0, 1);
+                color: #000000;
             }
 
             .nav-link:active {
-                color: rgba(0, 0, 0, 1);
+                color: #000000;
             }
 
             .nav-link:visited {
-                color: rgba(0, 0, 0, 1);
+                color: #000000;
             }
 
             #nav-logo:hover {

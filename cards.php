@@ -96,13 +96,13 @@
 
         ?>
         
-        <div class="card w-100 h-100 bg-dark text-white" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme"]); ?>);">
+        <div class="card w-100 h-100 bg-dark text-white">
             <div class="card-header text-center">
                 <div class="row">
                     <div class="col">
-                        <h2>
+                        <h3>
                             <?php echo($ceo["name"]); ?>
-                        </h2>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -118,13 +118,40 @@
             <div class="card-footer text-center">
                 <div class="row">
                     <div class="col">
-                        <h3>
+                        <h4>
                             <?php echo($ceo["role"]); ?>
-                        </h3>
+                        </h4>
                     </div>
                 </div>
             </div>
         </div>
 
-        <?php
-    }?>
+<?php
+    }
+    function info_card($title, $disc) {
+        ?>
+        
+        <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-header text-center">
+                <div class="row">
+                    <div class="col">
+                        <h2>
+                            <?php echo($title); ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body text-left">
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            <?php echo($disc); ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+
+<?php
+    }
