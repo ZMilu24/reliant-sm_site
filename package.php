@@ -32,8 +32,10 @@
 
 ?>
 
-    <?php package_header($package["theme color"])?>
+    <?php main_header($package["theme color"])?>
 
+    <header>
+    </header>
     <main class="container-fluid" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
         <div class="container">
             <div class="row p-3 px-5">
