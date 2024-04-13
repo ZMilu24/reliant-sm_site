@@ -10,42 +10,7 @@ function footer_fnc($color = "868686") { ?>
                                 <b id="footer_home">Reliant Service Management</b>
                             </h4>
                         </div>
-                        <div class="col text-end">
-                            <div class="row">
-                                <div class="col">
-                                    <h4>
-                                        Social Media
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p>
-                                        linkek
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col p-3 px-5">
-                    <div class="row">
-                        <div class="col text-left">
-                            <div class="row">
-                                <div class="col">
-                                    <h4>
-                                        Telefonszámunk
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p>
-                                        telószám
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <!---->
                         <div class="col text-center">
                             <div class="row">
                                 <div class="col text-left">
@@ -64,10 +29,31 @@ function footer_fnc($color = "868686") { ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col text-center">
-                                    <img src="imgs/logo.png" class="rounded-circle" height="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 px-5">
+                    <div class="row">
+                        <div class="col text-end">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>
+                                        Telefonszámunk
+                                    </h4>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>
+                                        telószám
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="col text-end">
+                            <img src="imgs/logo2.png" class="rounded-circle" height="100">
                         </div>
                     </div>
                 </div>

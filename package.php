@@ -6,25 +6,16 @@
     $themes["basic"] = [
         "name" => "Basic",
         "main price" => "150",
-        "month" => "123",
-        "half-year" => "345",
-        "year" => "567",
         "theme color" => "9AEBB1"
     ];
     $themes["premium"] = [
         "name" => "Premium",
         "main price" => "350",
-        "month" => "123",
-        "half-year" => "345",
-        "year" => "567",
         "theme color" => "DBF5F5"
     ];
     $themes["ultra"] = [
         "name" => "Ultra",
         "main price" => "500<...",
-        "month" => "123",
-        "half-year" => "345",
-        "year" => "567",
         "warning" => "szöveg",
         "theme color" => "424478"
     ];
@@ -71,41 +62,7 @@
                                 </ul>
                             </div>
                             <div class="col text-left">
-                                <div class="row px-5">
-                                    <div class="col text-center">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tr>
-                                                    <td class="text-center bg-light">
-                                                        <div class="m-3 my-1">Havi</div>
-                                                    </td>
-                                                    <td class="text-center bg-light">
-                                                        <div class="m-3 my-1">Féléves</div>
-                                                    </td>
-                                                    <td class="text-center bg-light">
-                                                        <div class="m-3 my-1">Éves</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center bg-light">
-                                                        <div class="m-3 my-1">$<?php echo($package["month"])?></div>
-                                                    </td>
-                                                    <td class="text-center bg-light">
-                                                        <div class="m-3 my-1">$<?php echo($package["half-year"])?></div>
-                                                    </td>
-                                                    <td class="text-center bg-light">
-                                                        <div class="m-3 my-1">$<?php echo($package["year"])?></div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col text-center">
-                                        <p class="text-danger">dixitque Dominus ad eum numquid considerasti servum meum Iob quod non sit ei similis in terra homo simplex et rectus et timens Deum ac recedens a malo</p>
-                                    </div>
-                                </div>
+                                <p class="text-danger">dixitque Dominus ad eum numquid considerasti servum meum Iob quod non sit ei similis in terra homo simplex et rectus et timens Deum ac recedens a malo</p>
                             </div>
                         </div>
                     </div>
