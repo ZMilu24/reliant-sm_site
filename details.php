@@ -60,15 +60,25 @@
                 <div class="row">
                     <div class="col">
                         <div class="p-3 m-3">
-                            <ul>
-                                <li><h3>Csomag tartalmának részletei</h3></li>
-                                <p>abrakadabra</p>
-                                <hr>
-                                <li><h3>Fizetési részletek</h3></li>
-                                <p>ba-dum-cs</p>
-                            </ul>
+                            <h3>Fizetési részletek</h3>
+                            <p>ba-dum-cs</p>
+                            <p class="text-danger">Piros szöveg</p>
                         </div>
                     </div>
+                    <div class="col">
+                        <h3>Csomag tartalmának részletei</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col">
                         <div class="container">
                             <div class="row">
