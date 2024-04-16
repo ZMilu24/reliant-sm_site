@@ -5,6 +5,30 @@
         ?>
         <style>
 
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown>.dropdown-toggle:active {/
+                pointer-events: none;
+            }
+
+            #dropdownMenuButton {
+                color: #000000;
+            }
+
+            #dropdownMenuButton:hover {
+                color: #000000;
+            }
+
+            #dropdownMenuButton:active {
+                color: #000000;
+            }
+
+            #dropdownMenuButton:visited {
+                color: #000000;
+            }
+
             #nav-bg {
                 padding: 1%;
                 background: rgba(0, 0, 0, 0.4);
@@ -13,25 +37,29 @@
                 position: fixed;
             }
 
-            .nav-link {
+            a {
                 color: #000000;
             }
 
-            .nav-link:hover {
+            a:hover {
                 color: #000000;
             }
 
-            .nav-link:active {
+            a:active {
                 color: #000000;
             }
 
-            .nav-link:visited {
+            a:visited {
                 color: #000000;
             }
 
             #nav-logo:hover {
                 animation: 2s logo-hover;
                 animation-composition: add;
+            }
+
+            #dd-menu {
+                background: rgba(0, 0, 0, 0.4);
             }
     
             
@@ -77,7 +105,23 @@
                                                     <a class="nav-link" href="about-us.php">Rólunk</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="offers.php">Kínálatunk</a>
+                                                    <div class="dropdown">
+                                                        <a
+                                                            data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn nav-link dropdown-toggle"
+                                                            type="button"
+                                                            id="dropdownMenuButton"
+                                                            data-mdb-toggle="dropdown"
+                                                            aria-expanded="false"
+                                                            href="offers.php"
+                                                        >
+                                                            Kínálatunk
+                                                        </a>
+                                                        <ul class="dropdown-menu" id="dd-menu" aria-labelledby="dropdownMenuButton">
+                                                            <li><a class="dropdown-item text-primary" href="package.php?p=b">Basic</a></li>
+                                                            <li><a class="dropdown-item text-primary" href="package.php?p=p">Premium</a></li>
+                                                            <li><a class="dropdown-item text-primary" href="package.php?p=u">Ultra</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                             </ul>
                                     </nav>

@@ -82,13 +82,13 @@
 
         $ceos["gergo"] = [
             "name" => "Bakalár Gergő",
-            "role" => "CO-CEO",
+            "role" => "Co-CEO",
             "dec" => "gaygaygay"
         ];
 
         $ceos["zupan"] = [
             "name" => "Zupán Milán",
-            "role" => "CO-CEO",
+            "role" => "Co-CEO",
             "dec" => "POG POG POG"
         ];
 
