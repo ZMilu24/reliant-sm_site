@@ -5,15 +5,23 @@ html {
 
 body {
     margin: 0;
-    min-height: 100%; /* height grows if content grows */
+    min-height: 100%;
 }
 
-footer, header {
-    min-height: 10vh;
+@media (max-width: 800px) {
+    footer, header {
+        min-height: 20%;
+    }
+}
+
+@media (min-width: 801px) {
+    footer, header {
+        min-height: 10%;
+    }
 }
 
 main {
-    min-height: 80vh;
+    min-height: 80%;
 }
 
 .text-danger {

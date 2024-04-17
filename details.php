@@ -30,7 +30,7 @@
     }
 
     if (isset($_POST["pleased"])) {
-        if (($DB->add_member([$_POST["email"], $_POST["phone"], $_POST["name"], (isset($_POST["comp"]) ? $_POST["comp"] : null)]) and $DB->add_order())) {
+        /* if (($DB->add_member([$_POST["email"], $_POST["phone"], $_POST["name"], (isset($_POST["comp"]) ? $_POST["comp"] : null)]) and $DB->add_order())) {
             ?>
                 <script>
                     alert("Ajánlatkérés sikeres!");
@@ -42,7 +42,7 @@
                     alert("Ajánlatkérés sikertelen!");
                 </script>
             <?php
-        }
+        } */
     }
 
 ?>
@@ -78,20 +78,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="bg-light p-3 m-3">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h3>Igényelhető specifikációk</h3>
+                <form method="post">
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="bg-light p-3 m-3">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3>Igényelhető specifikációk</h3>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <form method="post">
+                                            <div class="row">
+                                                <div class="col">
                                                     <div class="row">
                                                         <div class="col">
                                                             <div class="input-group mb-3 rounded-4">
@@ -110,42 +110,36 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </form>
-                                                <form method="post">
                                                     <div class="row">
                                                         <div class="input-group mb-3">
                                                             <div class="input-group-text">
-                                                            <input type="checkbox" id="DB">
+                                                            <input type="checkbox" name="database" id="DB">
                                                             </div>
                                                             <label>Adatbázis</label>
                                                         </div>
                                                         <p id="sign"></p>
                                                     </div>
-                                                </form>
-                                                <form method="post">
                                                     <div class="row">
                                                         <div class="form-floating">
-                                                            <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                                                            <textarea class="form-control" id="comment" name="comment" placeholder="Comment goes here"></textarea>
                                                             <label for="comment">Megjegyzés</label>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-danger">
-                                        Ábelesz kábelesz rákmegesz
-                                    </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text-danger">
+                                            Ábelesz kábelesz rákmegesz
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <form method="post">
                     <div class="row">
                         <div class="col">
                             <div class="container">
