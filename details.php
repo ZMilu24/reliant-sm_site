@@ -94,7 +94,15 @@
                                                 <div class="col">
                                                     <div class="row">
                                                         <div class="col">
-                                                            <div class="input-group mb-3 rounded-4">
+                                                            <div class="form-floating">
+                                                                <input type="number" class="form-control" id="page-num" name="page-num" placeholder="" value="1" min="1"></input>
+                                                                <label for="page-num">Oldalak száma</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col">
+                                                            <div class="input-group mb-1 rounded-4">
                                                                 <div class="input-group-text">
                                                                     <input type="radio" name="type" value="handMade" onclick=handMade()>
                                                                 </div>
@@ -102,7 +110,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col">
-                                                            <div class="input-group mb-3">
+                                                            <div class="input-group mb-1">
                                                                 <div class="input-group-text">
                                                                     <input type="radio" name="type" value="wordpress" onclick=wp()>
                                                                 </div>
@@ -110,19 +118,73 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="input-group mb-3">
-                                                            <div class="input-group-text">
-                                                            <input type="checkbox" name="database" id="DB">
+                                                    <div class="row mt-1">
+                                                        <div class="col">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-text">
+                                                                <input type="checkbox" name="database" id="DB">
+                                                                </div>
+                                                                <label>Adatbázis</label>
                                                             </div>
-                                                            <label>Adatbázis</label>
+                                                            <p id="sign"></p>
                                                         </div>
-                                                        <p id="sign"></p>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-text">
+                                                                <input type="checkbox" name="own-admin" id="own-admin">
+                                                                </div>
+                                                                <label>Saját admin felület</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-text">
+                                                                <input type="checkbox" name="dinamic-offers" id="dinamic-offers">
+                                                                </div>
+                                                                <label>Dinamikusan kővülő kínálat lap</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-text">
+                                                                <input type="checkbox" name="anime-cards" id="anime-cards">
+                                                                </div>
+                                                                <label>Animált kártyák</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-text">
+                                                                <input type="checkbox" name="footer" id="footer">
+                                                                </div>
+                                                                <label>Egyedi lábléc</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-text">
+                                                                <input type="checkbox" name="responsive" id="responsive">
+                                                                </div>
+                                                                <label>Reszponzív design</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="form-floating">
-                                                            <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
-                                                            <label for="comment">Megjegyzés</label>
+                                                        <div class="col">
+                                                            <div class="form-floating">
+                                                                <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
+                                                                <label for="comment">Megjegyzés</label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
