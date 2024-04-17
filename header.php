@@ -32,24 +32,22 @@
             #nav-bg {
                 padding: 1%;
                 background: rgba(0, 0, 0, 0.4);
-                top: 0;
-                right: 0;
-                position: fixed;
             }
 
-            a {
+            .nav-link {
+                transition: 1s;
                 color: #000000;
             }
 
-            a:hover {
+            .nav-link:hover {
+                color: rgba(0, 0, 255, 1) !important;
+            }
+
+            .nav-link:active {
                 color: #000000;
             }
 
-            a:active {
-                color: #000000;
-            }
-
-            a:visited {
+            .nav-link:visited {
                 color: #000000;
             }
 
@@ -58,8 +56,20 @@
                 animation-composition: add;
             }
 
-            #dd-menu {
-                background: rgba(0, 0, 0, 0.4);
+            .dropdown-item {
+                transition: 0.5s;
+            }
+
+            #ultra-nav:hover {
+                background: rgba(0, 0, 255, 0.5) !important;
+            }
+
+            #premium-nav:hover {
+                background: rgba(0, 255, 255, 0.5) !important;
+            }
+
+            #basic-nav:hover {
+                background: rgba(100, 255, 100, 0.5) !important;
             }
     
             
@@ -86,53 +96,54 @@
                 <link href="style.css" rel="stylesheet">
                 <link rel="icon" href="imgs/logo.png" type="image/icon type">
                 <title>Reliant Service Management</title>
+                <script src="main.js"></script>
             </head>
             <body>
                 <header class="container-fluid p-0" style="background-image: linear-gradient(to right, white, #<?php echo($color); ?>);">
-                <div class="w-100" id="nav-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col p-0">
-                                <div class="w-100">
-                                    <nav class="navbar navbar-expand-sm">
-                                            <ul class="navbar-nav">
-                                                <li>
-                                                    <a class="navbar-brand" href="index.php">
-                                                        <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="about-us.php">Rólunk</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <div class="dropdown">
-                                                        <a
-                                                            data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn nav-link dropdown-toggle"
-                                                            type="button"
-                                                            id="dropdownMenuButton"
-                                                            data-mdb-toggle="dropdown"
-                                                            aria-expanded="false"
-                                                            href="offers.php"
-                                                        >
-                                                            Kínálatunk
+                    <div class="w-100 fixed-top" id="nav-bg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col p-0">
+                                    <div class="w-100">
+                                        <nav class="navbar navbar-expand-sm">
+                                                <ul class="navbar-nav">
+                                                    <li>
+                                                        <a class="navbar-brand" href="index.php">
+                                                            <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                         </a>
-                                                        <ul class="dropdown-menu" id="dd-menu" aria-labelledby="dropdownMenuButton">
-                                                            <li><a class="dropdown-item text-primary" href="package.php?p=b">Basic</a></li>
-                                                            <li><a class="dropdown-item text-primary" href="package.php?p=p">Premium</a></li>
-                                                            <li><a class="dropdown-item text-primary" href="package.php?p=u">Ultra</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                    </nav>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="about-us.php">Rólunk</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <div class="dropdown">
+                                                            <a
+                                                                data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn nav-link dropdown-toggle"
+                                                                type="button"
+                                                                id="dropdownMenuButton"
+                                                                data-mdb-toggle="dropdown"
+                                                                aria-expanded="false"
+                                                                href="offers.php"
+                                                            >
+                                                                Kínálatunk
+                                                            </a>
+                                                            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                                                                <li><a class="dropdown-item bg-dark text-white" href="package.php?p=b" id="basic-nav">Basic</a></li>
+                                                                <li><a class="dropdown-item bg-dark text-white" href="package.php?p=p" id="premium-nav">Premium</a></li>
+                                                                <li><a class="dropdown-item bg-dark text-white" href="package.php?p=u" id="ultra-nav">Ultra</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                        </nav>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col text-end p-3 px-5">
-                                <b id="title">Reliant Service Management</b>
+                                <div class="col text-end p-3 px-5">
+                                    <b id="title">Reliant Service Management</b>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 <?php }
 
 ?>

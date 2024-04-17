@@ -31,10 +31,24 @@
             }
         }
 
-        function add_to_orders($data) {
-            $out=$data["email"].", ".$data["type"].", ".$data["name"].", ".$data["phone"].", ".$data["Date"].", ".
-            $this->DB->query("INSERT INTO orders (`email`, `type`, `name`, `phone`, `Date`) VALUES (".$out.")");
-            return(200);
+        function add_order($data) {
+            try {
+                $out=$data[0]."`, `".$data[1]."`, `".$data[2];
+                $this->DB->query("INSERT INTO orders (`name`, `tel`, `email`) VALUES (`".$out."`)");
+                return(200);
+            } catch (\Throwable $th) {
+                return(404);
+            }
+        }
+
+        function add_member($data) {
+            try {
+                $out=$data[0]."`, `".$data[1]."`, `".$data[2]."`, `".$data[3];
+                $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");
+                return(200);
+            } catch (\Throwable $th) {
+                return(404);
+            }
         }
 
     }

@@ -2,20 +2,20 @@
 
     require_once("header.php");
     require_once("footer.php");
+    require_once("mySQL_functions.php");
+
+    $DB = new Database;
     
     $themes["basic"] = [
         "name" => "Basic",
-        "price" => "150",
         "theme color" => "9AEBB1"
     ];
     $themes["premium"] = [
         "name" => "Premium",
-        "price" => "350",
         "theme color" => "DBF5F5"
     ];
     $themes["ultra"] = [
         "name" => "Ultra",
-        "price" => "500",
         "theme color" => "424478"
     ];
 
@@ -29,6 +29,22 @@
         $package = $themes["ultra"];
     }
 
+    if (isset($_POST["pleased"])) {
+        if (($DB->add_member([$_POST["email"], $_POST["phone"], $_POST["name"], (isset($_POST["comp"]) ? $_POST["comp"] : null)]) and $DB->add_order())) {
+            ?>
+                <script>
+                    alert("Ajánlatkérés sikeres!");
+                </script>
+            <?php
+        } else {
+            ?>
+                <script>
+                    alert("Ajánlatkérés sikertelen!");
+                </script>
+            <?php
+        }
+    }
+
 ?>
 
         <?php main_header($package["theme color"]); ?>
@@ -39,22 +55,6 @@
                 <div class="row">
                     <div class="col">
                         <h1><?php echo($package["name"]); ?></h1>
-                        <h3 id="mainPrice">$<?php echo($package["price"]); ?></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <style>
-                            #btn-group-bg {
-                                background: rgba(0, 0, 0, 0.2);
-                            }
-                        </style>
-                        <script src="main.js"></script>
-                        <div class="btn-group m-3 my-5" id="btn-group-bg">
-                            <button class="btn btn-light m-1" id="monthButton" onclick=month_set() style="background-image: linear-gradient(to left, white, #868686)">Havi</button>
-                            <button class="btn btn-light m-1" id="halfyButton" onclick=halfy_set()>Féléves</button>
-                            <button class="btn btn-light m-1" id="yearButton" onclick=year_set()>Éves</button>
-                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -110,6 +110,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </form>
+                                                <form method="post">
                                                     <div class="row">
                                                         <div class="input-group mb-3">
                                                             <div class="input-group-text">
@@ -119,6 +121,8 @@
                                                         </div>
                                                         <p id="sign"></p>
                                                     </div>
+                                                </form>
+                                                <form method="post">
                                                     <div class="row">
                                                         <div class="form-floating">
                                                             <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
@@ -141,21 +145,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <div class="bg-light p-3 m-3">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>Személyes információk</h3>
+                <form method="post">
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="bg-light p-3 m-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h3>Személyes információk</h3>
+                                            <p class="text-danger">A *-gel megjelölt elemeket kitölteni kötelező!</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <form>
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
                                                 <input type="tel" class="form-control" id="name" placeholder="Enter name" name="name" required>
-                                                <label for="name">Teljes név</label>
+                                                <label for="name"><b class="text-danger">*</b> Teljes név</label>
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +168,7 @@
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
                                                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-                                                <label for="email">Email</label>
+                                                <label for="email"><b class="text-danger">*</b> Email</label>
                                             </div>
                                         </div>
                                     </div>
@@ -171,22 +176,30 @@
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
                                                 <input type="tel" class="form-control" id="phone" placeholder="Enter telefon" name="phone" required>
-                                                <label for="phone">Telefon</label>
+                                                <label for="phone"><b class="text-danger">*</b> Telefonszám</label>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="text" class="form-control" id="comp" placeholder="Enter Company name" name="comp">
+                                                <label for="comp">Cégnév</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <form method="post">
-                            <input class="btn btn-dark w-25" type="submit" name="pleased" value="Ajánlat kérés">
-                        </form>
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="container">
+                                <input class="btn btn-dark" type="submit" name="pleased" value="Ajánlat kérés">
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </main>
         <?php footer_fnc(); ?>
