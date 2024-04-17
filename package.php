@@ -5,17 +5,14 @@
     $themes = array();
     $themes["basic"] = [
         "name" => "Basic",
-        "main price" => "150",
         "theme color" => "9AEBB1"
     ];
     $themes["premium"] = [
         "name" => "Premium",
-        "main price" => "350",
         "theme color" => "DBF5F5"
     ];
     $themes["ultra"] = [
         "name" => "Ultra",
-        "main price" => "500<...",
         "warning" => "szöveg",
         "theme color" => "424478"
     ];
@@ -41,11 +38,6 @@
             <div class="row p-3 px-5">
             <div class="col text-left">
                 <h1><i><?php echo($package["name"])?></i></h1>
-            </div>
-        </div>
-        <div class="row px-5">
-            <div class="col text-left">
-                <h2>$<?php echo($package["main price"])?></h2>
             </div>
         </div>
         <div class="row p-3 px-5 mx-5">

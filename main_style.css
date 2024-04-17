@@ -36,8 +36,22 @@ main, header {
 }
 
 .card {
-    margin: 5%;
     transition: 0.3s;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .card {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+}
+
+@media (min-width: 801px) {
+    .card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
 
 .card:hover {

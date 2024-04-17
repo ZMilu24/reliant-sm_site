@@ -34,9 +34,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="row mx-5">
+                <div class="row mx-5" id="offer-card-container">
                     <div class="col text-center">
-                        <div class="row m-3 mx-5">
+                        <div class="row mx-5">
                             <div class="col">
                                 <?php pck_card("basic"); ?>
                             </div>
@@ -53,4 +53,9 @@
         </main>
         <?php footer_fnc(); ?>
     </body>
+    <style>
+        #offer-card-container {
+            margin:0 !important;
+        }
+    </style>
 </html>

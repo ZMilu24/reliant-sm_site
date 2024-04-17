@@ -121,7 +121,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="form-floating">
-                                                            <textarea class="form-control" id="comment" name="comment" placeholder="Comment goes here"></textarea>
+                                                            <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
                                                             <label for="comment">Megjegyzés</label>
                                                         </div>
                                                     </div>
@@ -153,7 +153,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="tel" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                                                <input type="tel" class="form-control" id="name" placeholder="" name="name" required>
                                                 <label for="name"><b class="text-danger">*</b> Teljes név</label>
                                             </div>
                                         </div>
@@ -161,7 +161,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                                <input type="email" class="form-control" id="email" placeholder="" name="email" required>
                                                 <label for="email"><b class="text-danger">*</b> Email</label>
                                             </div>
                                         </div>
@@ -169,7 +169,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="tel" class="form-control" id="phone" placeholder="Enter telefon" name="phone" required>
+                                                <input type="tel" class="form-control" id="phone" placeholder="" name="phone" required>
                                                 <label for="phone"><b class="text-danger">*</b> Telefonszám</label>
                                             </div>
                                         </div>
@@ -177,7 +177,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="text" class="form-control" id="comp" placeholder="Enter Company name" name="comp">
+                                                <input type="text" class="form-control" id="comp" placeholder="" name="comp">
                                                 <label for="comp">Cégnév</label>
                                             </div>
                                         </div>

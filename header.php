@@ -2,6 +2,8 @@
 
     function main_header($color="868686") {
 
+        $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
+
         ?>
         <style>
 
@@ -35,12 +37,12 @@
             }
 
             .nav-link {
-                transition: 1s;
+                transition: 1s !important;
                 color: #000000;
             }
 
             .nav-link:hover {
-                color: rgba(0, 0, 255, 1) !important;
+                color: rgba(10, 10, 255, 1) !important;
             }
 
             .nav-link:active {
@@ -57,11 +59,11 @@
             }
 
             .dropdown-item {
-                transition: 0.5s;
+                transition: 1s;
             }
 
             #ultra-nav:hover {
-                background: rgba(0, 0, 255, 0.5) !important;
+                background: rgba(20, 20, 255, 0.5) !important;
             }
 
             #premium-nav:hover {
@@ -116,23 +118,31 @@
                                                         <a class="nav-link" href="about-us.php">Rólunk</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <div class="dropdown">
-                                                            <a
-                                                                data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn nav-link dropdown-toggle"
-                                                                type="button"
-                                                                id="dropdownMenuButton"
-                                                                data-mdb-toggle="dropdown"
-                                                                aria-expanded="false"
-                                                                href="offers.php"
-                                                            >
-                                                                Kínálatunk
-                                                            </a>
-                                                            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-                                                                <li><a class="dropdown-item bg-dark text-white" href="package.php?p=b" id="basic-nav">Basic</a></li>
-                                                                <li><a class="dropdown-item bg-dark text-white" href="package.php?p=p" id="premium-nav">Premium</a></li>
-                                                                <li><a class="dropdown-item bg-dark text-white" href="package.php?p=u" id="ultra-nav">Ultra</a></li>
-                                                            </ul>
-                                                        </div>
+                                                        <?php
+                                                        
+                                                            if ($isMob) {
+                                                                ?><a class="nav-link" href="offers.php">Kínálatunk</a><?php
+                                                            } else {
+                                                                ?><div class="dropdown">
+                                                                <a
+                                                                    data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn nav-link dropdown-toggle"
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    data-mdb-toggle="dropdown"
+                                                                    aria-expanded="false"
+                                                                    href="offers.php"
+                                                                >
+                                                                    Kínálatunk
+                                                                </a>
+                                                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                                                                    <li><a class="dropdown-item bg-dark text-white" href="package.php?p=b" id="basic-nav">Basic</a></li>
+                                                                    <li><a class="dropdown-item bg-dark text-white" href="package.php?p=p" id="premium-nav">Premium</a></li>
+                                                                    <li><a class="dropdown-item bg-dark text-white" href="package.php?p=u" id="ultra-nav">Ultra</a></li>
+                                                                </ul>
+                                                            </div><?php
+                                                            }
+
+                                                        ?>
                                                     </li>
                                                 </ul>
                                         </nav>
