@@ -1,6 +1,6 @@
 <?php
 
-    function main_header($color="868686") {
+    function main_header($color="868686", $start_color="white") {
 
         $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
 
@@ -156,7 +156,7 @@
                 </style>
             </head>
             <body>
-                <header class="container-fluid p-0" style="background-image: linear-gradient(to right, white, #<?php echo($color); ?>);">
+                <header class="container-fluid p-0" style="background-image: linear-gradient(to right, <?php echo($start_color); ?>, #<?php echo($color); ?>);">
                     <div class="w-100 fixed-top" id="nav-bg">
                         <div class="container">
                             <div class="row">

@@ -1,43 +1,12 @@
 <?php
     function pck_card($name = "basic") {
 
-        $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
+        require_once("config.php");
 
-        $packages = array();
-        $packages["basic"] = [
-            "name" => "Basic",
-            "utilities" => [
-                "weboldal"
-            ],
-            "url" => "b",
-            "theme" => "9AEBB1"
-        ];
-        $packages["premium"] = [
-            "name" => "Premium",
-            "utilities" => [
-                "weboldal",
-                "email services",
-                "google review"
-            ],
-            "url" => "p",
-            "theme" => "DBF5F5"
-        ];
-        $packages["ultra"] = [
-            "name" => "Ultra",
-            "utilities" => [
-                "weboldal",
-                "email services",
-                "adatbázis",
-                "google review"
-            ],
-            "url" => "u",
-            "theme" => "424478"
-        ];
-
-        $package=$packages[$name];
+        $package=$themes[$name];
 
         ?>
-        <div class="card w-100 <?php if ($isMob == false) { echo("h-100"); } ?>" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme"]); ?>);">
+        <div class="card w-100 <?php if ($isMob == false) { echo("h-100"); } ?>" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
             <div class="card-header text-left">
                 <div class="row">
                     <div class="col">
@@ -77,21 +46,7 @@
     }
     function CEO_card($name) {
 
-        $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
-
-        $ceos = array();
-
-        $ceos["gergo"] = [
-            "name" => "Bakalár Gergő",
-            "role" => "Co-CEO",
-            "dec" => "gaygaygay"
-        ];
-
-        $ceos["zupan"] = [
-            "name" => "Zupán Milán",
-            "role" => "Co-CEO",
-            "dec" => "POG POG POG"
-        ];
+        require_once("config.php");
 
         $ceo = $ceos[$name];
 
@@ -131,7 +86,7 @@
     }
     function info_card($title, $disc) {
 
-        $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
+        require_once("config.php");
         
         ?>
         

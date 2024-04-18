@@ -3,21 +3,7 @@
     require_once("header.php");
     require_once("footer.php");
     require_once("mySQL_functions.php");
-
-    $DB = new Database;
-    
-    $themes["basic"] = [
-        "name" => "Basic",
-        "theme color" => "9AEBB1"
-    ];
-    $themes["premium"] = [
-        "name" => "Premium",
-        "theme color" => "DBF5F5"
-    ];
-    $themes["ultra"] = [
-        "name" => "Ultra",
-        "theme color" => "424478"
-    ];
+    require_once("config.php");
 
     $package = null;
 
@@ -54,13 +40,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1><?php echo($package["name"]); ?></h1>
+                        <h1><i><?php echo($package["name"]); ?></i></h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="p-3 m-3">
                             <h3>Fizetési részletek</h3>
+                            <p>ba-dum-cs</p>
                             <p>ba-dum-cs</p>
                             <p class="text-danger">Piros szöveg</p>
                         </div>

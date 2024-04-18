@@ -1,21 +1,7 @@
 <?php
     require_once("footer.php");
     require_once("header.php");
-
-    $themes = array();
-    $themes["basic"] = [
-        "name" => "Basic",
-        "theme color" => "9AEBB1"
-    ];
-    $themes["premium"] = [
-        "name" => "Premium",
-        "theme color" => "DBF5F5"
-    ];
-    $themes["ultra"] = [
-        "name" => "Ultra",
-        "warning" => "szöveg",
-        "theme color" => "424478"
-    ];
+    require_once("config.php");
 
     $package = null;
 
@@ -55,9 +41,6 @@
                                     <li>Éves</li>
                                 </ul>
                             </div>
-                            <div class="col text-left">
-                                <p class="text-danger">dixitque Dominus ad eum numquid considerasti servum meum Iob quod non sit ei similis in terra homo simplex et rectus et timens Deum ac recedens a malo</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,12 +52,12 @@
                                 kábelesz
                                 rákmegesz
                             </p>
-                            <p>
-                                Ábelesz
-                                kábelesz
-                                rákmegesz
-                            </p>
                         </div>
+                    </div>
+                    <div class="row">
+                            <div class="col text-left">
+                                <p class="text-danger">dixitque Dominus ad eum numquid considerasti servum meum Iob quod non sit ei similis in terra homo simplex et rectus et timens Deum ac recedens a malo</p>
+                            </div>
                     </div>
                     <div class="row">
                         <div class="col">
@@ -85,24 +68,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>
-                                <b>
-                                    Ábelesz
-                                    kábelesz
-                                    rákmegesz
-                                </b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>
+                    <div class="row mt-5">
+                        <div class="col mt-5">
+                            <b>
                                 Ábelesz
                                 kábelesz
                                 rákmegesz
-                            </p>
+                            </b>
                         </div>
                     </div>
                     <div class="row">
