@@ -1,40 +1,29 @@
 <?php
     function pck_card($name = "basic") {
 
-        require_once("config.php");
+        require("config.php");
 
         $package=$themes[$name];
 
         ?>
-        <div class="card w-100 <?php if ($isMob == false) { echo("h-100"); } ?>" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
-            <div class="card-header text-left">
-                <div class="row">
-                    <div class="col">
-                        <h3><i><?php echo($package["name"]); ?></i></h3>
+        <div class="card w-75 pb-5 <?php if ($isMob == false) { echo("h-100"); } ?>" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
+            <div class="py-5">
+                <div class="text-left">
+                    <div class="row">
+                        <div class="col">
+                            <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><i><?php echo($package["name"]); ?></i></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-left">
+                    <div class="row">
+                        <div class="col">
+                            <h4><i>design</i></h4>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card-body text-left">
-                <div class="row">
-                    <div class="col">
-                        <h4>Tartalmazza:</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <ul>
-                            <?php
-                            
-                                foreach ($package["utilities"] as $value) {
-                                    echo("<li>".$value."</li>");
-                                }
-
-                            ?>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="card-footer text-center">
+            <div class="text-center mt-5">
                 <a href="package.php?p=<?php echo($package["url"]); ?>">
                     <button class="btn btn-dark w-75">
                         Megtekintés
@@ -46,7 +35,7 @@
     }
     function CEO_card($name) {
 
-        require_once("config.php");
+        require("config.php");
 
         $ceo = $ceos[$name];
 
@@ -86,7 +75,7 @@
     }
     function info_card($title, $disc) {
 
-        require_once("config.php");
+        require("config.php");
         
         ?>
         

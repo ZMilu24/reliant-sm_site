@@ -12,9 +12,7 @@
         $themes["premium"] = [
             "name" => "Premium",
             "utilities" => [
-                "weboldal",
-                "email services",
-                "google review"
+                "weboldal"
             ],
             "url" => "p",
             "theme color" => "DBF5F5"
@@ -23,9 +21,7 @@
             "name" => "Ultra",
             "utilities" => [
                 "weboldal",
-                "email services",
-                "adatbázis",
-                "google review"
+                "adatbázis"
             ],
             "url" => "u",
             "theme color" => "424478"

@@ -1,7 +1,8 @@
 <?php
     require_once("footer.php");
     require_once("header.php");
-    require_once("config.php");
+
+    require("config.php");
 
     $package = null;
 
@@ -16,17 +17,15 @@
 ?>
 
     <?php main_header($package["theme color"])?>
-
-    <header>
     </header>
     <main class="container-fluid" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
         <div class="container">
-            <div class="row p-3 px-5">
+            <div class="row p-3">
             <div class="col text-left">
                 <h1><i><?php echo($package["name"])?></i></h1>
             </div>
         </div>
-        <div class="row p-3 px-5 mx-5">
+        <div class="row p-3">
             <div class="col text-left">
                 <div class="row">
                     <div class="col text-left">
@@ -84,14 +83,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-end mx-5 px-5">
+                    <div class="col text-<?php echo($isMob == false ? "end" : "center"); ?> mx-5 px-5">
                         <a>
                             <button type="button" class="btn btn-dark btn-lg">
                                 <b class="w-100">Sablon megtekintése</b>
                             </button>
                         </a>
                     </div>
-                    <div class="col text-left mx-5 px-5">
+                    <div class="col text-<?php echo($isMob == false ? "left" : "center"); ?> mx-5 px-5">
                         <a href="details.php?pac=<?php echo($_GET["p"]); ?>">
                             <button type="button" class="btn btn-dark btn-lg">
                                 <b class="w-100">Részletek</b>

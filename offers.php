@@ -23,19 +23,30 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <i>Lista elem</i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <i>Lista elem</i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <i>Lista elem</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col">
                                 <p>
                                     abrakadabra XDXDXDDXDXDXDXD
                                 </p>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                    <li>Lista elem</li>
-                                    <li>Lista elem</li>
-                                    <li>Lista elem</li>
-                                    <li>Lista elem</li>
-                                </ul>
                             </div>
                         </div>
                         <div class="row">

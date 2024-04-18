@@ -3,7 +3,8 @@
     require_once("header.php");
     require_once("footer.php");
     require_once("mySQL_functions.php");
-    require_once("config.php");
+
+    require("config.php");
 
     $package = null;
 
@@ -142,7 +143,7 @@
                                                                 <div class="input-group-text">
                                                                 <input type="checkbox" name="anime-cards" id="anime-cards">
                                                                 </div>
-                                                                <label>Animált kártyák</label>
+                                                                <label>Animált kártyák / Animációk</label>
                                                             </div>
                                                         </div>
                                                     </div>
