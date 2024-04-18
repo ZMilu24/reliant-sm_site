@@ -9,11 +9,6 @@ main, header {
     color: black;
 }
 
-#email_link {
-    color:black;
-    text-decoration: none;
-}
-
 #footer_home, #header_home {
     text-decoration: underline;
 }

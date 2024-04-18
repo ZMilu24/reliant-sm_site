@@ -24,7 +24,7 @@ function footer_fnc($color = "868686") { ?>
                                     <div class="row text-left">
                                         <div class="col text-left">
                                             <p>
-                                                <a id="email_link" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">reliant.service.management@gmail.com</a>
+                                                <a id="email_link" onclick=copy(id) class="footer-link">reliant.service.management@gmail.com</a>
                                             </p>
                                         </div>
                                     </div>
@@ -46,7 +46,7 @@ function footer_fnc($color = "868686") { ?>
                             <div class="row">
                                 <div class="col">
                                     <p>
-                                        telószám
+                                        <a id="telefon_link" onclick=copy(id) class="footer-link">telószám</a>
                                     </p>
                                 </div>
                             </div>

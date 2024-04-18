@@ -10,18 +10,18 @@ body {
 
 @media (max-width: 800px) {
     footer, header {
-        min-height: 20%;
+        min-height: 20vh;
     }
 }
 
 @media (min-width: 801px) {
     footer, header {
-        min-height: 10%;
+        min-height: 10vh;
     }
 }
 
 main {
-    min-height: 80%;
+    min-height: 80vh;
 }
 
 .text-danger {
@@ -37,4 +37,10 @@ footer {
 
 a:hover {
     color: #000000;
+}
+
+.footer-link {
+    cursor: copy;
+    color:black;
+    text-decoration: none;
 }

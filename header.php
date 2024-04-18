@@ -5,89 +5,6 @@
         $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
 
         ?>
-        <style>
-
-            .dropdown:hover>.dropdown-menu {
-                display: block;
-            }
-
-            .dropdown>.dropdown-toggle:active {/
-                pointer-events: none;
-            }
-
-            #dropdownMenuButton {
-                color: #000000;
-            }
-
-            #dropdownMenuButton:hover {
-                color: #000000;
-            }
-
-            #dropdownMenuButton:active {
-                color: #000000;
-            }
-
-            #dropdownMenuButton:visited {
-                color: #000000;
-            }
-
-            #nav-bg {
-                padding: 1%;
-                background: rgba(0, 0, 0, 0.4);
-            }
-
-            .nav-link {
-                transition: 1s !important;
-                color: #000000;
-            }
-
-            .nav-link:hover {
-                color: rgba(10, 10, 255, 1) !important;
-            }
-
-            .nav-link:active {
-                color: #000000;
-            }
-
-            .nav-link:visited {
-                color: #000000;
-            }
-
-            #nav-logo:hover {
-                animation: 2s logo-hover;
-                animation-composition: add;
-            }
-
-            .dropdown-item {
-                transition: 1s;
-            }
-
-            #ultra-nav:hover {
-                background: rgba(20, 20, 255, 0.5) !important;
-            }
-
-            #premium-nav:hover {
-                background: rgba(0, 255, 255, 0.5) !important;
-            }
-
-            #basic-nav:hover {
-                background: rgba(100, 255, 100, 0.5) !important;
-            }
-    
-            
-            @keyframes logo-hover {
-                    0% {
-                        box-shadow: 0 0 0 #000000;
-                    }
-                    50% {
-                        box-shadow: 0 0 99px #000000;
-                    }
-                    100% {
-                        box-shadow: 0 0 0 #000000;
-                    }
-                }
-    
-        </style>
         <!DOCTYPE html>
         <html lang="hu">
             <head>
@@ -99,6 +16,144 @@
                 <link rel="icon" href="imgs/logo.png" type="image/icon type">
                 <title>Reliant Service Management</title>
                 <script src="main.js"></script>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                        document.getElementById("main").style.marginLeft = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                        document.getElementById("main").style.marginLeft= "0";
+                    }
+                </script>
+                <style>
+
+                    .sidenav {
+                        height: 100%;
+                        width: 0;
+                        position: fixed;
+                        z-index: 1;
+                        top: 0;
+                        left: 0;
+                        background-color: #111;
+                        overflow-x: hidden;
+                        transition: 0.5s;
+                        padding-top: 60px;
+                    }
+
+                    .sidenav a {
+                        padding: 8px 8px 8px 32px;
+                        text-decoration: none;
+                        font-size: 25px;
+                        color: #818181;
+                        display: block;
+                        transition: 0.3s;
+                    }
+
+                    .sidenav a:hover {
+                        color: #f1f1f1;
+                    }
+
+                    .sidenav .closebtn {
+                        position: absolute;
+                        top: 0;
+                        right: 25px;
+                        font-size: 36px;
+                        margin-left: 50px;
+                    }
+
+                    #main {
+                        transition: margin-left .5s;
+                        padding: 16px;
+                    }
+
+                    @media screen and (max-height: 450px) {
+                        .sidenav {padding-top: 15px;}
+                        .sidenav a {font-size: 18px;}
+                    }
+
+                    .dropdown:hover>.dropdown-menu {
+                        display: block;
+                    }
+
+                    .dropdown>.dropdown-toggle:active {/
+                        pointer-events: none;
+                    }
+
+                    #dropdownMenuButton {
+                        color: #000000;
+                    }
+
+                    #dropdownMenuButton:hover {
+                        color: #000000;
+                    }
+
+                    #dropdownMenuButton:active {
+                        color: #000000;
+                    }
+
+                    #dropdownMenuButton:visited {
+                        color: #000000;
+                    }
+
+                    #nav-bg {
+                        padding: 1%;
+                        background: rgba(0, 0, 0, 0.4);
+                    }
+
+                    .nav-link {
+                        transition: 1s !important;
+                        color: #000000;
+                    }
+
+                    .nav-link:hover {
+                        color: rgba(10, 10, 255, 1) !important;
+                    }
+
+                    .nav-link:active {
+                        color: #000000;
+                    }
+
+                    .nav-link:visited {
+                        color: #000000;
+                    }
+
+                    #nav-logo:hover {
+                        animation: 2s logo-hover;
+                        animation-composition: add;
+                    }
+
+                    .dropdown-item {
+                        transition: 1s;
+                    }
+
+                    #ultra-nav:hover {
+                        background: rgba(20, 20, 255, 0.5) !important;
+                    }
+
+                    #premium-nav:hover {
+                        background: rgba(0, 255, 255, 0.5) !important;
+                    }
+
+                    #basic-nav:hover {
+                        background: rgba(100, 255, 100, 0.5) !important;
+                    }
+            
+                    
+                    @keyframes logo-hover {
+                            0% {
+                                box-shadow: 0 0 0 #000000;
+                            }
+                            50% {
+                                box-shadow: 0 0 99px #000000;
+                            }
+                            100% {
+                                box-shadow: 0 0 0 #000000;
+                            }
+                        }
+            
+                </style>
             </head>
             <body>
                 <header class="container-fluid p-0" style="background-image: linear-gradient(to right, white, #<?php echo($color); ?>);">
@@ -106,8 +161,22 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col p-0">
-                                    <div class="w-100">
-                                        <nav class="navbar navbar-expand-sm">
+                                    <?php
+                                        if ($isMob) {
+                                            ?>
+                                            <div id="mySidenav" class="sidenav">
+                                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                                <a href="index.php">
+                                                    <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
+                                                </a>
+                                                <a href="about-us.php">Rólunk</a>
+                                                <a href="offers.php">Kínálatunk</a>
+                                            </div>
+                                            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                                        <?php
+                                        } else {
+                                            ?><div class="w-100">
+                                            <nav class="navbar navbar-expand-sm">
                                                 <ul class="navbar-nav">
                                                     <li>
                                                         <a class="navbar-brand" href="index.php">
@@ -141,12 +210,13 @@
                                                                 </ul>
                                                             </div><?php
                                                             }
-
                                                         ?>
                                                     </li>
                                                 </ul>
-                                        </nav>
-                                    </div>
+                                            </nav>
+                                        </div><?php
+                                        }
+                                    ?>
                                 </div>
                                 <div class="col text-end p-3 px-5">
                                     <b id="title">Reliant Service Management</b>
