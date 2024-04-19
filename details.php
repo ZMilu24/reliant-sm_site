@@ -17,19 +17,26 @@
     }
 
     if (isset($_POST["pleased"])) {
-        /* if (($DB->add_member([$_POST["email"], $_POST["phone"], $_POST["name"], (isset($_POST["comp"]) ? $_POST["comp"] : null)]) and $DB->add_order())) {
+        $code = $DB->order_webpage($_POST);
+        if ($code == 200) {
             ?>
                 <script>
                     alert("Ajánlatkérés sikeres!");
                 </script>
             <?php
+        } else if ($code == 400) {
+            ?>
+                <script>
+                    alert("Az ajánlatkérés ismeretlen okok miatt meghiúsult!");
+                </script>
+            <?php
         } else {
             ?>
                 <script>
-                    alert("Ajánlatkérés sikertelen!");
+                    alert("Undefind error!");
                 </script>
             <?php
-        } */
+        }
     }
 
 ?>
@@ -178,13 +185,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="text-danger">
-                                            Ábelesz kábelesz rákmegesz
-                                        </p>
                                     </div>
                                 </div>
                             </div>

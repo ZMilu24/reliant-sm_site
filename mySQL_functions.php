@@ -11,9 +11,12 @@
         function __construct() {
             $this->DB = mysqli_connect("localhost", "root", "", "reliant");
         }
+
+        function get_data() {
+            $data=$this->DB->query("SELECT * FROM members");
+        }
         
         function get_orders() {
-            $data=$this->DB->query("SELECT * FROM orders");
             while ($line=$data->fetch_assoc()) {
                 echo("<tr>");
                     echo("<td>".$line["name"]."</td>");
@@ -30,27 +33,21 @@
                 echo("</tr>");
             }
         }
-
-        function add_order($data) {
+        
+        function order_webpage($data) {
             try {
-                $out=$data[0]."`, `".$data[1]."`, `".$data[2];
-                $this->DB->query("INSERT INTO orders (`name`, `tel`, `email`) VALUES (`".$out."`)");
-                return(200);
-            } catch (\Throwable $th) {
-                return(404);
-            }
-        }
-
-        function add_member($data) {
-            try {
-                $out=$data[0]."`, `".$data[1]."`, `".$data[2]."`, `".$data[3];
+                //személyes adatok eltárolása
+                if (isset($data["comp"])) {
+                    $data["comp"] = null;
+                }
+                $out=$data["name"]."`, `".$data["tel"]."`, `".$data["email"]."`, `".$data["comp"];
                 $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");
+                //ajánlatfelvétel
                 return(200);
             } catch (\Throwable $th) {
-                return(404);
+                return(400);
             }
         }
-
     }
 
 ?>
