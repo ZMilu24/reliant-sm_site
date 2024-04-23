@@ -1,0 +1,54 @@
+main, header {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#title {
+    text-decoration: underline;
+    color: black;
+}
+
+#footer_home, #header_home {
+    text-decoration: underline;
+}
+
+.main_imgs {
+    border-radius: 20%;
+}
+
+#secund_img {
+    transform: rotate(13deg);
+}
+
+#third_img {
+    transform: rotate(13deg);
+}
+
+#fourth_img {
+    border-radius: 30%;
+    transform: rotate(-13deg);
+}
+
+.card {
+    transition: 0.3s;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .card {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+}
+
+@media (min-width: 801px) {
+    .card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #000000;
+}
