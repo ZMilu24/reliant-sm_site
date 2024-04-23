@@ -29,7 +29,7 @@
             <div class="col text-left">
                 <div class="row">
                     <div class="col text-left">
-                        <p>cui dixit Dominus unde venis qui respondens ait circuivi terram et perambulavi eam</p>
+                        <p>Az Ügyfél a fizetés megkezdése előtt három opció közül választhat:</p>
                     </div>
                     <div class="col text-left">
                         <div class="row">
@@ -47,32 +47,30 @@
                     <div class="row">
                         <div class="col">
                             <p>
-                                Ábelesz
-                                kábelesz
-                                rákmegesz
+                                Miután az Ügyfél megvásárolta a csomagot, onnantól az említett opciók behatásától függően
+kell fenntartási költséget fizetnie. Minnél nagyobb időtávra kíván leszerződni, annál nagyobb árkedvezvény szabható ki. Ezen lehetőségek kiválasztása (Havi terv; Fél éves terv; Éves terv), a “Részletek” gombra kattintva érhető el.
+Amennyiben Ügyfelünk részletekben kívánja fedezni a Fél éves -, illetve az Éves tervet, annak kiválasztását a “Részletek” menüpontban lelheti fel.
+
                             </p>
                         </div>
                     </div>
                     <div class="row">
                             <div class="col text-left">
-                                <p class="text-danger">dixitque Dominus ad eum numquid considerasti servum meum Iob quod non sit ei similis in terra homo simplex et rectus et timens Deum ac recedens a malo</p>
+                                <p class="text-danger">Amennyiben a havi törlesztőrészlet önnönhibából származó okok miatt elmarad, a weboldal (illetve a többi szolgáltatás) működését megszüntetjük!</p>
                             </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <p>
-                                Ábelesz
-                                kábelesz
-                                rákmegesz
+                               Csomagjaink minőség szerint vannak listázva, és attól függően, mennyire kíván Ön átlag felüli szolgáltatást, annak megfelelően küldünk árajánlatot.
+Ennek a csomagnak részletességei és választható extrái, a “Részletek” gombra kattintva érhetőek el. Ezen felül található egy sablon oldal, amely lefedi, az e csomagtól elvárhatóakat.
                             </p>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col mt-5">
                             <b>
-                                Ábelesz
-                                kábelesz
-                                rákmegesz
+                                Az első hónap fenntartási kölcségét Cégünk biztosítja.
                             </b>
                         </div>
                     </div>

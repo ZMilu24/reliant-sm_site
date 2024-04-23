@@ -19,7 +19,8 @@
                             Rólunk:
                         </h2>
                         <p>
-                            azi deshi young fly
+                            A Reliant Service Management 2024-ben kezdte pályafutását; Két jóbarát és kis csapata azóta minden nap azon igyekszik, hogy a kis- és nagyvállalkozók illetve
+vállalataiknak életét megkönnyítse és rendezettebbé, egyszerűbbé tegye azt.
                         </p>
                     </div>
                     <div class="col-lg-3">
@@ -35,7 +36,10 @@
                             Tapasztalataink:
                         </h2>
                         <p>
-                            azi deshi young fly
+                            Csapatunk programozó tagjai több éves tapasztalattal rendelkeznek a weboldalak mind frontend, mind backend terén. A programozóink 
+feladatfüggően rugalmas időkorlátokon belül tudnak dolgozni, így rövid időn belül képesek felépíteni egy weboldalt,
+akármiylen igény szerint. A weboldal(ak) meglétével csapatunk tagjai képesek növelni az éppen szóban forgó vállalat vásárlóköreit
+és forgalmát, beleértve az adott vállalat értékeléseinek számát is pozitív irányba.
                         </p>
                     </div>
                 </div>

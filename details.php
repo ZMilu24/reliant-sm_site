@@ -55,7 +55,9 @@
                     <div class="col">
                         <div class="p-3 m-3">
                             <h3>Fizetési részletek</h3>
-                            <p>ba-dum-cs</p>
+                            <p>Miután az Ügyfél megrendelte a csomagot, és leírta igényei, egy árajánlatot küldünk.
+Ha a Havi tervre esett a választás, akkor az első hónapra az Ügyfél kifizeti a csomag árát (és az esetlegesen kért extrákat), utána havonta
+egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánlat tartalmazza a havi fenntartási költségeket is). (havi)</p>
                             <p>ba-dum-cs</p>
                             <p class="text-danger">Piros szöveg</p>
                         </div>
@@ -63,13 +65,16 @@
                     <div class="col">
                         <h3>Csomag tartalmának részletei</h3>
                         <ul>
-                            <li>1</li>
-                            <li>1</li>
-                            <li>1</li>
-                            <li>1</li>
-                            <li>1</li>
-                            <li>1</li>
-                            <li>1</li>
+                            <li>Weboldal (alap pipa)</li>
+                            <li>Adatbázis:</li>
+                            <li>E-mail services;</li>
+                            <li>Google review;</li>
+                            <li>Könyvelői oldal;</li>
+                            <li>Saját admin felület;</li>
+                            <li>Dinamikusan bővülő kínálat lap;</li>
+                            <li>Animált kártyák/Animációk;</li>
+                            <li>Egyedi lábléc;</li>
+                            <li>Reszponzív design.</li>
                         </ul>
                     </div>
                 </div>

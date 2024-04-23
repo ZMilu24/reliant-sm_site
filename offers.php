@@ -19,7 +19,11 @@
                         <div class="row">
                             <div class="col">
                                 <p>
-                                    abrakadabra XDXDXDDXDXDXDXD
+                                   Cégünk azokra a problémákra talált megoldást, amely jellemző sok ország vállalataira, és kisvállalkozásaira, miszerint kevésbé 
+versenyképesek azokhoz a cégekhez képest, akiknek az informatikai infrastruktúrájukat már sikerült megalapozni és kiépíteni
+a modern világban.
+Ügyfeleink számára három külömböző “design” csomag érhető el, választható specifikáviókkal:
+
                                 </p>
                             </div>
                         </div>
@@ -27,32 +31,29 @@
                             <div class="col">
                                 <div class="row">
                                     <div class="col">
-                                        <i>Lista elem</i>
+                                        <i>Alap (Basic);</i>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <i>Lista elem</i>
+                                        <i>Prémium (Premium);</i>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <i>Lista elem</i>
+                                        <i>és Ultra.</i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row my-3">
                             <div class="col">
                                 <p>
-                                    abrakadabra XDXDXDDXDXDXDXD
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p>
-                                    abrakadabra XDXDXDDXDXDXDXD
+                                   
+                                Csomagjaink kinézetének minősége eféleképpen változik növekvő sorrendben: Basic; Premium; Ultra.
+                                A csomagok kérvényezésekor az Ügyfél a weboldalunkon belül, egy üzenetet tud írni nekünk, amelyben részletesen kifejtheti igényeit,
+                                melyet csapatunk tagjai megkapnak és válaszképp visszaküldenek egy árajánlatot és a várható elkészülés időtartamát. Ha a feldolgozás vagy a folyamat közben félreértés esne, csapatunk tagja e-mailben
+                                vagy telefonon fogja felkeresni Önt további egyeztetésért.
                                 </p>
                             </div>
                         </div>
@@ -61,7 +62,7 @@
                 <div class="row m-3 mx-5">
                     <div class="col">
                         <p class="text-danger">
-                            abrakadabra XDXDXDDXDXDXDXD
+                            A csomagok besorolása szerint és a választott opciók függvényében, az oldalak elkészülési ideje megnövekedhet!
                         </p>
                     </div>
                 </div>
