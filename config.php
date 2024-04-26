@@ -24,7 +24,8 @@
                 "adatbázis"
             ],
             "url" => "u",
-            "theme color" => "424478"
+            "theme color" => "424478",
+            "warning" => "424478"
         ];
 
     $ceos = array();

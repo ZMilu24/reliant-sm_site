@@ -14,9 +14,3 @@ td div {
 #package_main {
     width: 50%;
 }
-
-main, header {
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}

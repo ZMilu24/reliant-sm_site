@@ -22,3 +22,14 @@ function copy(id) {
     // Alert the copied text
     alert("Szöveg vágólapra másolva!");
 }
+
+function plans(plan) {
+    element=document.getElementById("plan");
+    if (plan == 0) {
+        element.innerHTML = "Havi";
+    } else if (plan == 1) {
+        element.innerHTML = "Féléves";
+    }else if(plan == 2) {
+        element.innerHTML = "Éves";
+    }
+}

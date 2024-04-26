@@ -42,7 +42,6 @@
 ?>
 
         <?php main_header($package["theme color"]); ?>
-        <header>
         </header>
         <main class="container-fluid p-3" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
             <div class="container">
@@ -51,15 +50,25 @@
                         <h1><i><?php echo($package["name"]); ?></i></h1>
                     </div>
                 </div>
+                <div class="row m-5">
+                    <div class="col text-center">
+                        <button class="btn btn-dark" onclick=plans(0)>Havi terv</button>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark" onclick=plans(1)>Féléves terv</button>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark" onclick=plans(2)>Éves terv</button>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col">
                         <div class="p-3 m-3">
                             <h3>Fizetési részletek</h3>
-                            <p>Miután az Ügyfél megrendelte a csomagot, és leírta igényei, egy árajánlatot küldünk.
-Ha a Havi tervre esett a választás, akkor az első hónapra az Ügyfél kifizeti a csomag árát (és az esetlegesen kért extrákat), utána havonta
+                            <p>Miután az Ügyfél megrendelte a csomagot, és leírta igényei, egy árajánlatot küldünk.</p>
+                            <p>Ha a <b><span id="plan">Havi</span> tervre</b> esett a választás, akkor az első hónapra az Ügyfél kifizeti a csomag árát (és az esetlegesen kért extrákat), utána havonta
 egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánlat tartalmazza a havi fenntartási költségeket is). (havi)</p>
-                            <p>ba-dum-cs</p>
-                            <p class="text-danger">Piros szöveg</p>
+                            <p id="extra-text"></p>
                         </div>
                     </div>
                     <div class="col">
@@ -95,7 +104,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                     <div class="row">
                                                         <div class="col">
                                                             <div class="form-floating">
-                                                                <input type="number" class="form-control" id="page-num" name="page-num" placeholder="" value="1" min="1"></input>
+                                                                <input type="number" class="form-control" id="page-num" name="page-num" placeholder="" value="1" min="1" max="20"></input>
                                                                 <label for="page-num">Oldalak száma</label>
                                                             </div>
                                                         </div>
@@ -104,7 +113,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-1 rounded-4">
                                                                 <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="handMade" onclick=handMade()>
+                                                                    <input type="radio" name="type" value="handMade" onclick=handMade() checked>
                                                                 </div>
                                                                 <label>Kézzel készített</label>
                                                             </div>
