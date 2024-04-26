@@ -40,9 +40,11 @@
                 if (isset($data["comp"])) {
                     $data["comp"] = null;
                 }
-                $out=$data["name"]."`, `".$data["tel"]."`, `".$data["email"]."`, `".$data["comp"];
+                $out=$data["page-num"]."`, `".$data["type"]."`, `".$data["database"]."`, `".$data["own-admin"]."`, `".$data["dinamic-offers"]."`, `".$data["anime-cards"]."`, `".$data["footer"]."`, `".$data["responsive"]."`, `".$data["comment"];
                 $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");
                 //ajánlatfelvétel
+                $out=$data["name"]."`, `".$data["tel"]."`, `".$data["email"]."`, `".$data["comp"];
+                $this->DB->query("INSERT INTO orders (`page-num`, `tipus`, `DB`, `own-admin`, `dinamic-page`, `animatics`, `footer`, `responsive`, `comment`) VALUES (`".$out."`)");
                 return(200);
             } catch (\Throwable $th) {
                 return(400);
