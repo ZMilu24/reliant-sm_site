@@ -24,6 +24,7 @@
                 foreach ($dataname as $i) {
                     $res.="<td>".$data[$i]."</td>";
                 }
+                $res.="<td><a href='?id=".$data["id"]."'></a></td>";
                 $res.="</tr>";
             }
             return($res);

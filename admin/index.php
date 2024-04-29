@@ -1,6 +1,6 @@
 <?php
 
-    if (defined('SID')) {
+    if (boolval(defined('SID'))) {
         session_start();
         $_SESSION["logged_in_admin"] = false;
     } else {
@@ -12,6 +12,7 @@
                 ?>
                 <script>
                     alert("permission denied");
+                    window.location.href = "https://www.google.com/";
                 </script>
                 <?php
             }

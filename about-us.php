@@ -13,7 +13,7 @@
         </header>
         <main class="w-100 container-fluid" style="background-image: linear-gradient(to bottom right, white, #0059ff);">
             <div class="container p-5">
-                <div class="row my-5">
+                <div class="row my-5 py-5">
                     <div class="col-lg-9 text-center">
                         <h2>
                             Rólunk:
@@ -27,7 +27,7 @@ vállalataiknak életét megkönnyítse és rendezettebbé, egyszerűbbé tegye 
                         <img src="imgs/img1.jpeg" class="w-100 rounded-3">
                     </div>
                 </div>
-                <div class="row my-5">
+                <div class="row my-5 py-5">
                     <div class="col-lg-3">
                         <img src="imgs/img3.jpg" class="w-100" style="border-radius: 20%;">
                     </div>
