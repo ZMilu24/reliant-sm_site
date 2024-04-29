@@ -1,33 +1,50 @@
 <?php
 
     require_once(__DIR__."/../mySQL_functions.php");
+    $DB = new Database();
 
-    function main() {
-        
-        $DB= new Database();
+    function main_page_Admin() {
 
-        ?>
-            <main class="container">
-                <caption id="unique-caption-id"><h1>Megrendelések</h1></caption>
-                <div class="table-wrap" role="region" aria-labelledby="unique-caption-id" tabindex="0">
+?>
+
+    <header class="container-fluid">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col">
+                    <img src="../imgs/logo.png">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fuid">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col">
                     <table>
                         <thead>
                             <tr>
-                                <th scope="col">Név</th>
-                                <th scope="col">E-mail</th>
-                                <th scope="col">Telefonszám</th>
-                                <th scope="col">Csomag</th>
-                                <th scope="col">Vásárlás dátuma</th>
-                                <th scope="col">Állapot</th>
+                                <td>Név</td>
+                                <td>E-mail</td>
+                                <td>Telcsi</td>
+                                <td>Cégnév</td>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php $DB->get_orders()?>
+                            <?php
+                                $data = ["name", "tel", "email", "comp"];
+        
+                                $SQL = $DB->echo_table($DB->get_members(), $data);
+
+                            ?>
                         </tbody>
                     </table>
                 </div>
-            </main>
-        <?php
-    }
+            </div>
+        </div>
+    </main>
+<?php
+
+}
 
 ?>

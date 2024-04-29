@@ -1,9 +1,5 @@
 <?php
 
-    session_start();
-
-    $_SESSION["logged_in_admin"] = false;
-
     class Database {
 
         private $DB;
@@ -12,26 +8,25 @@
             $this->DB = mysqli_connect("localhost", "root", "", "reliant");
         }
 
-        function get_data() {
-            $data=$this->DB->query("SELECT * FROM members");
+        function get_members() {
+            $data = $this->DB->query("SELECT * FROM members");
+            if ($data != null) {
+                return($data);
+            } else {
+                return(array());
+            }
         }
         
-        function get_orders() {
+        function echo_table($data, $dataname = []) {
+            $res="";
             while ($line=$data->fetch_assoc()) {
-                echo("<tr>");
-                    echo("<td>".$line["name"]."</td>");
-                    echo("<td>".$line["email"]."</td>");
-                    echo("<td>".$line["phone"]."</td>");
-                    echo("<td>".$line["type"]."</td>");
-                    echo("<td>".$line["Date"]."</td>");
-                    if ($line["isDone"] == true) {
-                        $res = "Készen van";
-                    } else {
-                        $res = "Nincs kész";
-                    }
-                    echo("<td>".$res."</td>");
-                echo("</tr>");
+                $res.="<tr>";
+                foreach ($dataname as $i) {
+                    $res.="<td>".$data[$i]."</td>";
+                }
+                $res.="</tr>";
             }
+            return($res);
         }
         
         function order_webpage($data) {
@@ -41,10 +36,10 @@
                     $data["comp"] = null;
                 }
                 $out=$data["page-num"]."`, `".$data["type"]."`, `".$data["database"]."`, `".$data["own-admin"]."`, `".$data["dinamic-offers"]."`, `".$data["anime-cards"]."`, `".$data["footer"]."`, `".$data["responsive"]."`, `".$data["comment"];
-                $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");
+                $this->DB->query("INSERT INTO orders (`page-num`, `tipus`, `DB`, `own-admin`, `dinamic-page`, `animatics`, `footer`, `responsive`, `comment`) VALUES (`".$out."`)");
                 //ajánlatfelvétel
                 $out=$data["name"]."`, `".$data["tel"]."`, `".$data["email"]."`, `".$data["comp"];
-                $this->DB->query("INSERT INTO orders (`page-num`, `tipus`, `DB`, `own-admin`, `dinamic-page`, `animatics`, `footer`, `responsive`, `comment`) VALUES (`".$out."`)");
+                $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");
                 return(200);
             } catch (\Throwable $th) {
                 return(400);
