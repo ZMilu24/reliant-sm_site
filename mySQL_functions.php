@@ -16,15 +16,26 @@
                 return(array());
             }
         }
+
+        function get_orders() {
+            $data = $this->DB->query("SELECT * FROM orders");
+            if ($data != null) {
+                return($data);
+            } else {
+                return(array());
+            }
+        }
         
-        function echo_table($data, $dataname = []) {
+        function echo_table($data, $dataname = [], $table = "members") {
             $res="";
             while ($line=$data->fetch_assoc()) {
                 $res.="<tr>";
                 foreach ($dataname as $i) {
                     $res.="<td>".$data[$i]."</td>";
                 }
-                $res.="<td><a href='?id=".$data["id"]."'></a></td>";
+                if ("members" == $table) {
+                    $res.="<td><a href='?id=".$data["id"]."'></a></td>";
+                }
                 $res.="</tr>";
             }
             return($res);
@@ -39,6 +50,12 @@
                 $out=$data["page-num"]."`, `".$data["type"]."`, `".$data["database"]."`, `".$data["own-admin"]."`, `".$data["dinamic-offers"]."`, `".$data["anime-cards"]."`, `".$data["footer"]."`, `".$data["responsive"]."`, `".$data["comment"];
                 $this->DB->query("INSERT INTO orders (`page-num`, `tipus`, `DB`, `own-admin`, `dinamic-page`, `animatics`, `footer`, `responsive`, `comment`) VALUES (`".$out."`)");
                 //ajánlatfelvétel
+                $order_data = ["page-num", "tipus", "DB", "own-admin", "dinamic-page", "animatics", "footer", "responsive", "comment"];
+                foreach ($order_data as $name) {
+                    if (not isset($data[$name])) {
+                        $data[$name] = null;
+                    }
+                }
                 $out=$data["name"]."`, `".$data["tel"]."`, `".$data["email"]."`, `".$data["comp"];
                 $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");
                 return(200);
