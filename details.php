@@ -113,7 +113,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-1 rounded-4">
                                                                 <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="handMade" onclick=handMade() checked>
+                                                                    <input type="radio" name="type" value="Kézzel" onclick=handMade() checked>
                                                                 </div>
                                                                 <label>Kézzel készített</label>
                                                             </div>
@@ -121,7 +121,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-1">
                                                                 <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="wordpress" onclick=wp()>
+                                                                    <input type="radio" name="type" value="Wordpressben" onclick=wp()>
                                                                 </div>
                                                                 <label>Wordpress-ben készített</label>
                                                             </div>

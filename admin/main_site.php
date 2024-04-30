@@ -91,11 +91,15 @@
                             <table class="text-white table table-dark">
                                 <thead>
                                     <tr>
-                                        <td>Név</td>
-                                        <td>E-mail</td>
-                                        <td>Telcsi</td>
-                                        <td>Cégnév</td>
-                                        <td>Több</td>
+                                        <td>Adatbázis</td>
+                                        <td>E-mail services</td>
+                                        <td>Google review</td>
+                                        <td>Könyvelői oldal</td>
+                                        <td>Saját admin felület</td>
+                                        <td>Dinamikusan bővülő kínálat lap</td>
+                                        <td>Animált kártyák/Animációk</td>
+                                        <td>Egyedi lábléc</td>
+                                        <td>Reszponzív design</td>
                                     </tr>
                                 </thead>
                                 <tbody>

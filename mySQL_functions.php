@@ -31,7 +31,14 @@
             while ($line=$data->fetch_assoc()) {
                 $res.="<tr>";
                 foreach ($dataname as $i) {
-                    $res.="<td>".$data[$i]."</td>";
+                    if ("orders" == $table) {
+                        if ($data[$i] == null) {
+                            $res.="<td>Nem kér</td>";
+                        } else if ($data[$i] == 1) {
+                            $res.="<td>Kér</td>";
+                        }
+                        
+                    }
                 }
                 if ("members" == $table) {
                     $res.="<td><a href='?id=".$data["id"]."'></a></td>";
@@ -56,12 +63,19 @@
                         $data[$name] = null;
                     }
                 }
+                if ($data["tipus"] == null) {
+                    $data["tipus"] = "Kézzel"
+                }
                 $out=$data["name"]."`, `".$data["tel"]."`, `".$data["email"]."`, `".$data["comp"];
                 $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");
                 return(200);
             } catch (\Throwable $th) {
                 return(400);
             }
+        }
+
+        function command($sql) {
+            $this->DB->qeury($sql);
         }
     }
 
