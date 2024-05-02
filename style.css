@@ -9,16 +9,8 @@ body {
     font-size: large;
 }
 
-@media (max-width: 800px) {
-    footer, .header {
-        min-height: 10vh;
-    }
-}
-
-@media (min-width: 801px) {
-    footer, .header {
-        min-height: 10vh;
-    }
+footer, .header {
+    min-height: 10vh;
 }
 
 main {

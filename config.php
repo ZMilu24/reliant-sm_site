@@ -1,5 +1,8 @@
 <?php
 
+    //www.reliant-sm.hu/
+    $main_link = "";
+
     $themes = array();
         $themes["basic"] = [
             "name" => "Basic",
@@ -7,7 +10,8 @@
                 "weboldal"
             ],
             "url" => "b",
-            "theme color" => "9AEBB1"
+            "theme color" => "9AEBB1",
+            "link" => $main_link."template/basic/"
         ];
         $themes["premium"] = [
             "name" => "Premium",
@@ -15,7 +19,8 @@
                 "weboldal"
             ],
             "url" => "p",
-            "theme color" => "DBF5F5"
+            "theme color" => "DBF5F5",
+            "link" => $main_link."template/premium/"
         ];
         $themes["ultra"] = [
             "name" => "Ultra",
@@ -25,7 +30,8 @@
             ],
             "url" => "u",
             "theme color" => "424478",
-            "warning" => "424478"
+            "warning" => "",
+            "link" => $main_link."template/ultra/"
         ];
 
     $ceos = array();

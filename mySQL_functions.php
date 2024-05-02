@@ -59,12 +59,14 @@
                 //ajánlatfelvétel
                 $order_data = ["page-num", "tipus", "DB", "own-admin", "dinamic-page", "animatics", "footer", "responsive", "comment"];
                 foreach ($order_data as $name) {
-                    if (not isset($data[$name])) {
+                    if (isset($data[$name])) {
+                        $data[$name] = $data[$name];
+                    } else {
                         $data[$name] = null;
                     }
                 }
                 if ($data["tipus"] == null) {
-                    $data["tipus"] = "Kézzel"
+                    $data["tipus"] = "Kézzel";
                 }
                 $out=$data["name"]."`, `".$data["tel"]."`, `".$data["email"]."`, `".$data["comp"];
                 $this->DB->query("INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES (`".$out."`)");

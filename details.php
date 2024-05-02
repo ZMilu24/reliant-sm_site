@@ -154,7 +154,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                                 <div class="input-group-text">
                                                                 <input type="checkbox" name="dinamic-offers" id="dinamic-offers">
                                                                 </div>
-                                                                <label>Dinamikusan kővülő kínálat lap</label>
+                                                                <label>Dinamikusan bővülő kínálat lap</label>
                                                             </div>
                                                         </div>
                                                     </div>

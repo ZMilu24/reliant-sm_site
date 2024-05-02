@@ -11,19 +11,6 @@
     border-radius: 20%;
 }
 
-#secund_img {
-    transform: rotate(13deg);
-}
-
-#third_img {
-    transform: rotate(13deg);
-}
-
-#fourth_img {
-    border-radius: 30%;
-    transform: rotate(-13deg);
-}
-
 .card {
     transition: 0.3s;
     height: auto;
