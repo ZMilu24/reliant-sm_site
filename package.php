@@ -86,14 +86,14 @@ Ennek a csomagnak részletességei és választható extrái, a “Részletek”
         </div>
         <div class="container" id="button_container">
             <div class="row p-3 text-center">
-                <div class="col text-<?php echo($isMob == false ? "end" : "center"); ?> mx-5 px-5">
+                <div class="col text-<?php echo($isMob == false ? "end" : "center"); ?> m-5 px-5">
                     <a href="<?php echo($package["link"]); ?>">
                         <button type="button" class="btn btn-dark btn-lg">
                             <b class="w-100">Sablon megtekintése</b>
                         </button>
                     </a>
                 </div>
-                <div class="col text-<?php echo($isMob == false ? "left" : "center"); ?> mx-5 px-5">
+                <div class="col text-<?php echo($isMob == false ? "left" : "center"); ?> m-5 px-5">
                     <a href="details.php?pac=<?php echo($_GET["p"]); ?>">
                         <button type="button" class="btn btn-dark btn-lg">
                             <b class="w-100">Részletek</b>
