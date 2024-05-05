@@ -49,10 +49,10 @@
                                                          (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).") ?>
                         </div>
                         <div class="col text-center">
-                            <?php info_card("Webdesign", "Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és 
+                            <?php info_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és 
                                                           a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
                                                           Minden weboldal, mely nálunk készül el, szakképzett, és tapasztalt munkatársaink bizonyosodnak meg róla,
-                                                          hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).") ?>
+                                                          hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).') ?>
                         </div>
                     </div>
                     <div class="row pt-3">
