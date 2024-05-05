@@ -104,8 +104,8 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                     <div class="row">
                                                         <div class="col">
                                                             <div class="form-floating">
-                                                                <input type="number" class="form-control" id="page-num" name="page-num" placeholder="" value="1" min="1" max="20"></input>
-                                                                <label for="page-num">Oldalak száma</label>
+                                                                <input type="number" class="form-control" id="page_num" name="page_num" placeholder="" value="1" min="1" max="20"></input>
+                                                                <label for="page_num">Oldalak száma</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -142,7 +142,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-3">
                                                                 <div class="input-group-text">
-                                                                <input type="checkbox" name="own-admin" id="own-admin">
+                                                                <input type="checkbox" name="own_admin" id="own_admin">
                                                                 </div>
                                                                 <label>Saját admin felület</label>
                                                             </div>
@@ -152,7 +152,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-3">
                                                                 <div class="input-group-text">
-                                                                <input type="checkbox" name="dinamic-offers" id="dinamic-offers">
+                                                                <input type="checkbox" name="dinamic_offers" id="dinamic_offers">
                                                                 </div>
                                                                 <label>Dinamikusan bővülő kínálat lap</label>
                                                             </div>
@@ -162,7 +162,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-3">
                                                                 <div class="input-group-text">
-                                                                <input type="checkbox" name="anime-cards" id="anime-cards">
+                                                                <input type="checkbox" name="anime_cards" id="anime_cards">
                                                                 </div>
                                                                 <label>Animált kártyák / Animációk</label>
                                                             </div>
