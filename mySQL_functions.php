@@ -1,7 +1,5 @@
 <?php
 
-echo("connected");
-
     class Database {
 
         private $DB;
