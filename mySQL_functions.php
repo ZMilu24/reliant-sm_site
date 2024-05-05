@@ -8,7 +8,7 @@ echo("connected");
 
         function __construct() {
             $this->DB = mysqli_connect("localhost", "root", "", "ldxqgqca_reliant");
-            /*$this->DB->query("CREATE TABLE IF NOT EXISTS members (
+            $this->DB->query("CREATE TABLE IF NOT EXISTS members (
                 id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
                 tel varchar(255),
                 email varchar(255),
@@ -25,7 +25,7 @@ echo("connected");
                 footer BOOLEAN,
                 responsive BOOLEAN,
                 comment varchar(255)
-            )"); */
+            )");
         }
 
         function get_members() {
@@ -51,8 +51,7 @@ echo("connected");
             while ($line=$data->fetch_assoc()) {
                 $res.="<tr>";
                 foreach ($dataname as $i) {
-                    $res.="<td>".$i."</td>";
-                    /*if ("orders" == $table) {
+                    if ("orders" == $table) {
                         if ($data[$i] == null) {
                             $res.="<td>Nem kér</td>";
                         } else if ($data[$i] == 1) {
@@ -61,7 +60,7 @@ echo("connected");
                     }
                     if ("members" == $table) {
                         $res.="<td><a href='?id=".$data["id"]."'></a></td>";
-                    }*/
+                    }
                 }
                 $res.="</tr>";
             }
