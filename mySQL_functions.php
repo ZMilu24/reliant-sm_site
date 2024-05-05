@@ -1,11 +1,31 @@
 <?php
 
+echo("connected");
+
     class Database {
 
         private $DB;
 
         function __construct() {
-            $this->DB = mysqli_connect("localhost", "root", "", "reliant");
+            $this->DB = mysqli_connect("localhost", "root", "", "ldxqgqca_reliant");
+            /*$this->DB->query("CREATE TABLE IF NOT EXISTS members (
+                id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                tel varchar(255),
+                email varchar(255),
+                comp varchar(255)
+            )");
+            $this->DB->query("CREATE TABLE IF NOT EXISTS orders (
+                id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                page_num int,
+                tipus varchar(255),
+                DB BOOLEAN,
+                own_admin BOOLEAN,
+                dinamic_page BOOLEAN,
+                animatics BOOLEAN,
+                footer BOOLEAN,
+                responsive BOOLEAN,
+                comment varchar(255)
+            )"); */
         }
 
         function get_members() {
@@ -31,17 +51,17 @@
             while ($line=$data->fetch_assoc()) {
                 $res.="<tr>";
                 foreach ($dataname as $i) {
-                    if ("orders" == $table) {
+                    $res.="<td>".$i."</td>";
+                    /*if ("orders" == $table) {
                         if ($data[$i] == null) {
                             $res.="<td>Nem kér</td>";
                         } else if ($data[$i] == 1) {
                             $res.="<td>Kér</td>";
                         }
-                        
                     }
-                }
-                if ("members" == $table) {
-                    $res.="<td><a href='?id=".$data["id"]."'></a></td>";
+                    if ("members" == $table) {
+                        $res.="<td><a href='?id=".$data["id"]."'></a></td>";
+                    }*/
                 }
                 $res.="</tr>";
             }
@@ -54,10 +74,10 @@
                 if (isset($data["comp"])) {
                     $data["comp"] = null;
                 }
-                $out=$data["page-num"]."`, `".$data["type"]."`, `".$data["database"]."`, `".$data["own-admin"]."`, `".$data["dinamic-offers"]."`, `".$data["anime-cards"]."`, `".$data["footer"]."`, `".$data["responsive"]."`, `".$data["comment"];
-                $this->DB->query("INSERT INTO orders (`page-num`, `tipus`, `DB`, `own-admin`, `dinamic-page`, `animatics`, `footer`, `responsive`, `comment`) VALUES (`".$out."`)");
+                $out=$data["page_num"]."`, `".$data["type"]."`, `".$data["database"]."`, `".$data["own_admin"]."`, `".$data["dinamic_offers"]."`, `".$data["anime_cards"]."`, `".$data["footer"]."`, `".$data["responsive"]."`, `".$data["comment"];
+                $this->DB->query("INSERT INTO orders (`page_num`, `tipus`, `DB`, `own_admin`, `dinamic_page`, `animatics`, `footer`, `responsive`, `comment`) VALUES (`".$out."`)");
                 //ajánlatfelvétel
-                $order_data = ["page-num", "tipus", "DB", "own-admin", "dinamic-page", "animatics", "footer", "responsive", "comment"];
+                $order_data = ["page_num", "tipus", "DB", "own_admin", "dinamic_page", "animatics", "footer", "responsive", "comment"];
                 foreach ($order_data as $name) {
                     if (isset($data[$name])) {
                         $data[$name] = $data[$name];

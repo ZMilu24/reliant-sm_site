@@ -1,9 +1,9 @@
 <?php
 
+require_once(__DIR__."/../mySQL_functions.php");
 
     function main_page_Admin() {
 
-        require_once(__DIR__."/../mySQL_functions.php");
         $DB = new Database();
 
         if (isset($_GET["id"])) {
@@ -104,7 +104,7 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                                        $data = ["page-num", "tipus", "DB", "own-admin", "dinamic-page", "animatics", "footer", "responsive", "comment"];
+                                        $data = ["page_num", "tipus", "DB", "own_admin", "dinamic_page", "animatics", "footer", "responsive", "comment"];
                 
                                         $SQL = $DB->echo_table($DB->get_orders(), $data, "orders");
                                         
