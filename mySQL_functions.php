@@ -74,7 +74,7 @@ echo("connected");
                 if (isset($data["comp"])) {
                     $data["comp"] = null;
                 }
-                $out=$data["page_num"]."`, `".$data["type"]."`, `".$data["database"]."`, `".$data["own_admin"]."`, `".$data["dinamic_offers"]."`, `".$data["anime-cards"]."`, `".$data["footer"]."`, `".$data["responsive"]."`, `".$data["comment"];
+                $out=$data["page_num"]."`, `".$data["type"]."`, `".$data["database"]."`, `".$data["own_admin"]."`, `".$data["dinamic_offers"]."`, `".$data["anime_cards"]."`, `".$data["footer"]."`, `".$data["responsive"]."`, `".$data["comment"];
                 $this->DB->query("INSERT INTO orders (`page_num`, `tipus`, `DB`, `own_admin`, `dinamic_page`, `animatics`, `footer`, `responsive`, `comment`) VALUES (`".$out."`)");
                 //ajánlatfelvétel
                 $order_data = ["page_num", "tipus", "DB", "own_admin", "dinamic_page", "animatics", "footer", "responsive", "comment"];
