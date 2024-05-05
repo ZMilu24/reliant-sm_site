@@ -32,23 +32,36 @@
     <body class="container bg-dark text-white">
 
     <?php
-        if ($_SESSION["logged_in_admin"] == false) {
-            ?>
-            
-            <form method="post">
-                <input type="text" name="uname">
-                <input type="password" name="psw">
-                <input type="submit" name="login" value="login">
-            </form>
-
-
-            <?php
+        if (isset($_SESSION["logged_in_admin"])) {
+            if ($_SESSION["logged_in_admin"] == false) {
+                ?>
+                
+                <form method="post">
+                    <input type="text" name="uname">
+                    <input type="password" name="psw">
+                    <input type="submit" name="login" value="login">
+                </form>
+    
+    
+                <?php
+            } else {
+    
+                require_once("main_site.php");
+    
+                main_page_Admin();
+    
+            }
         } else {
-
-            require_once("main_site.php");
-
-            main_page_Admin();
-
+            ?>
+                
+                <form method="post">
+                    <input type="text" name="uname">
+                    <input type="password" name="psw">
+                    <input type="submit" name="login" value="login">
+                </form>
+    
+    
+                <?php
         }
     ?>
 

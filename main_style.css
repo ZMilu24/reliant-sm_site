@@ -18,6 +18,7 @@
 
 @media (max-width: 800px) {
     .card {
+        width: 100% !important;
         margin-top: 20%;
         margin-bottom: 20%;
     }
@@ -27,6 +28,11 @@
     .card {
         margin-top: 5%;
         margin-bottom: 5%;
+    }
+
+    #button_container {
+        top: 25vh !important;
+        position: relative;
     }
 }
 

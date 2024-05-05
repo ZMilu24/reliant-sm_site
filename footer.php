@@ -49,7 +49,7 @@ function footer_fnc($color = "868686") { ?>
                             <div class="row">
                                 <div class="col">
                                     <p>
-                                        <a id="telefon_link" onclick=copy(id) class="footer-link">telószám</a>
+                                        <a id="telefon_link" onclick=copy(id) class="footer-link">06/20 318 9824</a>
                                     </p>
                                 </div>
                             </div>

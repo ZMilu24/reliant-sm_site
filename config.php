@@ -38,12 +38,14 @@
         $ceos["gergo"] = [
             "name" => "Bakalár Gergő",
             "role" => "Co-CEO",
-            "dec" => "gaygaygay"
+            "dec" => "A Reliant Service Management egyik alapítótagja vagyok, ha bármiféle gond, vagy probléma adódna a szolgáltatásainkkal, akkor az oldalunk alján
+                        megadott telefonszámon, engem személyes elérhetnek, hogy minnél hamarabb kitalálhassunk egy megoldást."
         ];
         $ceos["zupan"] = [
             "name" => "Zupán Milán",
             "role" => "Co-CEO",
-            "dec" => "POG POG POG"
+            "dec" => "A Reliant Service Management alapítótagjaként, Én felelek a programozóink szakmai tudásának biztosításáért és azért, hogy minden Tőlök telhetőt
+                        megtegyenek, hogy Önnek a legjobbat nyújtsák."
         ];
 
     $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));

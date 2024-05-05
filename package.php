@@ -19,6 +19,7 @@
     <?php main_header($package["theme color"])?>
     </header>
     <main class="container-fluid" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
+        <div style="min-height: 80vh;">
         <div class="container">
             <div class="row p-3">
             <div class="col text-left">
@@ -80,21 +81,24 @@ Ennek a csomagnak részletességei és választható extrái, a “Részletek”
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col text-<?php echo($isMob == false ? "end" : "center"); ?> mx-5 px-5">
-                        <a href="<?php echo($package["link"]); ?>">
-                            <button type="button" class="btn btn-dark btn-lg">
-                                <b class="w-100">Sablon megtekintése</b>
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col text-<?php echo($isMob == false ? "left" : "center"); ?> mx-5 px-5">
-                        <a href="details.php?pac=<?php echo($_GET["p"]); ?>">
-                            <button type="button" class="btn btn-dark btn-lg">
-                                <b class="w-100">Részletek</b>
-                            </button>
-                        </a>
-                    </div>
+            </div>
+        </div>
+        </div>
+        <div class="container" id="button_container">
+            <div class="row p-3 text-center">
+                <div class="col text-<?php echo($isMob == false ? "end" : "center"); ?> mx-5 px-5">
+                    <a href="<?php echo($package["link"]); ?>">
+                        <button type="button" class="btn btn-dark btn-lg">
+                            <b class="w-100">Sablon megtekintése</b>
+                        </button>
+                    </a>
+                </div>
+                <div class="col text-<?php echo($isMob == false ? "left" : "center"); ?> mx-5 px-5">
+                    <a href="details.php?pac=<?php echo($_GET["p"]); ?>">
+                        <button type="button" class="btn btn-dark btn-lg">
+                            <b class="w-100">Részletek</b>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
