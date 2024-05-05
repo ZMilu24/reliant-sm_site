@@ -6,7 +6,7 @@
         $package=$themes[$name];
 
         ?>
-        <div class="card w-75 pb-5 <?php if ($isMob == false) { echo("h-100"); } ?>" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
+        <div class="card w-75 pb-5" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
             <div class="py-5">
                 <div class="text-left">
                     <div class="row">

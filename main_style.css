@@ -21,6 +21,7 @@
         width: 100% !important;
         margin-top: 20%;
         margin-bottom: 20%;
+        height: 75%;
     }
 }
 
@@ -28,6 +29,7 @@
     .card {
         margin-top: 5%;
         margin-bottom: 5%;
+        height: 100%;
     }
 
     #button_container {
