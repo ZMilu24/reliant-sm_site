@@ -1,9 +1,9 @@
 <?php
 
+require_once(__DIR__."/../mySQL_functions.php");
 
     function main_page_Admin() {
 
-        require_once(__DIR__."/../mySQL_functions.php");
         $DB = new Database();
 
         if (isset($_GET["id"])) {
