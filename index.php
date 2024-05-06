@@ -69,11 +69,13 @@
                                                             mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.") ?>
                     </div>
                 </div>
-                <div class="col text-center my-3">
-                    <?php CEO_card("gergo") ?>
-                </div>
-                <div class="col text-center my-3">
-                    <?php CEO_card("zupan") ?>
+                <div class="row">
+                    <div class="col text-center my-3">
+                        <?php CEO_card("gergo") ?>
+                    </div>
+                    <div class="col text-center my-3">
+                        <?php CEO_card("zupan") ?>
+                    </div>
                 </div>
             </div>
         </main>
