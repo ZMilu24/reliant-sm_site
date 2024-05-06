@@ -52,13 +52,13 @@
                 </div>
                 <div class="row m-5">
                     <div class="col text-center">
-                        <button class="btn btn-dark" onclick=plans(0)>Havi terv</button>
+                        <button class="btn btn-dark m-3" onclick=plans(0)>Havi terv</button>
                     </div>
                     <div class="col text-center">
-                        <button class="btn btn-dark" onclick=plans(1)>Féléves terv</button>
+                        <button class="btn btn-dark m-3" onclick=plans(1)>Féléves terv</button>
                     </div>
                     <div class="col text-center">
-                        <button class="btn btn-dark" onclick=plans(2)>Éves terv</button>
+                        <button class="btn btn-dark m-3" onclick=plans(2)>Éves terv</button>
                     </div>
                 </div>
                 <div class="row">
@@ -76,9 +76,6 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                         <ul>
                             <li>Weboldal (alap pipa)</li>
                             <li>Adatbázis:</li>
-                            <li>E-mail services;</li>
-                            <li>Google review;</li>
-                            <li>Könyvelői oldal;</li>
                             <li>Saját admin felület;</li>
                             <li>Dinamikusan bővülő kínálat lap;</li>
                             <li>Animált kártyák/Animációk;</li>
