@@ -41,7 +41,7 @@
 
         ?>
         
-        <div class="card w-100 h-100 bg-dark text-white">
+        <div class="card w-100 bg-dark text-white">
             <div class="card-header text-center">
                 <div class="row">
                     <div class="col">

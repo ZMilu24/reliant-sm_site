@@ -2,6 +2,8 @@
     require_once("footer.php");
     require_once("header.php");
     require_once("cards.php");
+
+    require("config.php");
 ?>
         <style>
             #logo {
@@ -17,7 +19,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col text-center">
-                    <img src="imgs/logo.png" class="rounded-circle w-50" id="logo">
+                    <img src="imgs/logo.png" class="rounded-circle w-<?php echo($isMob == false ? "50" : "100"); ?>" id="logo">
                     </div>
                 </div>
             </div>
