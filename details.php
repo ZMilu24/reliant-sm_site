@@ -74,13 +74,11 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                     <div class="col">
                         <h3>Csomag tartalmának részletei</h3>
                         <ul>
-                            <li>Weboldal (alap pipa)</li>
-                            <li>Adatbázis:</li>
-                            <li>Saját admin felület;</li>
-                            <li>Dinamikusan bővülő kínálat lap;</li>
+                            <li>Weboldal;</li>
+                            <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
                             <li>Animált kártyák/Animációk;</li>
                             <li>Egyedi lábléc;</li>
-                            <li>Reszponzív design.</li>
+                            <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">nem bejelölés esetén csak számítógépes verziót készítünk</span>)</li>
                         </ul>
                     </div>
                 </div>
@@ -94,6 +92,9 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                             <div class="row">
                                                 <div class="col">
                                                     <h3>Igényelhető specifikációk</h3>
+                                                    <p class="text-danger">
+                                                        Az itt bejelölt specifikációk nem véglegesek, csak egy támpontot ad a fejlesztőink számára, de egy telefonos, vagy egy e-mailben történő egyeztetés után ez változhat
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -110,7 +111,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-1 rounded-4">
                                                                 <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="Kézzel" onclick=handMade() checked>
+                                                                    <input type="radio" name="type" value="Kézzel" checked>
                                                                 </div>
                                                                 <label>Kézzel készített</label>
                                                             </div>
@@ -118,21 +119,10 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                         <div class="col">
                                                             <div class="input-group mb-1">
                                                                 <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="Wordpressben" onclick=wp()>
+                                                                    <input type="radio" name="type" value="Wordpressben">
                                                                 </div>
                                                                 <label>Wordpress-ben készített</label>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-1">
-                                                        <div class="col">
-                                                            <div class="input-group mb-3">
-                                                                <div class="input-group-text">
-                                                                <input type="checkbox" name="database" id="DB">
-                                                                </div>
-                                                                <label>Adatbázis</label>
-                                                            </div>
-                                                            <p id="sign"></p>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-3">
@@ -142,16 +132,6 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                                 <input type="checkbox" name="own_admin" id="own_admin">
                                                                 </div>
                                                                 <label>Saját admin felület</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-3">
-                                                        <div class="col">
-                                                            <div class="input-group mb-3">
-                                                                <div class="input-group-text">
-                                                                <input type="checkbox" name="dinamic_offers" id="dinamic_offers">
-                                                                </div>
-                                                                <label>Dinamikusan bővülő kínálat lap</label>
                                                             </div>
                                                         </div>
                                                     </div>
