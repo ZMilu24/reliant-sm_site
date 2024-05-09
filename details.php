@@ -8,6 +8,8 @@
 
     $package = null;
 
+    $DB = new Database();
+
     if ($_GET["pac"] == "b") {
         $package = $themes["basic"];
     } else if ($_GET["pac"] == "p") {
@@ -210,7 +212,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="tel" class="form-control" id="phone" placeholder="" name="phone" required>
+                                                <input type="tel" class="form-control" id="phone" placeholder="" name="tel" required>
                                                 <label for="phone"><b class="text-danger">*</b> Telefonszám</label>
                                             </div>
                                         </div>

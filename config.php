@@ -44,7 +44,7 @@
         $ceos["zupan"] = [
             "name" => "Zupán Milán",
             "role" => "Co-CEO",
-            "dec" => "A Reliant Service Management alapítótagjaként, Én felelek a programozóink szakmai tudásának biztosításáért és azért, hogy minden Tőlök telhetőt
+            "dec" => "A Reliant Service Management alapítótagjaként, Én felelek a programozóink szakmai tudásának biztosításáért és azért, hogy minden Tőlük telhetőt
                         megtegyenek, hogy Önnek a legjobbat nyújtsák."
         ];
 
