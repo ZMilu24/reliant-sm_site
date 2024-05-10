@@ -12,7 +12,7 @@
         </style>
         </header>
         <main class="w-100 container-fluid" style="background-image: linear-gradient(to bottom right, white, #0059ff);">
-            <div class="container p-5">
+            <div class="container py-5">
                 <div class="row mx-5">
                     <div class="col text-center">
                         <h1>Rólunk:</h1>

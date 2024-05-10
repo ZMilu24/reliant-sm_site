@@ -29,7 +29,7 @@
                 <br class="py-3">
             </div>
         </header>
-        <main class="container-fluid p-3 px-5" style="background-image: linear-gradient(to top left, white, #868686);">
+        <main class="container-fluid py-5" style="background-image: linear-gradient(to top left, white, #868686);">
             <div class="container mb-5">
                 <div class="row p-3 px-5">
                     <div class="col text-center">

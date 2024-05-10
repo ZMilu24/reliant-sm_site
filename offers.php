@@ -8,7 +8,7 @@
     <?php main_header("9dc2c7", "gray"); ?>
         </header>
         <main class="w-100 container-fluid" style="background-image: linear-gradient(to top right, gray, #9dc2c7);">
-            <div class="container">
+            <div class="container py-5">
                 <div class="row mx-5">
                     <div class="col text-center">
                         <h1>Minden amit Kínálunk:</h1>
