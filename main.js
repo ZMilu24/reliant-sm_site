@@ -33,3 +33,5 @@ function plans(plan) {
         element.innerHTML = "Éves";
     }
 }
+
+document.getElementById("main-header").style.height = document.getElementById("nav-bg").clientHeight + "px";
