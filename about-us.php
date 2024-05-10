@@ -13,11 +13,13 @@
         </header>
         <main class="w-100 container-fluid" style="background-image: linear-gradient(to bottom right, white, #0059ff);">
             <div class="container p-5">
+                <div class="row mx-5">
+                    <div class="col text-center">
+                        <h1>Rólunk:</h1>
+                    </div>
+                </div>
                 <div class="row my-5 py-5">
                     <div class="col-lg-9 text-center">
-                        <h2>
-                            Rólunk:
-                        </h2>
                         <p>
                             A Reliant Service Management 2024-ben kezdte pályafutását; Két jóbarát és kis csapata azóta minden nap azon igyekszik, hogy a kis- és nagyvállalkozók illetve
 vállalataiknak életét megkönnyítse és rendezettebbé, egyszerűbbé tegye azt.
