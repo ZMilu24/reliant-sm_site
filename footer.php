@@ -27,7 +27,7 @@ function footer_fnc($color = "868686") { ?>
                                     <div class="row <?php if($isMob) {echo("text-left");} else {echo("text-center");} ?>">
                                         <div class="col <?php if($isMob) {echo("text-left");} else {echo("text-center");} ?>">
                                             <p>
-                                                <a id="email_link" onclick=copy(id) class="footer-link">reliant.service.management@gmail.com</a>
+                                                <a id="email_link" onclick=copy(id) class="footer-link text-break">reliant.service.management@gmail.com</a>
                                             </p>
                                         </div>
                                     </div>
