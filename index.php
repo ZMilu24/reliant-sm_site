@@ -45,35 +45,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="row pt-3">
-                    <div class="col text-center my-3">
+                <div class="row">
+                    <div class="my-3 col text-center">
                         <?php info_card("Tervezés", "Csapatunk az Ön által megadott indormációk alapján, a lehető legmegfelelőbb weboldaldesign-t
                                                         készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján
                                                         (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).") ?>
                     </div>
-                    <div class="col text-center my-3">
+                    <div class="my-3 col text-center">
                         <?php info_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és 
                                                         a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
                                                         Minden weboldal, mely nálunk készül el, szakképzett, és tapasztalt munkatársaink bizonyosodnak meg róla,
                                                         hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).') ?>
                     </div>
                 </div>
-                <div class="row pt-3">
-                    <div class="col text-center my-3">
+                <div class="row">
+                    <div class="my-3 col text-center">
                         <?php info_card("SEO", "Az általunk készített weboldalakat, a Google keresőmotorjához optimalizáljuk,
                                                 így az Önt sokkal hamarabb találják meg a potenciális látogatók.") ?>
                     </div>
-                    <div class="col text-center my-3">
+                    <div class="my-3 col text-center">
                         <?php info_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weoldalt életre kelti.
                                                             A programozás minden apró kis szegleteiben jártas munkatársaink, ötletes megoldásokkal igyekeznek az Ön weboldalát, mind funkciók,
                                                             mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.") ?>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col text-center my-3">
+                <div class="row my-3">
+                    <div class="my-3 col text-center">
                         <?php CEO_card("gergo") ?>
                     </div>
-                    <div class="col text-center my-3">
+                    <div class="my-3 col text-center">
                         <?php CEO_card("zupan") ?>
                     </div>
                 </div>

@@ -11,7 +11,7 @@
     border-radius: 20%;
 }
 
-.card {
+.card, .kartya {
     transition: 0.3s;
     height: auto;
 }
@@ -38,6 +38,6 @@
     }
 }
 
-.card:hover {
+.card:hover, .kartya:hover {
     box-shadow: 0 0 10px #000000;
 }
