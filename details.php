@@ -24,18 +24,21 @@
             ?>
                 <script>
                     alert("Ajánlatkérés sikeres!");
+                    window.location.href = "https://www.reliant-sm.eu/";
                 </script>
             <?php
         } else if ($code == 400) {
             ?>
                 <script>
                     alert("Az ajánlatkérés ismeretlen okok miatt meghiúsult!");
+                    window.location.href = "https://www.reliant-sm.eu/";
                 </script>
             <?php
         } else {
             ?>
                 <script>
                     alert("Undefind error!");
+                    window.location.href = "https://www.reliant-sm.eu/";
                 </script>
             <?php
         }
@@ -73,19 +76,20 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                             <p id="extra-text"></p>
                         </div>
                     </div>
+                <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="col">
-                        <h3>Csomag tartalmának részletei</h3>
+                        <!--<h3>Csomag tartalmának részletei</h3>
                         <ul>
                             <li>Weboldal;</li>
                             <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
                             <li>Animált kártyák/Animációk;</li>
                             <li>Egyedi lábléc;</li>
                             <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">nem bejelölés esetén csak számítógépes verziót készítünk</span>)</li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
                 <form method="post">
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col">
                             <div class="container">
                                 <div class="row">
@@ -182,7 +186,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row">
                         <div class="col">
                             <div class="container">
