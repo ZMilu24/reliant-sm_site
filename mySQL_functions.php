@@ -13,7 +13,7 @@
                 email varchar(255),
                 tipe varchar(255),
                 comp varchar(255),
-                comment varchar(255)
+                comment varchar(10000)
             )");
             /*$this->DB->query("CREATE TABLE IF NOT EXISTS orders (
                 id int PRIMARY KEY NOT NULL AUTO_INCREMENT,

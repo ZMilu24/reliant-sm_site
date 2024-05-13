@@ -37,7 +37,7 @@ require_once(__DIR__."/../mySQL_functions.php");
                                 </thead>
                                 <tbody>
                                     <?php
-                                        $data = ["name", "tel", "email", "tipe", "comp"];
+                                        $data = ["name", "tel", "email", "tipe", "comp", "comment"];
                 
                                         echo($DB->echo_table($DB->get_members(), $data));
                                         
