@@ -100,8 +100,8 @@
                 } else {
                     $data["comp"] = null;
                 }
-                $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"];
-                $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`) VALUES ('".$out."')";
+                $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"];
+                $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`) VALUES ('".$out."')";
                 $this->DB->query($sql);
                 return(200);
             } catch (\Throwable $th) {

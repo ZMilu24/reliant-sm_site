@@ -78,14 +78,14 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                     </div>
                 <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="col">
-                        <!--<h3>Csomag tartalmának részletei</h3>
+                        <h3>Csomag tartalmának részletei</h3>
                         <ul>
                             <li>Weboldal;</li>
                             <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
                             <li>Animált kártyák/Animációk;</li>
                             <li>Egyedi lábléc;</li>
                             <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">nem bejelölés esetén csak számítógépes verziót készítünk</span>)</li>
-                        </ul>-->
+                        </ul>
                     </div>
                 </div>
                 <form method="post">
@@ -218,6 +218,14 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                             <div class="form-floating mb-3 mt-3">
                                                 <input type="tel" class="form-control" id="phone" placeholder="" name="tel" required>
                                                 <label for="phone"><b class="text-danger">*</b> Telefonszám</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="cim" class="form-control" id="cim" placeholder="" name="cim" required>
+                                                <label for="cim"><b class="text-danger">*</b> Lakcím</label>
                                             </div>
                                         </div>
                                     </div>
