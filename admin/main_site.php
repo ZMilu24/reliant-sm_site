@@ -32,6 +32,7 @@ require_once(__DIR__."/../mySQL_functions.php");
                                         <td>Telcsi</td>
                                         <td>Tipus</td>
                                         <td>Cégnév</td>
+                                        <td>Elképzelés</td>
                                     </tr>
                                 </thead>
                                 <tbody>
