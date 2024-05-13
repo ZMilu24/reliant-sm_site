@@ -237,6 +237,44 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                             </div>
                                         </div>
                                     </div>
+                                    <style>
+                                        #comp_det {
+                                            transition: 0.5s;
+                                        }
+                                        .hidden {
+                                            display: none;
+                                        }
+                                    </style>
+                                    <div class="hidden" id="comp_det">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-floating mb-3 mt-3">
+                                                    <input type="ado" class="form-control" id="ado" placeholder="" name="ado" required>
+                                                    <label for="ado"><b class="text-danger">*</b> Adószám</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-floating mb-3 mt-3">
+                                                    <input type="szamla" class="form-control" id="szamla" placeholder="" name="szamla" required>
+                                                    <label for="szamla"><b class="text-danger">*</b> Számlázási cím</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        const comp = document.getElementById("comp");
+                                        const comp_det = document.getElementById("comp_det");
+
+                                        comp.addEventListener("input", function() {
+                                            if (this.value.trim() !== "") {
+                                                comp_det.classList.remove("hidden");
+                                            } else {
+                                                comp_det.classList.add("hidden");
+                                            }
+                                        });
+                                    </script>
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating">
