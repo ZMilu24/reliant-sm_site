@@ -19,7 +19,7 @@
     }
 
     if (isset($_POST["pleased"])) {
-        $code = $DB->order_webpage($_POST);
+        $code = $DB->order_webpage($_POST, $package["name"]);
         if ($code == 200) {
             ?>
                 <script>

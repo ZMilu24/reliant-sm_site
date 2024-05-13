@@ -30,15 +30,15 @@ require_once(__DIR__."/../mySQL_functions.php");
                                         <td>Név</td>
                                         <td>E-mail</td>
                                         <td>Telcsi</td>
+                                        <td>Tipus</td>
                                         <td>Cégnév</td>
-                                        <td>Több</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                        $data = ["name", "tel", "email", "comp"];
+                                        $data = ["name", "tel", "email", "tipe", "comp"];
                 
-                                        $SQL = $DB->echo_table($DB->get_members(), $data);
+                                        echo($DB->echo_table($DB->get_members(), $data));
                                         
                                     ?>
                                 </tbody>
@@ -52,6 +52,8 @@ require_once(__DIR__."/../mySQL_functions.php");
     }
 
     function order($id) {
+
+        $DB = new Database();
 
         ?>
         
@@ -73,10 +75,10 @@ require_once(__DIR__."/../mySQL_functions.php");
                 #info-box {
                     position: absolute;
                     background-color: rgba(255,255,255,1);
-                    top: 20%;
-                    left: 20%;
-                    width: 60vw !important;
-                    min-height: 60vh;
+                    top: 10%;
+                    left: 10%;
+                    width: 80vw !important;
+                    min-height: 80vh;
                 }
             }
 
@@ -84,13 +86,15 @@ require_once(__DIR__."/../mySQL_functions.php");
 
 
         <div id="shoutter"></div>
-        <div id="info-box" class="container-fluid p-3 rounded-3">
+        <div id="info-box" class="container-fluid p-3 rounded-3" style="background-color: rgba(0,0,0,1);">
             <div class="conatiner">
                     <div class="row">
                         <div class="col">
-                            <table class="text-white table table-dark">
+                            <table class="table table-dark">
                                 <thead>
                                     <tr>
+                                        <td>Lapok száma</td>
+                                        <td>Típus</td>
                                         <td>Adatbázis</td>
                                         <td>E-mail services</td>
                                         <td>Google review</td>
@@ -100,13 +104,14 @@ require_once(__DIR__."/../mySQL_functions.php");
                                         <td>Animált kártyák/Animációk</td>
                                         <td>Egyedi lábléc</td>
                                         <td>Reszponzív design</td>
+                                        <td>Comment</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
                                         $data = ["page_num", "tipus", "DB", "own_admin", "dinamic_page", "animatics", "footer", "responsive", "comment"];
                 
-                                        $SQL = $DB->echo_table($DB->get_orders(), $data, "orders");
+                                        echo($DB->echo_table($DB->get_orders(), $data, "orders"));
                                         
                                     ?>
                                 </tbody>

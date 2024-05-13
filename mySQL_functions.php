@@ -11,6 +11,7 @@
                 name varchar(255),
                 tel varchar(255),
                 email varchar(255),
+                tipe varchar(255),
                 comp varchar(255)
             )");
             $this->DB->query("CREATE TABLE IF NOT EXISTS orders (
@@ -50,23 +51,27 @@
             while ($line=$data->fetch_assoc()) {
                 $res.="<tr>";
                 foreach ($dataname as $i) {
-                    if ("orders" == $table) {
-                        if ($data[$i] == null) {
+                    if ($table == "orders") {
+                        if ($i == "page_num" or $i == "tipus" or $i == "comment") {
+                            $res.="<td>".$line[$i]."</td>";
+                        } else if ($line[$i] == 0) {
                             $res.="<td>Nem kér</td>";
-                        } else if ($data[$i] == 1) {
+                        } else {
                             $res.="<td>Kér</td>";
                         }
-                    }
-                    if ("members" == $table) {
-                        $res.="<td><a href='?id=".$line["id"]."'></a></td>";
+                    }else {
+                        $res.="<td>".$line[$i]."</td>";
                     }
                 }
+                /*if ($table == "members") {
+                    $res.="<td><a href='?id=".$line["id"]."'>CLICK</a></td>";
+                }*/
                 $res.="</tr>";
             }
             return($res);
         }
         
-        function order_webpage($data) {
+        function order_webpage($data, $tipe="basic") {
             try {
                 //ajánlatfelvétel
                 $order_data = ["page_num", "type", "database", "own_admin", "dinamic_offers", "anime_cards", "footer", "responsive", "comment"];
@@ -89,8 +94,8 @@
                 } else {
                     $data["comp"] = null;
                 }
-                $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$data["comp"];
-                $sql = "INSERT INTO members (`name`, `tel`, `email`, `comp`) VALUES ('".$out."')";
+                $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"];
+                $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`) VALUES ('".$out."')";
                 $this->DB->query($sql);
                 return(200);
             } catch (\Throwable $th) {
