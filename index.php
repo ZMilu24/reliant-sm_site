@@ -51,6 +51,7 @@
                                                         készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján
                                                         (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).") ?>
                     </div>
+                <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="my-3 col text-center">
                         <?php info_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és 
                                                         a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
@@ -63,6 +64,7 @@
                         <?php info_card("SEO", "Az általunk készített weboldalakat, a Google keresőmotorjához optimalizáljuk,
                                                 így az Önt sokkal hamarabb találják meg a potenciális látogatók.") ?>
                     </div>
+                <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="my-3 col text-center">
                         <?php info_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weoldalt életre kelti.
                                                             A programozás minden apró kis szegleteiben jártas munkatársaink, ötletes megoldásokkal igyekeznek az Ön weboldalát, mind funkciók,
@@ -73,6 +75,7 @@
                     <div class="my-3 col text-center">
                         <?php CEO_card("gergo") ?>
                     </div>
+                <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="my-3 col text-center">
                         <?php CEO_card("zupan") ?>
                     </div>
