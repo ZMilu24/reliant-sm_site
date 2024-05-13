@@ -49,7 +49,6 @@ a modern világban.
                         <div class="row my-3">
                             <div class="col">
                                 <p>
-                                   
                                 Csomagjaink kinézetének minősége eféleképpen változik növekvő sorrendben: Basic; Premium; Ultra.
                                 A csomagok kérvényezésekor az Ügyfél a weboldalunkon belül, egy üzenetet tud írni nekünk, amelyben részletesen kifejtheti igényeit,
                                 melyet csapatunk tagjai megkapnak és válaszképp visszaküldenek egy árajánlatot és a várható elkészülés időtartamát. Ha a feldolgozás vagy a folyamat közben félreértés esne, csapatunk tagja e-mailben
