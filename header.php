@@ -162,6 +162,7 @@
                             <div class="row">
                                 <div class="col p-0">
                                     <?php
+                                    require("config.php");
                                         if ($isMob) {
                                             ?>
                                             <div id="mySidenav" class="sidenav">
@@ -219,7 +220,7 @@
                                     ?>
                                 </div>
                                 <div class="col text-end p-3 px-5">
-                                    <b id="title">Reliant Service Management</b>
+                                    <b id="title"><?php require("config.php"); if($isMob == false) { echo("Reliant Service Management"); } ?></b>
                                 </div>
                             </div>
                         </div>
