@@ -9,12 +9,12 @@
         </header>
         <main class="w-100 container-fluid" style="background-image: linear-gradient(to top right, gray, #9dc2c7);">
             <div class="container py-5">
-                <div class="row mx-5">
+                <div class="row">
                     <div class="col text-center">
                         <h1>Minden amit Kínálunk:</h1>
                     </div>
                 </div>
-                <div class="row m-3 mx-5">
+                <div class="row">
                     <div class="col">
                         <div class="row">
                             <div class="col">
@@ -59,14 +59,14 @@ a modern világban.
                         </div>
                     </div>
                 </div>
-                <div class="row m-3 mx-5">
+                <div class="row">
                     <div class="col">
                         <p class="text-danger">
                             A csomagok besorolása szerint és a választott opciók függvényében, az oldalak elkészülési ideje megnövekedhet!
                         </p>
                     </div>
                 </div>
-                <div class="row mx-5" id="offer-card-container">
+                <div class="row" id="offer-card-container">
                     <div class="col text-center">
                         <div class="row mx-5">
                             <div class="col">

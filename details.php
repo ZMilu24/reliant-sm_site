@@ -229,6 +229,14 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
+                                                <label for="comment">Mi az ön elképzelése?</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
