@@ -78,104 +78,105 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                     </div>
                 <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="col">
-                        <h3>Csomag tartalmának részletei</h3>
+                        <h3>Igényelhető specifikációk</h3>
                         <ul>
-                            <li>Weboldal;</li>
                             <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
                             <li>Animált kártyák/Animációk;</li>
+                            <li>Automatikus e-mail küldő rendszer;</li>
                             <li>Egyedi lábléc;</li>
-                            <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">nem bejelölés esetén csak számítógépes verziót készítünk</span>)</li>
+                            <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">Ha Ön nem kéri, akkor csak számítógépes verziót készítünk</span>)</li>
                         </ul>
                     </div>
                 </div>
                 <form method="post">
                     <!--<div class="row">
-                        <div class="col">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="bg-light p-3 m-3">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h3>Igényelhető specifikációk</h3>
-                                                    <p class="text-danger">
-                                                        Az itt bejelölt specifikációk nem véglegesek, csak egy támpontot ad a fejlesztőink számára, de egy telefonos, vagy egy e-mailben történő egyeztetés után ez változhat
-                                                    </p>
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="bg-light p-3 m-3">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h3>Igényelhető specifikációk</h3>
+                                                        <p class="text-danger">
+                                                            Az itt bejelölt specifikációk nem véglegesek, csak egy támpontot ad a fejlesztőink számára, de egy telefonos, vagy egy e-mailben történő egyeztetés után ez változhat
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="form-floating">
-                                                                <input type="number" class="form-control" id="page_num" name="page_num" placeholder="" value="1" min="1" max="20"></input>
-                                                                <label for="page_num">Oldalak száma</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-3">
-                                                        <div class="col">
-                                                            <div class="input-group mb-1 rounded-4">
-                                                                <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="Kézzel" checked>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="page_num" name="page_num" placeholder="" value="1" min="1" max="20"></input>
+                                                                    <label for="page_num">Oldalak száma</label>
                                                                 </div>
-                                                                <label>Kézzel készített</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <div class="input-group mb-1">
-                                                                <div class="input-group-text">
-                                                                    <input type="radio" name="type" value="Wordpressben">
+                                                        <div class="row mt-3">
+                                                            <div class="col">
+                                                                <div class="input-group mb-1 rounded-4">
+                                                                    <div class="input-group-text">
+                                                                        <input type="radio" name="type" value="Kézzel" checked>
+                                                                    </div>
+                                                                    <label>Kézzel készített</label>
                                                                 </div>
-                                                                <label>Wordpress-ben készített</label>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-3">
-                                                        <div class="col">
-                                                            <div class="input-group mb-3">
-                                                                <div class="input-group-text">
-                                                                <input type="checkbox" name="own_admin" id="own_admin">
+                                                            <div class="col">
+                                                                <div class="input-group mb-1">
+                                                                    <div class="input-group-text">
+                                                                        <input type="radio" name="type" value="Wordpressben">
+                                                                    </div>
+                                                                    <label>Wordpress-ben készített</label>
                                                                 </div>
-                                                                <label>Saját admin felület</label>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mt-3">
-                                                        <div class="col">
-                                                            <div class="input-group mb-3">
-                                                                <div class="input-group-text">
-                                                                <input type="checkbox" name="anime_cards" id="anime_cards">
+                                                        <div class="row mt-3">
+                                                            <div class="col">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-text">
+                                                                    <input type="checkbox" name="own_admin" id="own_admin">
+                                                                    </div>
+                                                                    <label>Saját admin felület</label>
                                                                 </div>
-                                                                <label>Animált kártyák / Animációk</label>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mt-3">
-                                                        <div class="col">
-                                                            <div class="input-group mb-3">
-                                                                <div class="input-group-text">
-                                                                <input type="checkbox" name="footer" id="footer">
+                                                        <div class="row mt-3">
+                                                            <div class="col">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-text">
+                                                                    <input type="checkbox" name="anime_cards" id="anime_cards">
+                                                                    </div>
+                                                                    <label>Animált kártyák / Animációk</label>
                                                                 </div>
-                                                                <label>Egyedi lábléc</label>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mt-3">
-                                                        <div class="col">
-                                                            <div class="input-group mb-3">
-                                                                <div class="input-group-text">
-                                                                <input type="checkbox" name="responsive" id="responsive">
+                                                        <div class="row mt-3">
+                                                            <div class="col">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-text">
+                                                                    <input type="checkbox" name="footer" id="footer">
+                                                                    </div>
+                                                                    <label>Egyedi lábléc</label>
                                                                 </div>
-                                                                <label>Reszponzív design</label>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="form-floating">
-                                                                <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
-                                                                <label for="comment">Megjegyzés</label>
+                                                        <div class="row mt-3">
+                                                            <div class="col">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-text">
+                                                                    <input type="checkbox" name="responsive" id="responsive">
+                                                                    </div>
+                                                                    <label>Reszponzív design</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-floating">
+                                                                    <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
+                                                                    <label for="comment">Megjegyzés</label>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -185,8 +186,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>-->
+                        </div>-->
                     <div class="row">
                         <div class="col">
                             <div class="container">
@@ -200,7 +200,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="tel" class="form-control" id="name" placeholder="" name="name" required>
+                                                <input type="text" class="form-control" id="name" placeholder="" name="name" required>
                                                 <label for="name"><b class="text-danger">*</b> Teljes név</label>
                                             </div>
                                         </div>
@@ -216,7 +216,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="tel" class="form-control" id="phone" placeholder="" name="tel" required>
+                                                <input type="number" class="form-control" id="phone" placeholder="" name="tel" required>
                                                 <label for="phone"><b class="text-danger">*</b> Telefonszám</label>
                                             </div>
                                         </div>
@@ -224,7 +224,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-floating mb-3 mt-3">
-                                                <input type="cim" class="form-control" id="cim" placeholder="" name="cim" required>
+                                                <input type="text" class="form-control" id="cim" placeholder="" name="cim" required>
                                                 <label for="cim"><b class="text-danger">*</b> Lakcím</label>
                                             </div>
                                         </div>
@@ -249,15 +249,19 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-floating mb-3 mt-3">
-                                                    <input type="ado" class="form-control" id="ado" placeholder="" name="ado" required>
+                                                    <input type="number" class="form-control" id="ado" placeholder="" name="ado" min="00000000" required>
                                                     <label for="ado"><b class="text-danger">*</b> Adószám</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col">
+                                                <div class="mb-3 mt-3">
+                                                <input type="checkbox" name="cimek" id="cimek">
+                                                <label for="cimek">A számlázási cím, megegyezik a lakcímmel</label>
+                                                </div>
                                                 <div class="form-floating mb-3 mt-3">
-                                                    <input type="szamla" class="form-control" id="szamla" placeholder="" name="szamla" required>
+                                                    <input type="text" class="form-control" id="szamla" placeholder="" name="szamla" required>
                                                     <label for="szamla"><b class="text-danger">*</b> Számlázási cím</label>
                                                 </div>
                                             </div>
@@ -272,6 +276,19 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                 comp_det.classList.remove("hidden");
                                             } else {
                                                 comp_det.classList.add("hidden");
+                                            }
+                                        });
+                                        
+                                        const cimek = document.getElementById("cimek");
+                                        const lak = document.getElementById("cim");
+                                        const szamla = document.getElementById("szamla");
+                                        
+                                        cimek.addEventListener("input", function() {
+                                            if (this.checked) {
+                                                szamla.value = lak.value;
+                                                szamla.disabled = true;
+                                            } else {
+                                                szamla.disabled = false;
                                             }
                                         });
                                     </script>

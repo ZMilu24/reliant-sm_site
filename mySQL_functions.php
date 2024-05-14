@@ -13,6 +13,9 @@
                 email varchar(255),
                 tipe varchar(255),
                 comp varchar(255),
+                cim varchar(255),
+                ado int,
+                szamla varchar(255),
                 comment varchar(10000)
             )");
             /*$this->DB->query("CREATE TABLE IF NOT EXISTS orders (
@@ -100,8 +103,8 @@
                 } else {
                     $data["comp"] = null;
                 }
-                $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"];
-                $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`) VALUES ('".$out."')";
+                $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
+                $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`, `szamla`, `ado`) VALUES ('".$out."')";
                 $this->DB->query($sql);
                 return(200);
             } catch (\Throwable $th) {
