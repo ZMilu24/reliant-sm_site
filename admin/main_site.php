@@ -28,8 +28,8 @@ require_once(__DIR__."/../mySQL_functions.php");
                                 <thead>
                                     <tr>
                                         <td>Név</td>
-                                        <td>E-mail</td>
                                         <td>Telcsi</td>
+                                        <td>E-mail</td>
                                         <td>Tipus</td>
                                         <td>Cégnév</td>
                                         <td>Elképzelés</td>

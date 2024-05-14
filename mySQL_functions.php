@@ -78,35 +78,35 @@
         function order_webpage($data, $tipe="basic") {
             try {
                 //ajánlatfelvétel
-                /*$order_data = ["page_num", "type", "database", "own_admin", "dinamic_offers", "anime_cards", "footer", "responsive", "comment"];
-                foreach ($order_data as $order) {
-                    if (isset($data[$order])) {
-                        $data[$order] = $data[$order];
-                    } else {
-                        $data[$order] = null;
+                    /*$order_data = ["page_num", "type", "database", "own_admin", "dinamic_offers", "anime_cards", "footer", "responsive", "comment"];
+                    foreach ($order_data as $order) {
+                        if (isset($data[$order])) {
+                            $data[$order] = $data[$order];
+                        } else {
+                            $data[$order] = null;
+                        }
                     }
-                }
-                if ($data["type"] == null) {
-                    $data["type"] = "Kézzel";
-                }
-                $out=$data["page_num"]."', '".$data["type"]."', '".$data["database"]."', '".$data["own_admin"]."', '".$data["dinamic_offers"]."', '".$data["anime_cards"]."', '".$data["footer"]."', '".$data["responsive"]."', '".$data["comment"];
-                $sql = "INSERT INTO orders (`page_num`, `tipus`, `DB`, `own_admin`, `dinamic_page`, `animatics`, `footer`, `responsive`, `comment`) VALUES ('".$out."')";
-                $this->DB->query($sql);*/
+                    if ($data["type"] == null) {
+                        $data["type"] = "Kézzel";
+                    }
+                    $out=$data["page_num"]."', '".$data["type"]."', '".$data["database"]."', '".$data["own_admin"]."', '".$data["dinamic_offers"]."', '".$data["anime_cards"]."', '".$data["footer"]."', '".$data["responsive"]."', '".$data["comment"];
+                    $sql = "INSERT INTO orders (`page_num`, `tipus`, `DB`, `own_admin`, `dinamic_page`, `animatics`, `footer`, `responsive`, `comment`) VALUES ('".$out."')";
+                    $this->DB->query($sql);*/
                 //személyes adatok eltárolása
-                if (isset($data["comp"])) {
-                    $data["comp"] = $data["comp"];
-                } else {
-                    $data["comp"] = null;
-                }
-                if (isset($data["comp"])) {
-                    $data["comp"] = $data["comp"];
-                } else {
-                    $data["comp"] = null;
-                }
-                $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
-                $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`, `szamla`, `ado`) VALUES ('".$out."')";
-                $this->DB->query($sql);
-                return(200);
+                    if (isset($data["comp"])) {
+                        $data["comp"] = $data["comp"];
+                    } else {
+                        $data["comp"] = null;
+                    }
+                    if (isset($data["comp"])) {
+                        $data["comp"] = $data["comp"];
+                    } else {
+                        $data["comp"] = null;
+                    }
+                    $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
+                    $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`, `szamla`, `ado`) VALUES ('".$out."')";
+                    $this->DB->query($sql);
+                    return(200);
             } catch (\Throwable $th) {
                 echo($th);
                 return(400);
