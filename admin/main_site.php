@@ -30,14 +30,17 @@ require_once(__DIR__."/../mySQL_functions.php");
                                         <td>Név</td>
                                         <td>Telcsi</td>
                                         <td>E-mail</td>
+                                        <td>Lakcím</td>
                                         <td>Tipus</td>
                                         <td>Cégnév</td>
+                                        <td>Adószám</td>
+                                        <td>Számlázási cím</td>
                                         <td>Elképzelés</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                        $data = ["name", "tel", "email", "tipe", "comp", "comment"];
+                                        $data = ["name", "tel", "email", "cim", "tipe", "comp", "ado", "szamla", "comment"];
                 
                                         echo($DB->echo_table($DB->get_members(), $data));
                                         
@@ -91,32 +94,9 @@ require_once(__DIR__."/../mySQL_functions.php");
             <div class="conatiner">
                     <div class="row">
                         <div class="col">
-                            <table class="table table-dark">
-                                <thead>
-                                    <tr>
-                                        <td>Lapok száma</td>
-                                        <td>Típus</td>
-                                        <td>Adatbázis</td>
-                                        <td>E-mail services</td>
-                                        <td>Google review</td>
-                                        <td>Könyvelői oldal</td>
-                                        <td>Saját admin felület</td>
-                                        <td>Dinamikusan bővülő kínálat lap</td>
-                                        <td>Animált kártyák/Animációk</td>
-                                        <td>Egyedi lábléc</td>
-                                        <td>Reszponzív design</td>
-                                        <td>Comment</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                        $data = ["page_num", "tipus", "DB", "own_admin", "dinamic_page", "animatics", "footer", "responsive", "comment"];
-                
-                                        echo($DB->echo_table($DB->get_orders(), $data, "orders"));
-                                        
-                                    ?>
-                                </tbody>
-                            </table>
+                            <p class="text-center">
+                                <?php echo($DB->getComment($DB->get_members(), $id)); ?>
+                            </p>
                         </div>
                     </div>
                 </div>

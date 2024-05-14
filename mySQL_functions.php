@@ -49,6 +49,15 @@
                 return(array());
             }
         }
+
+        function getComment($data, $id) {
+            while ($line=$data->fetch_assoc()) {
+                if ($line["id"] == $id) {
+                    return($line["comment"]);
+                }
+            }
+            return("ID nem található");
+        }
         
         function echo_table($data, $dataname = [], $table = "members") {
             $res="";
@@ -64,7 +73,11 @@
                             $res.="<td>Kér</td>";
                         }
                     }else {
-                        $res.="<td>".$line[$i]."</td>";
+                        if ($i != "comment") {
+                            $res.="<td>".$line[$i]."</td>";
+                        } else {
+                            $res.="<td><a class='btn' href='?id=".$line["id"]."'>LINK</a></td>";
+                        }
                     }
                 }
                 /*if ($table == "members") {
