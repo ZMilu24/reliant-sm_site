@@ -74,9 +74,17 @@
                         }
                     }else {
                         if ($i != "comment") {
-                            $res.="<td>".$line[$i]."</td>";
+                            if ($i != "szamla") {
+                                $res.="<td>".$line[$i]."</td>";
+                            } else {
+                                if ($line[$i] == NULL or $line[$i] == "") {
+                                    $res.="<td>".$line["cim"]."</td>";
+                                } else {
+                                    $res.="<td>".$line[$i]."</td>";
+                                }
+                            }
                         } else {
-                            $res.="<td><a class='btn' href='?id=".$line["id"]."'>LINK</a></td>";
+                            $res.="<td><a class='btn text-white' href='?id=".$line["id"]."'>LINK</a></td>";
                         }
                     }
                 }

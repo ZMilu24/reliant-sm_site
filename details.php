@@ -249,7 +249,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-floating mb-3 mt-3">
-                                                    <input type="number" class="form-control" id="ado" placeholder="" name="ado" min="00000000" required>
+                                                    <input type="number" class="form-control" id="ado" placeholder="" name="ado">
                                                     <label for="ado"><b class="text-danger">*</b> Adószám</label>
                                                 </div>
                                             </div>
@@ -261,7 +261,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                                 <label for="cimek">A számlázási cím, megegyezik a lakcímmel</label>
                                                 </div>
                                                 <div class="form-floating mb-3 mt-3">
-                                                    <input type="text" class="form-control" id="szamla" placeholder="" name="szamla" required>
+                                                    <input type="text" class="form-control" id="szamla" placeholder="" name="szamla">
                                                     <label for="szamla"><b class="text-danger">*</b> Számlázási cím</label>
                                                 </div>
                                             </div>
@@ -270,18 +270,23 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                     <script>
                                         const comp = document.getElementById("comp");
                                         const comp_det = document.getElementById("comp_det");
+                                        const ado = document.getElementById("ado");
+                                        const szamla = document.getElementById("szamla");
 
                                         comp.addEventListener("input", function() {
                                             if (this.value.trim() !== "") {
                                                 comp_det.classList.remove("hidden");
+                                                szamla.required = true;
+                                                ado.required = true;
                                             } else {
                                                 comp_det.classList.add("hidden");
+                                                szamla.required = false;
+                                                ado.required = false;
                                             }
                                         });
                                         
                                         const cimek = document.getElementById("cimek");
                                         const lak = document.getElementById("cim");
-                                        const szamla = document.getElementById("szamla");
                                         
                                         cimek.addEventListener("input", function() {
                                             if (this.checked) {
