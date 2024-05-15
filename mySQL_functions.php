@@ -14,7 +14,7 @@
                 tipe varchar(255),
                 comp varchar(255),
                 cim varchar(255),
-                ado int,
+                ado varchar(255),
                 szamla varchar(255),
                 comment varchar(10000)
             )");
@@ -127,10 +127,20 @@
                     } else {
                         $data["comp"] = null;
                     }
-                    if (isset($data["comp"])) {
-                        $data["comp"] = $data["comp"];
+                    if (isset($data["ado"])) {
+                        $data["ado"] = $data["ado"];
                     } else {
-                        $data["comp"] = null;
+                        $data["ado"] = null;
+                    }
+                    if (isset($data["szamla"])) {
+                        $data["szamla"] = $data["szamla"];
+                    } else {
+                        $data["szamla"] = null;
+                    }
+                    if (isset($data["comment"])) {
+                        $data["comment"] = $data["comment"];
+                    } else {
+                        $data["comment"] = null;
                     }
                     $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
                     $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`, `szamla`, `ado`) VALUES ('".$out."')";

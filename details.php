@@ -249,7 +249,7 @@ egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánl
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-floating mb-3 mt-3">
-                                                    <input type="number" class="form-control" id="ado" placeholder="" name="ado">
+                                                    <input type="text" class="form-control" id="ado" placeholder="" name="ado">
                                                     <label for="ado"><b class="text-danger">*</b> Adószám</label>
                                                 </div>
                                             </div>
