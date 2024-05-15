@@ -79,8 +79,8 @@
                     }else {
                         if ($i != "comment") {
                             if ($i != "szamla") {
-                                if ($line[$i] == NULL or $line[$i] == "") {
-                                    $res.="<td>Nincsen megadva</td>";
+                                if ($line[$i] == NULL or $line[$i] == "" or $line[$i] == 0) {
+                                    $res.="<td>Nincs megadva</td>";
                                 } else {
                                     $res.="<td>".$line[$i]."</td>";
                                 }
