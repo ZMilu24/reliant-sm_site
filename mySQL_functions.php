@@ -53,7 +53,11 @@
         function getComment($data, $id) {
             while ($line=$data->fetch_assoc()) {
                 if ($line["id"] == $id) {
-                    return($line["comment"]);
+                    if ($line["comment"] != NULL or $line["comment"] != "") {
+                        return($line["comment"]);
+                    } else {
+                        return("Nincs itt semmi :)");
+                    }
                 }
             }
             return("ID nem található");
@@ -75,7 +79,11 @@
                     }else {
                         if ($i != "comment") {
                             if ($i != "szamla") {
-                                $res.="<td>".$line[$i]."</td>";
+                                if ($line[$i] == NULL or $line[$i] == "") {
+                                    $res.="<td>Nincsen megadva</td>";
+                                } else {
+                                    $res.="<td>".$line[$i]."</td>";
+                                }
                             } else {
                                 if ($line[$i] == NULL or $line[$i] == "") {
                                     $res.="<td>".$line["cim"]."</td>";
@@ -84,7 +92,7 @@
                                 }
                             }
                         } else {
-                            $res.="<td><a class='btn text-white' href='?id=".$line["id"]."'>LINK</a></td>";
+                            $res.="<td><a class='btn text-primary' href='?id=".$line["id"]."'>LINK</a></td>";
                         }
                     }
                 }
