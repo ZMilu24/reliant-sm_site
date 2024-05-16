@@ -78,15 +78,23 @@
                         }
                     }else {
                         if ($i != "comment") {
-                            if ($i != "szamla") {
-                                if ($line[$i] == NULL or $line[$i] == "" or $line[$i] == 0) {
-                                    $res.="<td>Nincs megadva</td>";
+                            if ($line["comp"] != "" or $line["comp"] != null) {
+                                if ($i != "szamla") {
+                                    if ($line[$i] == NULL or $line[$i] == "" or $line[$i] == 0) {
+                                        $res.="<td>Nincs megadva</td>";
+                                    } else {
+                                        $res.="<td>".$line[$i]."</td>";
+                                    }
                                 } else {
-                                    $res.="<td>".$line[$i]."</td>";
+                                    if ($line[$i] == NULL or $line[$i] == "") {
+                                        $res.="<td>".$line["cim"]."</td>";
+                                    } else {
+                                        $res.="<td>".$line[$i]."</td>";
+                                    }
                                 }
                             } else {
-                                if ($line[$i] == NULL or $line[$i] == "") {
-                                    $res.="<td>".$line["cim"]."</td>";
+                                if ($line[$i] == NULL or $line[$i] == "" or $line[$i] == 0) {
+                                    $res.="<td>Nincs megadva</td>";
                                 } else {
                                     $res.="<td>".$line[$i]."</td>";
                                 }
