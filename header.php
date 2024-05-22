@@ -180,7 +180,7 @@
                                             <nav class="navbar navbar-expand-sm">
                                                 <ul class="navbar-nav">
                                                     <li>
-                                                        <a class="navbar-brand" href="/">
+                                                        <a class="navbar-brand" href="https://www.reliant-sm.eu">
                                                             <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                         </a>
                                                     </li>
