@@ -16,12 +16,17 @@
     height: auto;
 }
 
+.kartya {
+    box-shadow: 0 0 10px #000000;
+}
+
 @media (max-height: 1200px) {
     .card {
         width: 100% !important;
         margin-top: 20%;
         margin-bottom: 20%;
         height: 75%;
+        box-shadow: 0 0 10px #000000;
     }
 }
 
@@ -30,6 +35,7 @@
         margin-top: 5%;
         margin-bottom: 5%;
         height: 100%;
+        box-shadow: 0 0 10px #000000;
     }
 
     #button_container {
@@ -39,5 +45,10 @@
 }
 
 .card:hover, .kartya:hover {
-    box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 15px #000000;
+}
+
+.role {
+    bottom: 0;
+    border-bottom-left-radius: 0;
 }
