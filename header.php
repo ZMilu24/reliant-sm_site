@@ -167,7 +167,7 @@
                                             ?>
                                             <div id="mySidenav" class="sidenav">
                                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                                <a href="index.php">
+                                                <a href="/">
                                                     <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                 </a>
                                                 <a href="about-us.php">Rólunk</a>
@@ -180,7 +180,7 @@
                                             <nav class="navbar navbar-expand-sm">
                                                 <ul class="navbar-nav">
                                                     <li>
-                                                        <a class="navbar-brand" href="index.php">
+                                                        <a class="navbar-brand" href="/">
                                                             <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                         </a>
                                                     </li>
