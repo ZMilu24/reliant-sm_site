@@ -6,7 +6,7 @@
         $package=$themes[$name];
 
         ?>
-        <div class="card w-75 pb-5" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
+        <div class="card w-75 pb-5 rounded-3" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
             <div class="py-5">
                 <div class="text-left">
                     <div class="row">
@@ -40,7 +40,7 @@
         $ceo = $ceos[$name];
 
         ?>
-        <div class="kartya w-100 h-100 bg-dark text-white d-flex flex-column">
+        <div class="kartya w-100 h-100 bg-dark text-white d-flex flex-column rounded-3">
             <div class="card-header text-center">
                 <div class="row">
                     <div class="col">
@@ -77,7 +77,7 @@
         
         ?>
         
-        <div class="kartya w-100 h-100 bg-dark text-white">
+        <div class="kartya w-100 h-100 bg-dark text-white rounded-3">
             <div class="card-header text-center">
                 <div class="row">
                     <div class="col">
