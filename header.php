@@ -167,7 +167,7 @@
                                             ?>
                                             <div id="mySidenav" class="sidenav">
                                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                                <a href="/">
+                                                <a href="https://www.reliant-sm.eu">
                                                     <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                 </a>
                                                 <a href="about-us.php">Rólunk</a>

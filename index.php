@@ -11,22 +11,12 @@
             }
         </style>
         <?php main_header("none"); ?>
-            <div class="py-5">
-                <br class="py-3">
-                <br class="py-3">
-                <br class="py-3">
-            </div>
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col text-center">
-                    <img src="imgs/logo.png" class="rounded-circle w-<?php echo($isMob == false ? "50" : "100"); ?>" id="logo">
+            <div class="container h-100" style="display: flex; justify-content: center; align-items: center;" >
+                <div class="row h-100" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="col text-center h-100" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="imgs/logo.png" class="rounded-circle h-<?php echo($isMob == false ? "75" : "100"); ?>" id="logo" style="display: flex; justify-content: center; align-items: center;">
                     </div>
                 </div>
-            </div>
-            <div class="py-5">
-                <br class="py-3">
-                <br class="py-3">
-                <br class="py-3">
             </div>
         </header>
         <main class="container-fluid py-5" style="background-image: linear-gradient(to top left, white, #868686);">
