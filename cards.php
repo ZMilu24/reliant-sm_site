@@ -40,8 +40,7 @@
         $ceo = $ceos[$name];
 
         ?>
-        
-        <div class="kartya w-100 h-100 bg-dark text-white">
+        <div class="kartya w-100 h-100 bg-dark text-white d-flex flex-column">
             <div class="card-header text-center">
                 <div class="row">
                     <div class="col">
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-body text-left">
+            <div class="card-body text-left flex-grow-1">
                 <div class="row">
                     <div class="col">
                         <p>
@@ -60,16 +59,15 @@
                     </div>
                 </div>
             </div>
-            <div class="card-footer text-center">
-                <div class="row">
-                    <div class="col">
-                        <h4>
-                            <?php echo($ceo["role"]); ?>
-                        </h4>
-                    </div>
+            <div class="text-center mt-auto">
+                <div class="py-1">
+                    <h4 class="role">
+                        <?php echo($ceo["role"]); ?>
+                    </h4>
                 </div>
             </div>
         </div>
+    
 
 <?php
     }
@@ -98,7 +96,6 @@
                     </div>
                 </div>
             </div>
-            <div class="card-footer"></div>
         </div>
 
 <?php

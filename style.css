@@ -43,3 +43,8 @@ main {
     background-attachment: scroll;
     background-size: cover;
 }
+
+.role {
+    bottom: 0;
+    border-bottom-left-radius: 0;
+}
