@@ -6,7 +6,7 @@
         $package=$themes[$name];
 
         ?>
-        <div class="card w-75 pb-5 rounded-3" style="background-image: linear-gradient(to left, white, #<?php echo($package["theme color"]); ?>);">
+        <div class="kartya w-75 pb-5 rounded-3" style="background-image: linear-gradient(to bottom left, white, #<?php echo($package["theme color"]); ?>);">
             <div class="py-5">
                 <div class="text-left">
                     <div class="row">
