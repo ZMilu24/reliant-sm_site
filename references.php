@@ -5,21 +5,23 @@
 
     function createReference($data) {
         ?>
-        <div class="col-lg-6">
-            <div class="content">
-                <img src="imgs/logo.png" alt="Avatar" class="image" style="width:100%">
-                <div class="middle">
-                    <div class="text">John Doe</div>
+        <div class="col-lg-6 text-center">
+            <a href="<?php echo($data["link"]); ?>">
+                <h3><?php echo($data["name"]); ?></h3>
+                <div class="content">
+                    <img src="<?php echo($data["image1"]); ?>" alt="Referencia" class="image" style="width:100%">
+                    <div class="middle">
+                        <img src="<?php echo($data["image2"]); ?>" alt="Referencia" class="image" style="width:100%">
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <?php
     }
 
 ?>
-    <?php main_header("9dc2c7", "gray"); ?>
+    <?php main_header("9dc2c7", "gray", "reference.css"); ?>
         </header>
-        <link href="references.css" rel="stylesheet">
         <main class="container-fluid">
             <div id="shutter" class="container my-5">
                 <?php
