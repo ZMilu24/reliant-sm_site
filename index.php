@@ -14,7 +14,7 @@
             <div class="container h-100" style="display: flex; justify-content: center; align-items: center;" >
                 <div class="row h-100" style="display: flex; justify-content: center; align-items: center;">
                     <div class="col text-center h-100" style="display: flex; justify-content: center; align-items: center;">
-                        <img src="imgs/logo.png" class="rounded-circle h-<?php echo($isMob == false ? "75" : "100"); ?>" id="logo" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="imgs/logo.png" class="rounded-circle h-<?php echo($isMob == false ? "75" : "50"); ?>" id="logo" style="display: flex; justify-content: center; align-items: center;">
                     </div>
                 </div>
             </div>

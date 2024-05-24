@@ -68,13 +68,13 @@ a modern világban.
                 <div class="row" id="offer-card-container">
                     <div class="col text-center">
                         <div class="row mx-5">
-                            <div class="col">
+                            <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>">
                                 <?php pck_card("basic"); ?>
                             </div>
-                            <div class="col">
+                            <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>">
                                 <?php pck_card("premium"); ?>
                             </div>
-                            <div class="col">
+                            <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>">
                                 <?php pck_card("ultra"); ?>
                             </div>
                         </div>
