@@ -26,12 +26,12 @@ vállalataiknak életét megkönnyítse és rendezettebbé, egyszerűbbé tegye 
                         </p>
                     </div>
                     <div class="col-lg-3">
-                        <img src="imgs/img1.jpeg" class="w-100 rounded-3">
+                        <img src="imgs/img1.jpeg" class="w-100 rounded-3 img">
                     </div>
                 </div>
                 <div class="row my-5 py-5">
                     <div class="col-lg-3">
-                        <img src="imgs/img3.jpg" class="w-100" style="border-radius: 20%;">
+                        <img src="imgs/img3.jpg" class="w-100 img" style="border-radius: 20%;">
                     </div>
                     <div class="col-lg-9 text-center">
                         <h2>

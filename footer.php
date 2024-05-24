@@ -89,7 +89,7 @@ function footer_fnc($color = "868686") { ?>
                         </div>
                         <!---->
                         <div class="col text-center">
-                            <img src="imgs/logo2.png" class="rounded-circle" height="100">
+                            <img src="imgs/logo2.png" class="rounded-circle img" height="100">
                         </div>
                     </div>
                 </div>

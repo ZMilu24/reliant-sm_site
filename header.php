@@ -34,6 +34,11 @@
                 </script>
                 <style>
 
+                    #nav-bg {
+                        padding: 1%;
+                        background: rgba(0, 0, 0, 0.4);
+                    }
+
                     .sidenav {
                         height: 100%;
                         width: 0;
@@ -102,11 +107,6 @@
                         color: #000000;
                     }
 
-                    #nav-bg {
-                        padding: 1%;
-                        background: rgba(0, 0, 0, 0.4);
-                    }
-
                     .nav-link {
                         transition: 1s !important;
                         color: #000000;
@@ -151,7 +151,7 @@
                                 box-shadow: 0 0 0 #000000;
                             }
                             50% {
-                                box-shadow: 0 0 99px #000000;
+                                box-shadow: 0 0 20px #000000;
                             }
                             100% {
                                 box-shadow: 0 0 0 #000000;
@@ -186,7 +186,7 @@
                                                 <ul class="navbar-nav">
                                                     <li>
                                                         <a class="navbar-brand" href="https://www.reliant-sm.eu">
-                                                            <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
+                                                            <img class="img rounded-3" src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">

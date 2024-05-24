@@ -57,22 +57,33 @@
                 </div>
                 <div class="row m-5">
                     <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(0)>Havi terv</button>
+                        <button class="btn btn-dark m-3" onclick=plans(0)>Negyedéves terv</button>
                     </div>
                     <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(1)>Féléves terv</button>
+                        <button class="btn btn-dark m-3" onclick=plans(1)>Fél éves terv</button>
                     </div>
                     <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(2)>Éves terv</button>
+                        <button class="btn btn-dark m-3" onclick=plans(2)>Egy éves terv</button>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark m-3" onclick=plans(3)>Két éves terv</button>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark m-3" onclick=plans(4)>Öt éves terv</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="p-3 m-3">
                             <h3>Fizetési részletek</h3>
-                            <p>Miután az Ügyfél megrendelte a csomagot, és leírta igényei, egy árajánlatot küldünk.</p>
-                            <p>Ha a <b><span id="plan">Havi</span> tervre</b> esett a választás, akkor az első hónapra az Ügyfél kifizeti a csomag árát (és az esetlegesen kért extrákat), utána havonta
-egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánlat tartalmazza a havi fenntartási költségeket is). (havi)</p>
+                            <p>Miután az Ügyfél megrendelte a csomagot, és leírta igényeit, egy árajánlatot küldünk.
+Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két lehetőség állhat fenn:</p>
+                            <ul>
+                                <li id="li1">Az Ügyfél az első hónapra  kifizeti a csomag árát, utána három hónapig egy meghatározott dátumon a fenntartási költségeket
+        vonjuk le (az árajánlat tartalmazza a havi fenntartási költségeket is).</li>
+                                <li id="li2">Az Ügyfél az árajánlatban megemlített összeget, egy utalás alatt fedezi, és Fél évre biztosítva van az oldala.</li>
+                            </ul>
+                            <p>E két opció közül majd a "Fizetés" oldalunkon lehet választani, miután visszaküldtük Önnek az ajánlatunkat.</p>
                             <p id="extra-text"></p>
                         </div>
                     </div>

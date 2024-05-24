@@ -50,3 +50,10 @@ main {
     align-items: center;
     display: flex;
 }
+
+.img {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 0 5px #000000;
+}
