@@ -4,7 +4,7 @@ require("config.php");
 
 function footer_fnc($color = "868686") { ?>
     <footer class="container-fluid p-0 text-center" style="background-image: linear-gradient(to left, white, #<?php echo($color); ?>);">
-        <div class="container text-center">
+        <div class="container justify-center" id="footer-container">
             <div class="row w-100 text-center">
                 <div class="col p-3 px-5 text-center">
                     <div class="row">

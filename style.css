@@ -43,3 +43,10 @@ main {
     background-attachment: scroll;
     background-size: cover;
 }
+
+#footer-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
