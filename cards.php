@@ -53,7 +53,7 @@
             <div class="card-body text-left flex-grow-1">
                 <div class="row">
                     <div class="col">
-                        <p>
+                        <p <?php require("config.php"); if($isMob){echo('style="text-align: center !important;"');} ?>>
                             <?php echo($ceo["dec"]); ?>
                         </p>
                     </div>
@@ -90,7 +90,7 @@
             <div class="card-body text-left">
                 <div class="row">
                     <div class="col">
-                        <p>
+                        <p <?php require("config.php"); if($isMob){echo('style="text-align: center !important;"');} ?>>
                             <?php echo($disc); ?>
                         </p>
                     </div>
