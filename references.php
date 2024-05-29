@@ -20,7 +20,7 @@
     }
 
 ?>
-    <?php require("config.php"); header_v2("reference.css", $isMob == false ? "imgs/ref_desktop.png" : "imgs/ref_mobil.png"); ?>
+    <?php require("config.php"); header_v2("css/reference.css", $isMob == false ? "url(imgs/ref_desktop.png)" : "url(imgs/ref_mobil.png)"   ); ?>
         </header>
         <main class="container-fluid">
             <div id="shutter" class="container my-5">

@@ -34,7 +34,7 @@ function footer_fnc($color = "868686") { ?>
                                     </div>
                                     <div class="row text-center">
                                         <div class="col text-center">
-                                            <p class="text-center">
+                                            <p style="text-align: center !important;">
                                                 <a id="email_link" onclick=copy(id) class="footer-link text-center">reliant<span class="text-break">.</span>service<span class="text-break">.</span>management<span class="text-break">@</span>gmail<span class="text-break">.</span>com</a>
                                             </p>
                                         </div>
@@ -58,8 +58,8 @@ function footer_fnc($color = "868686") { ?>
                                     </div>
                                     <div class="row text-center">
                                         <div class="col text-center">
-                                            <p class="text-center">
-                                            <a id="email_link" onclick=copy(id) class="footer-link text-center">reliant<span class="text-break">.</span>service<span class="text-break">.</span>management<span class="text-break">@</span>gmail<span class="text-break">.</span>com</a>
+                                            <p style="text-align: center !important;">
+                                                <a id="email_link" onclick=copy(id) class="footer-link text-center">reliant<span class="text-break">.</span>service<span class="text-break">.</span>management<span class="text-break">@</span>gmail<span class="text-break">.</span>com</a>
                                             </p>
                                         </div>
                                     </div>
@@ -73,15 +73,15 @@ function footer_fnc($color = "868686") { ?>
                     <div class="row">
                         <div class="col text-center">
                             <div class="row">
-                                <div class="col">
+                                <div class="col text-center">
                                     <h4>
                                         Telefonszámunk
                                     </h4>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <p>
+                                <div class="col text-center">
+                                    <p style="text-align: center !important;">
                                         <a id="telefon_link" onclick=copy(id) class="footer-link">06/20 318 9824</a>
                                     </p>
                                 </div>
