@@ -50,7 +50,7 @@
         <?php header_v2(null, "linear-gradient(to bottom right, white, #".$package["theme color"].")"); ?>
         <?php //main_header($package["theme color"]); ?>
         </header>
-        <main class="container-fluid p-3 mt-5" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
+        <main class="container-fluid p-3 mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col">
