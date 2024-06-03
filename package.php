@@ -16,10 +16,11 @@
 
 ?>
 
-    <?php main_header($package["theme color"])?>
+    <?php header_v2(null, "linear-gradient(to bottom right, white, #".$package["theme color"].")"); ?>
+    <?php //main_header($package["theme color"]); ?>
     </header>
-    <main class="container-fluid" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
-        <div style="min-height: 80vh;">
+    <main class="container-fluid mt-5">
+        <div>
         <div class="container">
             <div class="row p-3">
             <div class="col text-left">

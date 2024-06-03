@@ -46,9 +46,11 @@
 
 ?>
 
-        <?php main_header($package["theme color"]); ?>
+
+        <?php header_v2(null, "linear-gradient(to bottom right, white, #".$package["theme color"].")"); ?>
+        <?php //main_header($package["theme color"]); ?>
         </header>
-        <main class="container-fluid p-3" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
+        <main class="container-fluid p-3 mt-5" style="background-image: linear-gradient(to bottom right, white, #<?php echo($package["theme color"]); ?>);">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -93,7 +95,6 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                         <ul>
                             <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
                             <li>Animált kártyák/Animációk;</li>
-                            <li>Automatikus e-mail küldő rendszer;</li>
                             <li>Egyedi lábléc;</li>
                             <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">Ha Ön nem kéri, akkor csak számítógépes verziót készítünk</span>)</li>
                         </ul>
@@ -320,7 +321,7 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row my-3">
                         <div class="col text-center">
                             <div class="container">
                                 <input class="btn btn-dark" type="submit" name="pleased" value="Ajánlat kérés">
