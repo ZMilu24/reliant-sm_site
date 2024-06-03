@@ -1,7 +1,7 @@
 <?php
 
     //www.reliant-sm.eu/
-    $main_link = "www.reliant-sm.eu/";
+    $main_link = "https://www.reliant-sm.eu/";
 
     $themes = array();
         $themes["basic"] = [

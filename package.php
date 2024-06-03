@@ -90,7 +90,7 @@ Ennek a csomagnak részletességei és választható extrái, a “Részletek”
                 <div class="col text-<?php echo($isMob == false ? "end" : "center"); ?> m-5 px-5">
                     <a href="<?php echo($package["link"]); ?>">
                         <button type="button" class="btn btn-dark btn-lg">
-                            <b class="w-100">Sablon megtekintése</b>
+                            <b class="w-100">Minta megtekintése</b>
                         </button>
                     </a>
                 </div>
