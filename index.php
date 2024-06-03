@@ -60,6 +60,13 @@
     mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.") ?>
                     </div>
                 </div>
+                <div class="p-5">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2>Cégzetezők</h2>
+                        </div>
+                    </div>
+                </div>
                 <div class="row my-3">
                     <div class="my-3 col text-center">
                         <?php CEO_card("gergo") ?>
