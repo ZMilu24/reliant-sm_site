@@ -37,13 +37,13 @@
     $ceos = array();
         $ceos["gergo"] = [
             "name" => "Bakalár Gergő",
-            "role" => "Co-CEO",
+            "role" => "Ügyvezető",
             "dec" => "A Reliant Service Management egyik alapítótagja vagyok, ha bármiféle gond, vagy probléma adódna a szolgáltatásainkkal, akkor az oldalunk alján
                         megadott telefonszámon, engem személyes elérhetnek, hogy minnél hamarabb kitalálhassunk egy megoldást."
         ];
         $ceos["zupan"] = [
             "name" => "Zupán Milán",
-            "role" => "Co-CEO",
+            "role" => "Cégvezető",
             "dec" => "A Reliant Service Management alapítótagjaként, Én felelek a programozóink szakmai tudásának biztosításáért és azért, hogy minden Tőlük telhetőt
                         megtegyenek, hogy Önnek a legjobbat nyújtsák."
         ];

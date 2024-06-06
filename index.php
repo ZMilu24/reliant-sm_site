@@ -51,7 +51,7 @@
                 </div>
                 <div class="row">
                     <div class="my-3 col text-center">
-                        <?php info_card("SEO", "Az általunk készített weboldalakat, a Google keresőmotorjához optimalizáljuk, így Önt sokkal hamarabb találják meg a látogatók.") ?>
+                        <?php info_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így a kis- és középvállalkozások könnyebben megtalálják az ügyfeleket. A hatékony SEO révén ügyfeleink weboldalai előkelőbb helyezést érnek el a keresési eredmények között. Bízza ránk weboldala optimalizálását, hogy Ön is előnyt élvezhessen a versenytársakkal szemben.") ?>
                     </div>
                 <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="my-3 col text-center">
