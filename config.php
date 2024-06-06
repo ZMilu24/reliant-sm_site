@@ -38,14 +38,12 @@
         $ceos["gergo"] = [
             "name" => "Bakalár Gergő",
             "role" => "Ügyvezető",
-            "dec" => "A Reliant Service Management egyik alapítótagja vagyok, ha bármiféle gond, vagy probléma adódna a szolgáltatásainkkal, akkor az oldalunk alján
-                        megadott telefonszámon, engem személyes elérhetnek, hogy minnél hamarabb kitalálhassunk egy megoldást."
+            "dec" => "A Reliant Service Management egyik alapítótagjaként bármilyen probléma vagy kérdés esetén személyesen elérhet az oldal alján található telefonszámon. Azért vagyok itt, hogy gyors és hatékony megoldásokat találjunk az Ön számára."
         ];
         $ceos["zupan"] = [
             "name" => "Zupán Milán",
             "role" => "Cégvezető",
-            "dec" => "A Reliant Service Management alapítótagjaként, Én felelek a programozóink szakmai tudásának biztosításáért és azért, hogy minden Tőlük telhetőt
-                        megtegyenek, hogy Önnek a legjobbat nyújtsák."
+            "dec" => "A Reliant Service Management alapítótagjaként az én feladatom biztosítani programozóink szakmai felkészültségét és elkötelezettségét. Minden erőnkkel azon dolgozunk, hogy ügyfeleink számára a lehető legmagasabb színvonalú szolgáltatást nyújtsuk."
         ];
 
     $references = array();
