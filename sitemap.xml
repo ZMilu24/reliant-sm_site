@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.reliant-sm.eu/</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/about-us.php</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/offers.php</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/package.php?p=b</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/package.php?p=p</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/package.php?p=u</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/template/basic/</loc>
+  <lastmod>2024-05-05T15:12:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/details.php?pac=b</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/template/premium/</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/details.php?pac=p</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/template/ultra/</loc>
+  <lastmod>2024-05-05T15:13:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/details.php?pac=u</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.reliant-sm.eu/index.php</loc>
+  <lastmod>2024-06-09T16:48:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

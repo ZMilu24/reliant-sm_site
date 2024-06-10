@@ -18,7 +18,7 @@
                         echo('<link href="'.$css.'" rel="stylesheet">');
                     }
                 ?>
-                <link rel="icon" href="imgs/logo.png" type="image/icon type">
+                <link rel="icon" href="imgs/logo.png" type="image/png">
                 <title>Reliant Service Management</title>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -163,8 +163,8 @@
                 </style>
             </head>
             <body>
-                <header id="main-header" class="container-fluid header h-100 p-5" style="background-image: linear-gradient(to right, <?php echo($start_color); ?>, #<?php echo($color); ?>);">
-                    <div class="w-100 fixed-top header" id="nav-bg">
+                <header id="main-header" class="container-fluid header h-100 p-5 w-100" style="background-image: linear-gradient(to right, <?php echo($start_color); ?>, #<?php echo($color); ?>);">
+                    <div class="fixed-top header" id="nav-bg">
                         <div class="container">
                             <div class="row">
                                 <div class="col p-0">
