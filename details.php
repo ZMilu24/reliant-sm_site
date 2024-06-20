@@ -97,6 +97,7 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                             <li>Animált kártyák/Animációk;</li>
                             <li>Egyedi lábléc;</li>
                             <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">Ha Ön nem kéri, akkor csak számítógépes verziót készítünk</span>)</li>
+                            <li>Logo készítés;</li>
                         </ul>
                     </div>
                 </div>
