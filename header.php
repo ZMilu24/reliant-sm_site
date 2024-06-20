@@ -1,6 +1,6 @@
 <?php
 
-    function main_header($color="868686", $start_color="white", $css=null) {
+    function main_header($color="868686", $start_color="white", $css=null, $title = "Reliant Service Management") {
 
         $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
 
@@ -19,7 +19,7 @@
                     }
                 ?>
                 <link rel="icon" href="imgs/logo.png" type="image/png">
-                <title>Reliant Service Management</title>
+                <title><?php echo($title); ?></title>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script src="main.js"></script>
@@ -177,8 +177,11 @@
                                                 <a href="https://www.reliant-sm.eu">
                                                     <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                 </a>
-                                                <a href="about-us.php">Rólunk</a>
-                                                <a href="offers.php">Kínálatunk</a>
+                                                <!--<a href="about-us.php">Rólunk</a>-->
+                                                <a href="offers.php">Webfejlesztés</a>
+                                                <a href="constuct.html">Email Marketing</a>
+                                                <a href="references.php">Referenciák</a>
+                                                <a href="constuct.html">Hibajelentés</a>
                                             </div>
                                             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                                         <?php
@@ -188,17 +191,17 @@
                                                 <ul class="navbar-nav">
                                                     <li>
                                                         <a class="navbar-brand" href="https://www.reliant-sm.eu">
-                                                            <img class="img rounded-3" src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
+                                                            <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <!--<li class="nav-item">
                                                         <a class="nav-link" href="about-us.php">Rólunk</a>
-                                                    </li>
+                                                    </li>-->
                                                     <li class="nav-item">
                                                         <?php
                                                         
                                                             if ($isMob) {
-                                                                ?><a class="nav-link" href="offers.php">Kínálatunk</a><?php
+                                                                ?><a class="nav-link" href="offers.php">Webfejlesztés</a><?php
                                                             } else {
                                                                 ?><div class="dropdown">
                                                                 <a
@@ -209,7 +212,7 @@
                                                                     aria-expanded="false"
                                                                     href="offers.php"
                                                                 >
-                                                                    Kínálatunk
+                                                                Webfejlesztés
                                                                 </a>
                                                                 <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
                                                                     <li><a class="dropdown-item bg-dark text-white" href="package.php?p=b" id="basic-nav">Basic</a></li>
@@ -219,6 +222,15 @@
                                                             </div><?php
                                                             }
                                                         ?>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="constuct.html">Email Marketing</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="references.php">Referencia</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="constuct.html">Hibajelentés</a>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -234,7 +246,7 @@
                     </div>
 <?php }
 
-    function header_v2($css=null, $img="url(imgs/logo.png)", $color="") {
+    function header_v2($css=null, $img="url(imgs/logo.png)", $color="", $title = "Reliant Service Management") {
 
         $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
 
@@ -243,7 +255,7 @@
         <html lang="hu">
             <head>
                 <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
                 <link href="css/main_style.css" rel="stylesheet">
                 <link href="css/style.css" rel="stylesheet">
@@ -252,8 +264,8 @@
                         echo('<link href="'.$css.'" rel="stylesheet">');
                     }
                 ?>
-                <link rel="icon" href="imgs/logo.png" type="image/icon type">
-                <title>Reliant Service Management</title>
+                <link rel="icon" href="imgs/logo.png" type="image/png">
+                <title><?php echo($title); ?></title>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script src="main.js"></script>
@@ -269,6 +281,11 @@
                     }
                 </script>
                 <style>
+
+                    #nav-bg {
+                        padding: 1%;
+                        background: rgba(0, 0, 0, 0.4);
+                    }
 
                     .sidenav {
                         height: 100%;
@@ -338,11 +355,6 @@
                         color: #000000;
                     }
 
-                    #nav-bg {
-                        padding: 1%;
-                        background: rgba(0, 0, 0, 0.4);
-                    }
-
                     .nav-link {
                         transition: 1s !important;
                         color: #000000;
@@ -387,7 +399,7 @@
                                 box-shadow: 0 0 0 #000000;
                             }
                             50% {
-                                box-shadow: 0 0 99px #000000;
+                                box-shadow: 0 0 20px #000000;
                             }
                             100% {
                                 box-shadow: 0 0 0 #000000;
@@ -411,8 +423,11 @@
                                                 <a href="https://www.reliant-sm.eu">
                                                     <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                 </a>
-                                                <a href="about-us.php">Rólunk</a>
-                                                <a href="offers.php">Kínálatunk</a>
+                                                <!--<a href="about-us.php">Rólunk</a>-->
+                                                <a href="offers.php">Webfejlesztés</a>
+                                                <a href="constuct.html">Email Marketing</a>
+                                                <a href="references.php">Referenciák</a>
+                                                <a href="constuct.html">Hibajelentés</a>
                                             </div>
                                             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                                         <?php
@@ -425,14 +440,14 @@
                                                             <img src="imgs/logo.png" alt="Logo" height=50 id="nav-logo">
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <!--<li class="nav-item">
                                                         <a class="nav-link" href="about-us.php">Rólunk</a>
-                                                    </li>
+                                                    </li>-->
                                                     <li class="nav-item">
                                                         <?php
                                                         
                                                             if ($isMob) {
-                                                                ?><a class="nav-link" href="offers.php">Kínálatunk</a><?php
+                                                                ?><a class="nav-link" href="offers.php">Webfejlesztés</a><?php
                                                             } else {
                                                                 ?><div class="dropdown">
                                                                 <a
@@ -443,7 +458,7 @@
                                                                     aria-expanded="false"
                                                                     href="offers.php"
                                                                 >
-                                                                    Kínálatunk
+                                                                Webfejlesztés
                                                                 </a>
                                                                 <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
                                                                     <li><a class="dropdown-item bg-dark text-white" href="package.php?p=b" id="basic-nav">Basic</a></li>
@@ -453,6 +468,15 @@
                                                             </div><?php
                                                             }
                                                         ?>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="constuct.html">Email Marketing</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="references.php">Referencia</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="constuct.html">Hibajelentés</a>
                                                     </li>
                                                 </ul>
                                             </nav>

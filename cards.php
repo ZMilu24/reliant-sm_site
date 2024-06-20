@@ -71,13 +71,13 @@
 
 <?php
     }
-    function info_card($title, $disc) {
+    function info_card($title, $disc, $circle=3, $bgcolor="dark") {
 
         require("config.php");
         
         ?>
         
-        <div class="kartya w-100 h-100 bg-dark text-white rounded-3">
+        <div class="kartya w-100 h-100 bg-<?php echo($bgcolor); ?> text-white rounded-<?php echo($circle); ?>">
             <div class="card-header text-center">
                 <div class="row">
                     <div class="col">

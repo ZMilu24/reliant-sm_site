@@ -47,12 +47,12 @@
         ];
 
     $references = array();
-        $references["szechenyi_ter_apartman"] = [
+        /*$references["szechenyi_ter_apartman"] = [
             "name" => "Szécsényi Tér Apartman",
             "link" => "https://ld3xqgqc.a2hosted.com/szechenyi_ter_apartman/",
             "image1" => "imgs/logo2.png",
             "image2" => "imgs/logo.png"
-        ];
+        ];*/
     $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
 
 ?>

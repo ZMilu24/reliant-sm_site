@@ -47,7 +47,7 @@
 ?>
 
 
-        <?php header_v2(null, "linear-gradient(to bottom right, white, #".$package["theme color"].")"); ?>
+        <?php header_v2(null, "linear-gradient(to bottom right, white, #".$package["theme color"].")", "", $package["name"]); ?>
         <?php //main_header($package["theme color"]); ?>
         </header>
         <main class="container-fluid p-3 mt-5">

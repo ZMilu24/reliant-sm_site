@@ -28,36 +28,15 @@
                         </h2>
                     </div>
                 </div>
-                <div class="p-5">
-                    <div class="row">
-                        <div class="col text-center">
-                            <h2>A webfejlesztés építőkövei</h2>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="my-3 col text-center">
-                        <?php info_card("Tervezés", "Csapatunk az Ön által megadott információk alapján, a lehető legmegfelelőbb weboldaldesign-t
-    készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján
-    (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).") ?>
+                        <?php info_card("Rólunk", "A Reliant Service Management 2024-ben alakult két jóbarát és csapatuk által. Azóta minden nap azon dolgozunk, hogy kis- és nagyvállalkozások számára nyújtsunk kiváló szolgáltatásokat, megkönnyítve és rendezettebbé téve működésüket. Célunk, hogy vállalkozása életét egyszerűbbé és hatékonyabbá tegyük. Cégünk azokra a problémákra talált megoldást, amely jellemző sok ország vállalataira, és kisvállalkozásaira, miszerint kevésbé
+                                    versenyképesek azokhoz a cégekhez képest, akiknek az informatikai infrastruktúrájukat már sikerült megalapozni és kiépíteni
+                                    a modern világban.") ?>
                     </div>
                 <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="my-3 col text-center">
-                        <?php info_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és
-    a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
-    Minden weboldalról, amely nálunk készül el, szakképzett, és tapasztalt munkatársaink bizonyosodnak meg,
-    hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).') ?>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="my-3 col text-center">
-                        <?php info_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így a kis- és középvállalkozások könnyebben megtalálják az ügyfeleket. A hatékony SEO révén ügyfeleink weboldalai előkelőbb helyezést érnek el a keresési eredmények között. Bízza ránk weboldala optimalizálását, hogy Ön is előnyt élvezhessen a versenytársakkal szemben.") ?>
-                    </div>
-                <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
-                    <div class="my-3 col text-center">
-                        <?php info_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weboldalt életre kelti.
-    A programozás minden apró kis szegleteiben jártas munkatársaink, ötletes megoldásokkal igyekeznek az Ön weboldalát, mind funkciók,
-    mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.") ?>
+                        <?php info_card("Tapasztalataink", "Csapatunk programozói több éves tapasztalattal rendelkeznek a webfejlesztés minden területén, beleértve a frontend és backend fejlesztést is. Rugalmasságuknak köszönhetően rövid időn belül képesek bármilyen igény szerint weboldalt építeni. A kész weboldalakkal növeljük ügyfeleink vállalatainak vásárlókörét és forgalmát, valamint pozitív irányba befolyásoljuk értékeléseik számát.") ?>
                     </div>
                 </div>
                 <div class="p-5">
