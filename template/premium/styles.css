@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
@@ -10,6 +13,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.section h3 {
+    color: white;
 }
 
 nav {
@@ -69,7 +80,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-image: linear-gradient(to left, #ddb401, #aa8b00);
     padding: 2rem;
     display: flex;
     justify-content: space-between;
