@@ -4,7 +4,7 @@
     require_once("header.php");
 
 ?>
-    <?php require("config.php"); header_v2("css/offers.css", "url(imgs/offers_bg.png)", "", "Kínálatunk")?>
+    <?php require("config.php"); header_v2("css/offers.css", "url(imgs/offers_bg.png)", "", "Webfejlesztés")?>
         </header>
         <main class="container-fluid my-5">
             <div id="shutter" class="container my-3 rounded-3 p-3">
