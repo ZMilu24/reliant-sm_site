@@ -35,7 +35,8 @@ function footer_fnc($color = "868686") { ?>
                                     <div class="row text-center">
                                         <div class="col text-center">
                                             <p style="text-align: center !important;">
-                                                <a id="email_link" onclick=copy(id) class="footer-link text-center">reliant<span class="text-break">.</span>service<span class="text-break">.</span>management<span class="text-break">@</span>gmail<span class="text-break">.</span>com</a>
+                                                <span class="icon">📧</span>
+                                                <a id="email_link" onclick=copy(id) class="footer-link text-center">reliant-sm<span class="text-break">@</span>reliant-sm<span class="text-break">.</span>eu</a>
                                             </p>
                                         </div>
                                     </div>
@@ -59,7 +60,8 @@ function footer_fnc($color = "868686") { ?>
                                     <div class="row text-center">
                                         <div class="col text-center">
                                             <p style="text-align: center !important;">
-                                                <a id="email_link" onclick=copy(id) class="footer-link text-center">reliant<span class="text-break">.</span>service<span class="text-break">.</span>management<span class="text-break">@</span>gmail<span class="text-break">.</span>com</a>
+                                                <span class="icon">📧</span>
+                                                <a id="email_link" onclick=copy(id) class="footer-link text-center">reliant-sm<span class="text-break">@</span>reliant-sm<span class="text-break">.</span>eu</a>
                                             </p>
                                         </div>
                                     </div>
@@ -82,6 +84,7 @@ function footer_fnc($color = "868686") { ?>
                             <div class="row">
                                 <div class="col text-center">
                                     <p style="text-align: center !important;">
+                                        <span class="icon">📞</span>
                                         <a id="telefon_link" onclick=copy(id) class="footer-link">06/20 318 9824</a>
                                     </p>
                                 </div>

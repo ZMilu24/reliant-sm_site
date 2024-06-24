@@ -1,96 +1,38 @@
+
 body {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
     color: #333;
 }
-
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 700;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #007BFF;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #007BFF;
-}
-
-.hero {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+header, footer {
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 2rem;
+    padding: 10px 0;
 }
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.25rem;
-}
-
-footer {
-    background-color: #f8f9fa;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.container-fluid {
     text-align: center;
+    padding-bottom: 0; /* Close the gap */
 }
-
-.contact-info {
+h1 {
+    margin: 20px 0 10px 0; /* Reduce bottom margin to close the gap */
+}
+h3 {
+    margin: 20px 0;
+}
+.image-placeholder {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+    color: #666;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px 0;
 }
-
-.icon {
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
+.image-placeholder.bordered {
+    border: 3px solid #333;
 }
-
-.footer-logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #007BFF;
+nav a {
+    color: #fff !important;
 }
