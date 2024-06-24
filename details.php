@@ -2,13 +2,13 @@
 
     require_once("header.php");
     require_once("footer.php");
-    require_once("mySQL_functions.php");
+    //require_once("mySQL_functions.php");
 
     require("config.php");
 
     $package = null;
 
-    $DB = new Database();
+    //$DB = new Database();
 
     if ($_GET["pac"] == "b") {
         $package = $themes["basic"];
@@ -47,14 +47,14 @@
 ?>
 
 
-        <?php header_v2(null, "linear-gradient(to bottom right, white, #".$package["theme color"].")", "", $package["name"]); ?>
+        <?php header_v2(null, "url('imgs/resume_bg.png')", "", $package["name"]); ?>
         <?php //main_header($package["theme color"]); ?>
         </header>
         <main class="container-fluid p-3 mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1><i><?php echo($package["name"]); ?></i></h1>
+                        <h1><img src="imgs/<?php echo($package["name"]."_ful.png"); ?>" width=300></h1>
                     </div>
                 </div>
                 <div class="row m-5">
