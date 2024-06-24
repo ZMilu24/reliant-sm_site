@@ -47,10 +47,11 @@
 ?>
 
 
-        <?php header_v2(null, "url('imgs/resume_bg.png')", "", $package["name"]); ?>
+        <?php header_v2("css/details.css", "url('imgs/resume_bg.png')", "", $package["name"]); ?>
         <?php //main_header($package["theme color"]); ?>
         </header>
         <main class="container-fluid p-3 mt-5">
+            <div id="shutter" class="container my-3 rounded-3 p-3">
             <div class="container">
                 <div class="row">
                     <div class="col">
