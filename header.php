@@ -419,7 +419,7 @@
                     <div class="w-100 fixed-top header" id="nav-bg">
                         <div class="container">
                             <div class="row">
-                                <div class="col p-0">
+                                <div class='col-lg-<?php require("config.php"); if($isMob == false) { echo("9"); } else { echo("12"); } ?> p-0'>
                                     <?php
                                     require("config.php");
                                         if ($isMob) {
@@ -494,7 +494,7 @@
                                         }
                                     ?>
                                 </div>
-                                <div class="col text-end p-3 px-5">
+                                <div class="col-lg-3 text-end p-3 px-5">
                                     <b id="title"><?php require("config.php"); if($isMob == false) { echo("Reliant Service Management"); } ?></b>
                                 </div>
                             </div>
