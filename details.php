@@ -2,13 +2,13 @@
 
     require_once("header.php");
     require_once("footer.php");
-    //require_once("mySQL_functions.php");
+    require_once("mySQL_functions.php");
 
     require("config.php");
 
     $package = null;
 
-    //$DB = new Database();
+    $DB = new Database;
 
     if ($_GET["pac"] == "b") {
         $package = $themes["basic"];
@@ -316,6 +316,14 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                                             <div class="form-floating">
                                                 <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
                                                 <label for="comment">Mi az ön elképzelése?</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3 mt-3">
+                                            <input type="checkbox" name="adatvedelmi" id="adatvedelmi" required>
+                                            <label for="adatvedelmi">Kérjük fogadja el az <a href="">Adatvédelmi Nyilatkozatokat</a></label>
                                             </div>
                                         </div>
                                     </div>

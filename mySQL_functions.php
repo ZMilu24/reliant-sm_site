@@ -136,12 +136,12 @@
                         $data["comp"] = null;
                     }
                     if (isset($data["ado"])) {
-                        $data["ado"] = $data["ado"];
+                        $data["ado"] = password_hash($data["ado"], PASSWORD_BCRYPT);
                     } else {
                         $data["ado"] = null;
                     }
                     if (isset($data["szamla"])) {
-                        $data["szamla"] = $data["szamla"];
+                        $data["szamla"] = password_hash($data["szamla"], PASSWORD_BCRYPT);
                     } else {
                         $data["szamla"] = null;
                     }
@@ -150,6 +150,7 @@
                     } else {
                         $data["comment"] = null;
                     }
+                    $data["cim"] = password_hash($data["cim"], PASSWORD_BCRYPT);
                     $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
                     $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`, `szamla`, `ado`) VALUES ('".$out."')";
                     $this->DB->query($sql);
