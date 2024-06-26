@@ -183,6 +183,7 @@
                                                 <a href="constuct.html">Email Marketing</a>
                                                 <a href="references.php">Referenciák</a>
                                                 <a href="constuct.html">Hibajelentés</a>
+                                                <a href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
                                             </div>
                                             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                                         <?php
@@ -232,6 +233,9 @@
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="constuct.html">Hibajelentés</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -430,6 +434,7 @@
                                                 <a href="constuct.html">Email Marketing</a>
                                                 <a href="references.php">Referenciák</a>
                                                 <a href="constuct.html">Hibajelentés</a>
+                                                <a href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
                                             </div>
                                             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                                         <?php
@@ -479,6 +484,9 @@
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="constuct.html">Hibajelentés</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
                                                     </li>
                                                 </ul>
                                             </nav>
