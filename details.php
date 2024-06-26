@@ -323,7 +323,7 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                                         <div class="col">
                                             <div class="mb-3 mt-3">
                                             <input type="checkbox" name="adatvedelmi" id="adatvedelmi" required>
-                                            <label for="adatvedelmi">Kérjük fogadja el az <a href="">Adatvédelmi Nyilatkozatokat</a></label>
+                                            <label for="adatvedelmi">Kérjük fogadja el az <a href="adatvedelmi_nyilatkozat.pdf">Adatvédelmi Nyilatkozatokat</a></label>
                                             </div>
                                         </div>
                                     </div>
