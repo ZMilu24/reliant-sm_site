@@ -1,0 +1,22 @@
+#left-shutter {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid   rgba(0, 0, 0, 1);
+}
+
+#right-shutter {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid   rgba(0, 0, 0, 1);
+}
+
+section {
+    margin: 10px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+#left-hr {
+    height: 6px;
+    background-color: #d0c719;
+}

@@ -51,13 +51,15 @@
         <?php //main_header($package["theme color"]); ?>
         </header>
         <main class="container-fluid p-3 mt-5">
-            <div id="shutter" class="container my-3 rounded-3 p-3">
             <div class="container">
-                <div class="row">
-                    <div class="col">
+                <div class="row p-3">
+                    <div class="col text-left">
                         <h1><img src="imgs/<?php echo($package["name"]."_ful.png"); ?>" width=300></h1>
                     </div>
                 </div>
+            </div>
+            <div id="shutter" class="container my-3 rounded-3 p-3">
+            <div class="container">
                 <div class="row m-5">
                     <div class="col text-center">
                         <button class="btn btn-dark m-3" onclick=plans(0)>Negyedéves terv</button>
@@ -82,7 +84,7 @@
                             <p>Miután az Ügyfél megrendelte a csomagot, és leírta igényeit, egy árajánlatot küldünk.
 Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két lehetőség állhat fenn:</p>
                             <ul>
-                                <li id="li1">Az Ügyfél az első hónapra  kifizeti a csomag árát, utána három hónapig egy meghatározott dátumon a fenntartási költségeket
+                                <li id="li1">Az Ügyfél az első hónapra  kifizeti a csomag árát, utána kettő hónapig egy meghatározott dátumon a fenntartási költségeket
         vonjuk le (az árajánlat tartalmazza a havi fenntartási költségeket is).</li>
                                 <li id="li2">Az Ügyfél az árajánlatban megemlített összeget, egy utalás alatt fedezi, és Fél évre biztosítva van az oldala.</li>
                             </ul>

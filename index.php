@@ -42,7 +42,7 @@
                 <div class="p-5">
                     <div class="row">
                         <div class="col text-center">
-                            <h2>Cégzetezők</h2>
+                            <h2>Cégvezetők</h2>
                         </div>
                     </div>
                 </div>

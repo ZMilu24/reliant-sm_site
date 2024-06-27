@@ -56,6 +56,18 @@
             "image1" => "imgs/logo2.png",
             "image2" => "imgs/logo.png"
         ];*/
+        /*$references["moni_webshop"] = [
+            "name" => "Webshop",
+            "link" => "https://ld3xqgqc.a2hosted.com/moni_webshop/",
+            "image1" => "imgs/logo2.png",
+            "image2" => "imgs/logo.png"
+        ];*/
+        /*$references["pzbau"] = [
+            "name" => "PZ-BAU KFT",
+            "link" => "https://ld3xqgqc.a2hosted.com/pz-bau/",
+            "image1" => "imgs/logo2.png",
+            "image2" => "imgs/logo.png"
+        ];*/
 
     $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
 

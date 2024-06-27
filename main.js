@@ -47,7 +47,7 @@ function plans(plan) {
     element3=document.getElementById("li2");
     if (plan == 0) {
         element1.innerHTML = "Negyedéves";
-        element2.innerHTML = "Az Ügyfél az első hónapra  kifizeti a csomag árát, utána három hónapig egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánlat tartalmazza a negyedéves fenntartási költségeket is).";
+        element2.innerHTML = "Az Ügyfél az első hónapra  kifizeti a csomag árát, utána kettő hónapig egy meghatározott dátumon a fenntartási költségeket vonjuk le (az árajánlat tartalmazza a negyedéves fenntartási költségeket is).";
         element3.innerHTML = "Az Ügyfél az árajánlatban megemlített összeget, egy utalás alatt fedezi, és Negyedévre biztosítva van az oldala.";
     } else if (plan == 1) {
         element1.innerHTML = "Féléves";

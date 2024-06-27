@@ -20,13 +20,15 @@
     <?php //main_header($package["theme color"]); ?>
     </header>
     <main class="container-fluid mt-5">
-    <div id="shutter" class="container my-3 rounded-3 p-3">
-        <div class="container">
-            <div class="row p-3">
+    <div class="container">
+        <div class="row p-3">
             <div class="col text-left">
                 <h1><img src="imgs/<?php echo($package["name"]."_ful.png"); ?>" width=300></h1>
             </div>
         </div>
+    </div>
+    <div id="shutter" class="container my-3 rounded-3 p-3">
+        <div class="container">
         <div class="row p-3">
             <div class="col text-left">
                 <div class="row">

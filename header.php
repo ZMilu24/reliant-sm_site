@@ -11,9 +11,9 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
                 <link href="css/main_style.css" rel="stylesheet">
                 <link href="css/style.css" rel="stylesheet">
-                <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
                 <?php
                     if ($css != null) {
                         echo('<link href="'.$css.'" rel="stylesheet">');
@@ -180,7 +180,7 @@
                                                 </a>
                                                 <!--<a href="about-us.php">Rólunk</a>-->
                                                 <a href="offers.php">Webfejlesztés</a>
-                                                <a href="constuct.html">Email Marketing</a>
+                                                <a href="email.php">Email Marketing</a>
                                                 <a href="references.php">Referenciák</a>
                                                 <a href="constuct.html">Hibajelentés</a>
                                                 <a href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
@@ -226,7 +226,7 @@
                                                         ?>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="constuct.html">Email Marketing</a>
+                                                        <a class="nav-link" href="email.php">Email Marketing</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="references.php">Referencia</a>
@@ -262,9 +262,9 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
                 <link href="css/main_style.css" rel="stylesheet">
                 <link href="css/style.css" rel="stylesheet">
-                <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
                 <?php
                     if ($css != null) {
                         echo('<link href="'.$css.'" rel="stylesheet">');
@@ -431,7 +431,7 @@
                                                 </a>
                                                 <!--<a href="about-us.php">Rólunk</a>-->
                                                 <a href="offers.php">Webfejlesztés</a>
-                                                <a href="constuct.html">Email Marketing</a>
+                                                <a href="email.php">Email Marketing</a>
                                                 <a href="references.php">Referenciák</a>
                                                 <a href="constuct.html">Hibajelentés</a>
                                                 <a href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
@@ -477,7 +477,7 @@
                                                         ?>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="constuct.html">Email Marketing</a>
+                                                        <a class="nav-link" href="email.php">Email Marketing</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="references.php">Referencia</a>
