@@ -136,7 +136,7 @@
                                         automatizálás során a kettő eegyüttes működésével egy teljesen automatikus rendszert kapunk
                                     </p>
                                     <p>
-                                        <i>Csak a küldő program működési elve félautómata!</i>
+                                        <i>Az E-mail automatizált program működési elve autómata!</i>
                                     </p>
                                 </div>
                             </div>
