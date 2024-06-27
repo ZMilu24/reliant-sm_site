@@ -11,7 +11,8 @@
             ],
             "url" => "b",
             "theme color" => "9AEBB1",
-            "link" => $main_link."template/basic/"
+            "link" => $main_link."template/basic/",
+            "bgPic" => "imgs/basic_bg.jpg"
         ];
         $themes["premium"] = [
             "name" => "Premium",
@@ -20,7 +21,8 @@
             ],
             "url" => "p",
             "theme color" => "DBF5F5",
-            "link" => $main_link."template/premium/"
+            "link" => $main_link."template/premium/",
+            "bgPic" => "imgs/premium_bg.jpg"
         ];
         $themes["ultra"] = [
             "name" => "Ultra",
@@ -31,7 +33,8 @@
             "url" => "u",
             "theme color" => "424478",
             "warning" => "",
-            "link" => $main_link."template/ultra/"
+            "link" => $main_link."template/ultra/",
+            "bgPic" => "imgs/ultra_bg.jpg"
         ];
 
     $ceos = array();
@@ -53,6 +56,7 @@
             "image1" => "imgs/logo2.png",
             "image2" => "imgs/logo.png"
         ];*/
+
     $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
 
 ?>

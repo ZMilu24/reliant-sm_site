@@ -16,15 +16,15 @@
 
 ?>
 
-    <?php header_v2(null, "linear-gradient(to bottom right, white, #".$package["theme color"].")", "", $package["name"]); ?>
+    <?php header_v2("css/packages.css", "url(".$package["bgPic"].")", "", $package["name"]); ?>
     <?php //main_header($package["theme color"]); ?>
     </header>
     <main class="container-fluid mt-5">
-        <div>
+    <div id="shutter" class="container my-3 rounded-3 p-3">
         <div class="container">
             <div class="row p-3">
             <div class="col text-left">
-                <h1><i><?php echo($package["name"])?></i></h1>
+                <h1><img src="imgs/<?php echo($package["name"]."_ful.png"); ?>" width=300></h1>
             </div>
         </div>
         <div class="row p-3">
@@ -106,6 +106,6 @@ Ennek a csomagnak részletességei és választható extrái, a “Részletek”
         </div>
     </main>
 
-    <?php footer_fnc()?>
+    <?php footer_fnc($package["theme color"])?>
 </body>
 </html>
