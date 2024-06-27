@@ -1,7 +1,7 @@
 <?php require_once("header.php"); header_v2("css/email.css", "url(imgs/email-bg.png)"); ?>
     </header>
-    <main class="container-fluid mt-5">
-        <div class="row">
+    <main class="container-fluid my-5">
+        <div class="row my-5">
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col text-center">
