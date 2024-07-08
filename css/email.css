@@ -1,11 +1,15 @@
 #left-shutter {
     background-color: rgba(0, 0, 0, 0.7);
     border: 2px solid   rgba(0, 0, 0, 1);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
 }
 
 #right-shutter {
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid   rgba(0, 0, 0, 1);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
 }
 
 section {
@@ -19,4 +23,8 @@ section {
 #left-hr {
     height: 6px;
     background-color: #d0c719;
+}
+
+p, li {
+    text-shadow: 0 0 1px #000000;
 }
