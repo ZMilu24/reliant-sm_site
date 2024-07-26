@@ -68,6 +68,14 @@ main {
     box-shadow: 0 0 5px #000000;
 }
 
-p {
-    text-align: justify !important;
+@media (max-height: 1200px) {
+    p {
+        text-align: left !important;
+    }
+}
+
+@media (min-height: 1201px) {
+    p {
+        text-align: justify !important;
+    }
 }

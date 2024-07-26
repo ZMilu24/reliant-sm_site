@@ -36,6 +36,17 @@
             "link" => $main_link."template/ultra/",
             "bgPic" => "imgs/ultra_bg.jpg"
         ];
+        $themes["email"] = [
+            "name" => "Email",
+            "utilities" => [
+                null
+            ],
+            "url" => "e",
+            "theme color" => "ECF740",
+            "warning" => "",
+            "link" => $main_link."template/email/",
+            "bgPic" => "imgs/email-bg.png"
+        ];
 
     $ceos = array();
         $ceos["gergo"] = [

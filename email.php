@@ -5,7 +5,7 @@
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col text-center">
-                        <img class="w-75" src="imgs/email-logo.png">
+                        <img class="w-75" src="imgs/email_ful.png">
                     </div>
                 </div>
                 <div class="row">
@@ -39,7 +39,10 @@
             </div>
             <div class="col-lg-8">
                 <div id="right-shutter" class="container my-3 rounded-3 p-3">
-                    <section class="row">
+                    <h2>
+                        E-mail Csomagunk három részből tevődik össze:
+                    </h2>
+                    <section class="row my-4">
                         <div class="col-lg-4" style="margin-inline: auto !important;
                         margin-left: auto;
                         display: flex;
@@ -71,14 +74,11 @@
                                         és sok más e-maileket automatikusan megszerkezti, majd kiküldi a regisztrált vásárlóknak.
                                         A program többekközt innovatív Ai-t (arartificial intelligence) is használ, hogy minnél jobban megszerkeztett és egyben megfogalmazott e-maileket kapjanak a vásárlók.
                                     </p>
-                                    <p>
-                                        <i>Csak a küldő program működési elve félautómata!</i>
-                                    </p>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="row">
+                    <section class="row my-4">
                         <div class="col-lg-8">
                             <div class="row">
                                 <div class="col">
@@ -95,9 +95,6 @@
                                     Miután az e-mail üzenet elkészült, a program elküldi azt az SMTP szervernek, 
                                     amely továbbítja a címzett e-mail szerveréhez. Végül, az e-mail szerver kézbesíti az üzenetet a címzett postaládájába.
                                     </p>
-                                    <p>
-                                        <i>Csak a küldő program működési elve félautómata!</i>
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +108,7 @@
                             <img class="w-75" src="imgs/email-right-mid.jpg">
                         </div>
                     </section>
-                    <section class="row">
+                    <section class="row mt-5">
                         <div class="col-lg-4"  style="margin-inline: auto !important;
                         margin-left: auto;
                         display: flex;
@@ -135,13 +132,17 @@
                                         programban. természetesen lehetséges vagy csak a küldő, vagy csak a megíró programot igényelni, viszont az
                                         automatizálás során a kettő eegyüttes működésével egy teljesen automatikus rendszert kapunk
                                     </p>
-                                    <p>
-                                        <i>Az E-mail automatizált program működési elve autómata!</i>
-                                    </p>
                                 </div>
                             </div>
                         </div>
                     </section>
+                    <div class="row">
+                        <div class="col text-end">
+                            <a class="btn btn-dark" href="details.php?pac=e">
+                                Ajánlat Kérése
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

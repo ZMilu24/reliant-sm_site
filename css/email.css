@@ -28,3 +28,9 @@ section {
 p, li {
     text-shadow: 0 0 1px #000000;
 }
+
+h2 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}

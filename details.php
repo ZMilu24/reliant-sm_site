@@ -8,17 +8,18 @@
 
     $package = null;
 
-    $DB = new Database;
-
     if ($_GET["pac"] == "b") {
         $package = $themes["basic"];
     } else if ($_GET["pac"] == "p") {
         $package = $themes["premium"];
     } else if ($_GET["pac"] == "u") {
         $package = $themes["ultra"];
+    } else if ($_GET["pac"] == "e") {
+        $package = $themes["email"];
     }
 
     if (isset($_POST["pleased"])) {
+        $DB = new Database;
         $code = $DB->order_webpage($_POST, $package["name"]);
         if ($code == 200) {
             ?>
@@ -60,23 +61,25 @@
             </div>
             <div id="shutter" class="container my-3 rounded-3 p-3">
             <div class="container">
-                <div class="row m-5">
-                    <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(0)>Negyedéves terv</button>
+                <?php if ($_GET["pac"] != "e") { ?>
+                    <div class="row m-5">
+                        <div class="col text-center">
+                            <button class="btn btn-dark m-3" onclick=plans(0)>Negyedéves terv</button>
+                        </div>
+                        <div class="col text-center">
+                            <button class="btn btn-dark m-3" onclick=plans(1)>Fél éves terv</button>
+                        </div>
+                        <div class="col text-center">
+                            <button class="btn btn-dark m-3" onclick=plans(2)>Egy éves terv</button>
+                        </div>
+                        <div class="col text-center">
+                            <button class="btn btn-dark m-3" onclick=plans(3)>Két éves terv</button>
+                        </div>
+                        <div class="col text-center">
+                            <button class="btn btn-dark m-3" onclick=plans(4)>Öt éves terv</button>
+                        </div>
                     </div>
-                    <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(1)>Fél éves terv</button>
-                    </div>
-                    <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(2)>Egy éves terv</button>
-                    </div>
-                    <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(3)>Két éves terv</button>
-                    </div>
-                    <div class="col text-center">
-                        <button class="btn btn-dark m-3" onclick=plans(4)>Öt éves terv</button>
-                    </div>
-                </div>
+                <?php } ?>
                 <div class="row">
                     <div class="col">
                         <div class="p-3 m-3">
@@ -93,16 +96,31 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                         </div>
                     </div>
                 <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
-                    <div class="col">
-                        <h3>Igényelhető specifikációk</h3>
-                        <ul>
-                            <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
-                            <li>Animált kártyák/Animációk;</li>
-                            <li>Egyedi lábléc;</li>
-                            <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">Ha Ön nem kéri, akkor csak számítógépes verziót készítünk</span>)</li>
-                            <li>Logo készítés;</li>
-                        </ul>
-                    </div>
+                    <?php if ($_GET["pac"] != "e") { ?>
+                        <div class="col">
+                            <div class="p-3 m-3">
+                                <h3>Igényelhető specifikációk</h3>
+                                <ul>
+                                    <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
+                                    <li>Animált kártyák/Animációk;</li>
+                                    <li>Egyedi lábléc;</li>
+                                    <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">Ha Ön nem kéri, akkor csak számítógépes verziót készítünk</span>)</li>
+                                    <li>Logo készítés;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <?php } else { ?>
+                        <div class="col">
+                            <div class="p-3 m-3">
+                                <h3>Csomag tartalma</h3>
+                                <ul>
+                                    <li>Email Megíró Program</li>
+                                    <li>Email Küldő Program</li>
+                                    <li>Email Automatizálás</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <?php } ?>
                 </div>
                 <form method="post">
                     <!--<div class="row">
@@ -343,6 +361,22 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                 </form>
             </div>
         </main>
+        <section class="container-fluid p-3 mt-5">
+            <div class="row">
+                <div class="col">
+                    <a href="<?php if ($_GET["pac"] == 'e') {echo("email.php");} else {echo("package.php?p=".$_GET["pac"]);} ?>">
+                        <img src="imgs/back_button.png" width="100">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.reliant-sm.eu/">
+                        <img src="imgs/home_button.png" width="100">
+                    </a>
+                </div>
+            </div>
+        </section>
         <?php footer_fnc(); ?>
     </body>
 </html>

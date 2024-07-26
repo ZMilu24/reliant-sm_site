@@ -181,7 +181,7 @@
                                                 <!--<a href="about-us.php">Rólunk</a>-->
                                                 <a href="offers.php">Webfejlesztés</a>
                                                 <a href="email.php">Email Marketing</a>
-                                                <a href="references.php">Referenciák</a>
+                                                <a href="references.php">Eddigi munkáink</a>
                                                 <a href="constuct.html">Hibajelentés</a>
                                                 <a href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
                                             </div>
@@ -229,7 +229,7 @@
                                                         <a class="nav-link" href="email.php">Email Marketing</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="references.php">Referencia</a>
+                                                        <a class="nav-link" href="references.php">Eddigi munkáink</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="constuct.html">Hibajelentés</a>
@@ -432,7 +432,7 @@
                                                 <!--<a href="about-us.php">Rólunk</a>-->
                                                 <a href="offers.php">Webfejlesztés</a>
                                                 <a href="email.php">Email Marketing</a>
-                                                <a href="references.php">Referenciák</a>
+                                                <a href="references.php">Eddigi munkáink</a>
                                                 <a href="constuct.html">Hibajelentés</a>
                                                 <a href="https://g.page/r/CdcgtFYhxiqtEAE/review">Értékelés</a>
                                             </div>
@@ -480,7 +480,7 @@
                                                         <a class="nav-link" href="email.php">Email Marketing</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="references.php">Referencia</a>
+                                                        <a class="nav-link" href="references.php">Eddigi munkáink</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="constuct.html">Hibajelentés</a>
