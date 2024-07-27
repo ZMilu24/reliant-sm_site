@@ -354,7 +354,7 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                     <div class="row my-3">
                         <div class="col text-center">
                             <div class="container">
-                                <input class="btn btn-dark" type="submit" name="pleased" value="Ajánlat kérés">
+                                <input class="btn btn-dark" type="submit" name="pleased" value="Megrendelés">
                             </div>
                         </div>
                     </div>

@@ -11,6 +11,8 @@
             }
         </style>
         <?php main_header("none"); ?>
+        </header>
+        <header class="scroller">
             <div class="container h-100" style="display: flex; justify-content: center; align-items: center;" >
                 <div class="row h-100" style="display: flex; justify-content: center; align-items: center;">
                     <div class="col text-center h-100" style="display: flex; justify-content: center; align-items: center;">
@@ -19,7 +21,7 @@
                 </div>
             </div>
         </header>
-        <main class="container-fluid py-5" style="background-image: linear-gradient(to top left, white, #868686);">
+        <main class="container-fluid py-5 scroller" style="background-image: linear-gradient(to top left, white, #868686);">
             <div class="container mb-5">
                 <div class="row p-3 px-5">
                     <div class="col text-center">

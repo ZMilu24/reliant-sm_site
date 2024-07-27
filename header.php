@@ -164,7 +164,7 @@
                 </style>
             </head>
             <body>
-                <header id="main-header" class="container-fluid header h-100 p-5 w-100" style="background-image: linear-gradient(to right, <?php echo($start_color); ?>, #<?php echo($color); ?>);">
+                <header class="container-fluid w-100" style="background-image: linear-gradient(to right, <?php echo($start_color); ?>, #<?php echo($color); ?>);">
                     <div class="fixed-top header" id="nav-bg">
                         <div class="container">
                             <div class="row">

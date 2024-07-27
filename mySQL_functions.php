@@ -79,15 +79,9 @@
                     }else {
                         if ($i != "comment") {
                             if ($line["comp"] != "" or $line["comp"] != null) {
-                                if ($i != "szamla") {
+                                if ($i != "szamla" or $i != "cim" or $i != "ado") {
                                     if ($line[$i] == NULL or $line[$i] == "" or $line[$i] == 0) {
                                         $res.="<td>Nincs megadva</td>";
-                                    } else {
-                                        $res.="<td>".$line[$i]."</td>";
-                                    }
-                                } else {
-                                    if ($line[$i] == NULL or $line[$i] == "") {
-                                        $res.="<td>".$line["cim"]."</td>";
                                     } else {
                                         $res.="<td>".$line[$i]."</td>";
                                     }

@@ -30,11 +30,8 @@ require_once(__DIR__."/../mySQL_functions.php");
                                         <td>Név</td>
                                         <td>Telcsi</td>
                                         <td>E-mail</td>
-                                        <td>Lakcím</td>
                                         <td>Tipus</td>
                                         <td>Cégnév</td>
-                                        <td>Adószám</td>
-                                        <td>Számlázási cím</td>
                                         <td>Elképzelés</td>
                                     </tr>
                                 </thead>
