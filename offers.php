@@ -177,20 +177,28 @@
 
             
             function replaceElement() {
-                let childA = sh1.innerHTML;
-                let childB = sh2.innerHTML;
-                sh1.innerHTML = childB;
-                sh2.innerHTML = childA;
-                /*
-                // Temporarily move the old element to the holder div
-                holder.appendChild(oldElement);
+                let sh1 = document.getElementById("shutter1");
+                let sh2 = document.getElementById("shutter2");
+                let child1 = document.getElementById("child1");
+                let child2 = document.getElementById("child2");
 
-                // Replace newElement with oldElement
-                sh1.replaceChild(newElement, oldElement);
+                // Add hidden class to trigger fade-out effect
+                sh1.classList.add("hidden");
 
-                // Move the old element back to sh2
-                sh2.replaceChild(oldElement, newElement);
-                */
+                // Wait for the fade-out to complete before swapping content
+                setTimeout(() => {
+                    // Swap innerHTML of elements
+                    let childA = sh1.innerHTML;
+                    let childB = sh2.innerHTML;
+                    sh1.innerHTML = childB;
+                    sh2.innerHTML = childA;
+
+                    // Remove hidden class and add visible class for fade-in effect
+                    sh1.classList.remove("hidden");
+
+                    // Apply fade-in effect
+                    sh1.classList.add("visible");
+                }, 500); // Match the transition duration in milliseconds
             }
 
             <?php if($isMob == false) { ?>
