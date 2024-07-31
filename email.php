@@ -5,7 +5,7 @@
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col text-center">
-                        <img class="w-75" src="imgs/email_ful.png">
+                        <img class="w-75" src="imgs/Email_ful.png">
                     </div>
                 </div>
                 <div class="row">

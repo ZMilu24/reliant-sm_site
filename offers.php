@@ -26,46 +26,6 @@
                     </div>
                         <div class="row my-3">
                             <div class="col">
-                                <p class="text-danger">
-                                    A csomagok besorolása szerint és a választott opciók függvényében, az oldalak elkészülési ideje megnövekedhet!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row my-3" id="offer-card-container">
-                            <div class="col text-center">
-                                <div class="row mx-5" style="margin-inline: auto; !important">
-                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
-                        margin-left: auto;
-                        display: flex;
-                        margin-right: auto;
-                        justify-content: center;
-                        align-items: center;
-                        place-content: center;">
-                                        <?php pck_card("basic"); ?>
-                                    </div>
-                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
-                        margin-left: auto;
-                        display: flex;
-                        margin-right: auto;
-                        justify-content: center;
-                        align-items: center;
-                        place-content: center;">
-                                        <?php pck_card("premium"); ?>
-                                    </div>
-                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important
-                        justify-content: center;
-                        display: flex;
-                        align-items: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                        place-content: center;">
-                                        <?php pck_card("ultra"); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col">
                                 <div class="row">
                                     <div class="col">
                                         <p>
@@ -100,6 +60,46 @@
                                             melyet csapatunk tagjai megkapnak és válaszképp visszaküldenek egy árajánlatot és a várható elkészülés időtartamát. Ha a feldolgozás vagy a folyamat közben félreértés esne, csapatunk tagja e-mailben
                                             vagy telefonon fogja felkeresni Önt további egyeztetésért.
                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <p class="text-danger">
+                                    A csomagok besorolása szerint és a választott opciók függvényében, az oldalak elkészülési ideje megnövekedhet!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row my-3" id="offer-card-container">
+                            <div class="col text-center">
+                                <div class="row mx-5" style="margin-inline: auto; !important">
+                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
+                                    margin-left: auto;
+                                    display: flex;
+                                    margin-right: auto;
+                                    justify-content: center;
+                                    align-items: center;
+                                    place-content: center;">
+                                        <?php pck_card("basic"); ?>
+                                    </div>
+                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
+                                    margin-left: auto;
+                                    display: flex;
+                                    margin-right: auto;
+                                    justify-content: center;
+                                    align-items: center;
+                                    place-content: center;">
+                                        <?php pck_card("premium"); ?>
+                                    </div>
+                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important
+                                    justify-content: center;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    place-content: center;">
+                                        <?php pck_card("ultra"); ?>
                                     </div>
                                 </div>
                             </div>
