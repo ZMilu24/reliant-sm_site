@@ -7,212 +7,241 @@
     <?php require("config.php"); header_v2("css/offers.css", "url(imgs/offers_bg.png)", "", "Webfejlesztés")?>
         </header>
         <main class="container-fluid my-5">
-            <div id="shutter" class="container my-3 rounded-3 p-3">
-            <div class="row my-3">
-                <div class="col text-center">
-                    <h1>Weboldal kínálatunk:</h1>
-                </div>
-            </div>
-                <div class="row my-3">
-                    <div class="col">
-                        <p class="text-danger">
-                            A csomagok besorolása szerint és a választott opciók függvényében, az oldalak elkészülési ideje megnövekedhet!
-                        </p>
+            <div id="shutter1" class="shutter container my-3 rounded-3 p-3">
+                <div id="child1">
+                    <div class="row my-3">
+                        <?php if($isMob == false) { ?>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6 text-center">
+                                <h1>Weboldal kínálatunk:</h1>
+                            </div>
+                            <div class="col-lg-3 text-end">
+                                <img id="sideArrow1" class="sideArrow" src="imgs/SideArrow.png" width=100 onclick=replaceElement() >
+                            </div>
+                        <?php } else { ?>
+                            <div class="col text-center">
+                                <h1>Weboldal kínálatunk:</h1>
+                            </div>
+                        <?php } ?>
                     </div>
-                </div>
-                <div class="row my-3" id="offer-card-container">
-                    <div class="col text-center">
-                        <div class="row mx-5" style="margin-inline: auto; !important">
-                            <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
-  margin-left: auto;
-  display: flex;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-  place-content: center;">
-                                <?php pck_card("basic"); ?>
-                            </div>
-                            <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
-  margin-left: auto;
-  display: flex;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-  place-content: center;">
-                                <?php pck_card("premium"); ?>
-                            </div>
-                            <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  place-content: center;">
-                                <?php pck_card("ultra"); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-3">
-                    <div class="col">
-                        <div class="row">
+                        <div class="row my-3">
                             <div class="col">
-                                <p>
-                                    
-                                    Ügyfeleink számára három külömböző “design” csomag érhető el, választható specifikáviókkal:
-
+                                <p class="text-danger">
+                                    A csomagok besorolása szerint és a választott opciók függvényében, az oldalak elkészülési ideje megnövekedhet!
                                 </p>
                             </div>
                         </div>
-                        <div class="row text-center">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col">
-                                        <i>Alap (Basic);</i>
+                        <div class="row my-3" id="offer-card-container">
+                            <div class="col text-center">
+                                <div class="row mx-5" style="margin-inline: auto; !important">
+                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
+                        margin-left: auto;
+                        display: flex;
+                        margin-right: auto;
+                        justify-content: center;
+                        align-items: center;
+                        place-content: center;">
+                                        <?php pck_card("basic"); ?>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <i>Prémium (Premium);</i>
+                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important;
+                        margin-left: auto;
+                        display: flex;
+                        margin-right: auto;
+                        justify-content: center;
+                        align-items: center;
+                        place-content: center;">
+                                        <?php pck_card("premium"); ?>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <i>és Ultra.</i>
+                                    <div class="col <?php echo($isMob == false ? "" : "py-3"); ?>" style="margin-inline: auto !important
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        place-content: center;">
+                                        <?php pck_card("ultra"); ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row my-3">
                             <div class="col">
-                                <p>
-                                    Csomagjaink kinézetének minősége eféleképpen változik növekvő sorrendben: Basic; Premium; Ultra.
-                                    A csomagok kérvényezésekor az Ügyfél a weboldalunkon belül, egy üzenetet tud írni nekünk, amelyben részletesen kifejtheti igényeit,
-                                    melyet csapatunk tagjai megkapnak és válaszképp visszaküldenek egy árajánlatot és a várható elkészülés időtartamát. Ha a feldolgozás vagy a folyamat közben félreértés esne, csapatunk tagja e-mailben
-                                    vagy telefonon fogja felkeresni Önt további egyeztetésért.
-                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            Ügyfeleink számára három külömböző “design” csomag érhető el, választható specifikáviókkal:
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <i>Alap (Basic);</i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <i>Prémium (Premium);</i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <i>és Ultra.</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <p>
+                                            Csomagjaink kinézetének minősége eféleképpen változik növekvő sorrendben: Basic; Premium; Ultra.
+                                            A csomagok kérvényezésekor az Ügyfél a weboldalunkon belül, egy üzenetet tud írni nekünk, amelyben részletesen kifejtheti igényeit,
+                                            melyet csapatunk tagjai megkapnak és válaszképp visszaküldenek egy árajánlatot és a várható elkészülés időtartamát. Ha a feldolgozás vagy a folyamat közben félreértés esne, csapatunk tagja e-mailben
+                                            vagy telefonon fogja felkeresni Önt további egyeztetésért.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-            <div class="row my-3 mt-5">
-                <div class="col">
-                    <div>
-                        <h2>Webfejlesztés alapkövei:</h2>
                     </div>
                 </div>
-            </div>
-                <div class="row my-3">
-                    <div class="my-3 col text-center">
-                        <?php info_card("Tervezés", "Csapatunk az Ön által megadott információk alapján, a lehető legmegfelelőbb weboldaldesign-t
-    készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján
-    (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).", 3) ?>
+            <div id="shutter2" class="shutter container my-3 rounded-3 p-3">
+                    <div id="child2">
+                            <div class="row my-3 mt-3">
+                                    <?php if($isMob == false) { ?>
+                                        <div class="col-lg-3">
+                                            <img id="sideArrow2" class="sideArrow" src="imgs/SideArrow.png" width=100 onclick=replaceElement() >
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="text-center">
+                                                <h1>Webfejlesztés alapkövei:</h1>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3"></div>
+                                    <?php } else { ?>
+                                        <div class="col text-center">
+                                            <h1>Weboldal kínálatunk:</h1>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                                        <div class="row my-3">
+                                            <div class="my-3 col text-center">
+                                                <?php info_card("Tervezés", "Csapatunk az Ön által megadott információk alapján, a lehető legmegfelelőbb weboldaldesign-t
+                                                készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján
+                                                (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).", 3) ?>
+                                            </div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="my-3 col text-center">
+                                                <?php info_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és
+                                                a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
+                                                Minden weboldalról, amely nálunk készül el, szakképzett, és tapasztalt munkatársaink bizonyosodnak meg,
+                                                hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).', 3) ?>
+                                            </div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="my-3 col text-center">
+                                                <?php info_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így a kis- és középvállalkozások könnyebben megtalálják az ügyfeleket. A hatékony SEO révén ügyfeleink weboldalai előkelőbb helyezést érnek el a keresési eredmények között. Bízza ránk weboldala optimalizálását, hogy Ön is előnyt élvezhessen a versenytársakkal szemben.", 3) ?>
+                                            </div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="my-3 col text-center">
+                                                <?php info_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weboldalt életre kelti.
+                                                A programozás minden apró kis szegleteiben jártas munkatársaink, ötletes megoldásokkal igyekeznek az Ön weboldalát, mind funkciók,
+                                                mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.", 3) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="my-3 col text-center">
-                        <?php info_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és
-    a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
-    Minden weboldalról, amely nálunk készül el, szakképzett, és tapasztalt munkatársaink bizonyosodnak meg,
-    hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).', 3) ?>
-                    </div>
-                </div>
-                <div class="row my-3">
-                    <div class="my-3 col text-center">
-                        <?php info_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így a kis- és középvállalkozások könnyebben megtalálják az ügyfeleket. A hatékony SEO révén ügyfeleink weboldalai előkelőbb helyezést érnek el a keresési eredmények között. Bízza ránk weboldala optimalizálását, hogy Ön is előnyt élvezhessen a versenytársakkal szemben.", 3) ?>
-                    </div>
-                </div>
-                <div class="row my-3">
-                    <div class="my-3 col text-center">
-                        <?php info_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weboldalt életre kelti.
-    A programozás minden apró kis szegleteiben jártas munkatársaink, ötletes megoldásokkal igyekeznek az Ön weboldalát, mind funkciók,
-    mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.", 3) ?>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    <!--<?php //main_header("9dc2c7", "gray"); ?>
-        </header>
-        <main class="w-100 container-fluid" style="background-image: linear-gradient(to top right, gray, #9dc2c7);">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col text-center">
-                        <h1>Minden amit Kínálunk:</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col">
-                                <p>
-                                    Cégünk azokra a problémákra talált megoldást, amely jellemző sok ország vállalataira, és kisvállalkozásaira, miszerint kevésbé 
-                                    versenyképesek azokhoz a cégekhez képest, akiknek az informatikai infrastruktúrájukat már sikerült megalapozni és kiépíteni
-                                    a modern világban.
-                                    Ügyfeleink számára három külömböző “design” csomag érhető el, választható specifikáviókkal:
+            </main>
+        <script>
+            // Use the correct casing for getElementById
+            let sh1 = document.getElementById("shutter1");
+            let sh2 = document.getElementById("shutter2");
+            let holder = document.getElementById("holder");
+            let child1 = document.getElementById("child1");
+            let child2 = document.getElementById("child2");
 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col">
-                                        <i>Alap (Basic);</i>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <i>Prémium (Premium);</i>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <i>és Ultra.</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col">
-                                <p>
-                                Csomagjaink kinézetének minősége eféleképpen változik növekvő sorrendben: Basic; Premium; Ultra.
-                                A csomagok kérvényezésekor az Ügyfél a weboldalunkon belül, egy üzenetet tud írni nekünk, amelyben részletesen kifejtheti igényeit,
-                                melyet csapatunk tagjai megkapnak és válaszképp visszaküldenek egy árajánlatot és a várható elkészülés időtartamát. Ha a feldolgozás vagy a folyamat közben félreértés esne, csapatunk tagja e-mailben
-                                vagy telefonon fogja felkeresni Önt további egyeztetésért.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="text-danger">
-                            A csomagok besorolása szerint és a választott opciók függvényében, az oldalak elkészülési ideje megnövekedhet!
-                        </p>
-                    </div>
-                </div>
-                <div class="row" id="offer-card-container">
-                    <div class="col text-center">
-                        <div class="row mx-5">
-                            <div class="col <?php //echo($isMob == false ? "" : "py-3"); ?>">
-                                <?php //pck_card("basic"); ?>
-                            </div>
-                            <div class="col <?php //echo($isMob == false ? "" : "py-3"); ?>">
-                                <?php //pck_card("premium"); ?>
-                            </div>
-                            <div class="col <?php //echo($isMob == false ? "" : "py-3"); ?>">
-                                <?php //pck_card("ultra"); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <style>
-            #offer-card-container {
-                margin:0 !important;
+            // Get the computed styles of sh1 and sh2
+            let child1ComputedStyle = window.getComputedStyle(child1);
+            let child2ComputedStyle = window.getComputedStyle(child2);
+
+            // Extract and parse the heights as numbers
+            let child1Height = parseFloat(child1ComputedStyle.getPropertyValue('height'));
+            let child2Height = parseFloat(child2ComputedStyle.getPropertyValue('height'));
+
+            
+            function replaceElement() {
+                let childA = sh1.innerHTML;
+                let childB = sh2.innerHTML;
+                sh1.innerHTML = childB;
+                sh2.innerHTML = childA;
+                /*
+                // Temporarily move the old element to the holder div
+                holder.appendChild(oldElement);
+
+                // Replace newElement with oldElement
+                sh1.replaceChild(newElement, oldElement);
+
+                // Move the old element back to sh2
+                sh2.replaceChild(oldElement, newElement);
+                */
             }
-        </style>-->
+
+            <?php if($isMob == false) { ?>
+                // Find the maximum height
+                let maxHeight = Math.max(child1Height, child2Height) *1.1;
+            <?php } ?>
+            
+            <?php if($isMob == true) { ?>
+
+                // Find the maximum height
+                let maxHeight = Math.max(child1Height, child2Height) *1.05;
+                
+                let swipeArea = document.getElementById('shutter1');
+
+                let startX;
+
+                swipeArea.addEventListener('touchstart', function(e) {
+                    let touch = e.touches[0];
+                    startX = touch.clientX;
+                    startY = touch.clientY;
+                });
+
+                swipeArea.addEventListener('touchmove', function(e) {
+                    // Allow vertical scrolling
+                });
+
+                swipeArea.addEventListener('touchend', function(e) {
+                    let touch = e.changedTouches[0];
+                    let endX = touch.clientX;
+                    let endY = touch.clientY;
+
+                    let diffX = endX - startX;
+                    let diffY = endY - startY;
+
+                    // Check if horizontal swipe is greater than vertical swipe
+                    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) { // Threshold to consider it a swipe
+                        if (diffX > 10) {
+                            console.log('Swiped right');
+                            replaceElement();
+                        } else {
+                            console.log('Swiped left');
+                            replaceElement();
+                        }
+                    }
+                });
+            <?php } ?>
+
+            // Set both elements to the maximum height
+            sh1.style.height = maxHeight + 'px';
+
+        </script>
     <?php footer_fnc(); ?>
     </body>
 </html>
