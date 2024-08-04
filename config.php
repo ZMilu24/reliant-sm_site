@@ -61,23 +61,23 @@
         ];
 
     $references = array();
-        /*$references["szechenyi_ter_apartman"] = [
-            "name" => "Szécsényi Tér Apartman",
-            "link" => "https://ld3xqgqc.a2hosted.com/szechenyi_ter_apartman/",
-            "image1" => "imgs/logo2.png",
-            "image2" => "imgs/logo.png"
+        /*$references["szechenyi_apartman_esztergom"] = [
+            "name" => "Szécsényi Apartman Esztergom",
+            "link" => "https://www.szechenyi.apartman.hu",
+            "image1" => "imgs/references/szechenyiapartman/logo2.png",
+            "image2" => "imgs/references/szechenyiapartman/logo.png"
         ];*/
-        /*$references["moni_webshop"] = [
-            "name" => "Webshop",
-            "link" => "https://ld3xqgqc.a2hosted.com/moni_webshop/",
-            "image1" => "imgs/logo2.png",
-            "image2" => "imgs/logo.png"
+        /*$references["moony"] = [
+            "name" => "Moony",
+            "link" => "https://moony.com",
+            "image1" => "imgs/references/noony/logo2.png",
+            "image2" => "imgs/references/moony/logo.png"
         ];*/
         /*$references["pzbau"] = [
             "name" => "PZ-BAU KFT",
-            "link" => "https://ld3xqgqc.a2hosted.com/pz-bau/",
-            "image1" => "imgs/logo2.png",
-            "image2" => "imgs/logo.png"
+            "link" => "https://www.pzbau.com",
+            "image1" => "imgs/references/pzbau/logo2.png",
+            "image2" => "imgs/references/pzbau/logo.png"
         ];*/
 
     $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));

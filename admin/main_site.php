@@ -14,7 +14,7 @@ require_once(__DIR__."/../mySQL_functions.php");
                 <div class="conatiner">
                     <div class="row">
                         <div class="col text-center">
-                            <img src="../imgs/logo.png" class="rounded-circle">
+                            <img src="../imgs/logo.png" class="rounded-circle" width=100>
                         </div>
                     </div>
                 </div>

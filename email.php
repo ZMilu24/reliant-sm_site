@@ -139,7 +139,7 @@
                     <div class="row">
                         <div class="col text-end">
                             <a class="btn btn-dark" href="details.php?pac=e">
-                                Ajánlat Kérése
+                                Tovább
                             </a>
                         </div>
                     </div>

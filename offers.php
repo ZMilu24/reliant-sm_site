@@ -202,13 +202,13 @@
 
             <?php if($isMob == false) { ?>
                 // Find the maximum height
-                let maxHeight = Math.max(child1Height, child2Height) *1.2;
+                let maxHeight = Math.max(child1Height, child2Height) *1.35;
             <?php } ?>
             
             <?php if($isMob == true) { ?>
 
                 // Find the maximum height
-                let maxHeight = Math.max(child1Height, child2Height) *1.15;
+                let maxHeight = Math.max(child1Height, child2Height) *1.2;
                 
                 let swipeArea = document.getElementById('shutter1');
 
