@@ -27,6 +27,7 @@ body{
 
 .kartya {
     box-shadow: 0 0 5px #000000;
+    border: 2px solid black;
 }
 
 @media (max-height: 1200px) {

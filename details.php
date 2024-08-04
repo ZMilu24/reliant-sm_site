@@ -364,15 +364,15 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
         <section class="container-fluid p-3 mt-5">
             <div class="row">
                 <div class="col">
-                    <a href="<?php if ($_GET["pac"] == 'e') {echo("email.php");} else {echo("package.php?p=".$_GET["pac"]);} ?>">
-                        <img src="imgs/back_button.png" width="100">
+                    <a class="rounded-circle" href="<?php if ($_GET["pac"] == 'e') {echo("email.php");} else {echo("package.php?p=".$_GET["pac"]);} ?>">
+                        <img src="imgs/back_button.png" width="80">
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="https://www.reliant-sm.eu/">
-                        <img src="imgs/home_button.png" width="100">
+                    <a class="rounded-circle" href="https://www.reliant-sm.eu/">
+                        <img src="imgs/home_button.png" width="80">
                     </a>
                 </div>
             </div>

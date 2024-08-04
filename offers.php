@@ -121,35 +121,34 @@
                                         <div class="col-lg-3"></div>
                                     <?php } else { ?>
                                         <div class="col text-center">
-                                            <h1>Weboldal kínálatunk:</h1>
+                                            <h1>Webfejlesztés alapkövei:</h1>
                                         </div>
                                     <?php } ?>
                                     </div>
                                         <div class="row my-3">
-                                            <div class="my-3 col text-center">
-                                                <?php info_card("Tervezés", "Csapatunk az Ön által megadott információk alapján, a lehető legmegfelelőbb weboldaldesign-t
+                                            <div class="my-3 col-lg-6 text-center">
+                                                <?php fejleszto_card("Tervezés", "Csapatunk az Ön által megadott információk alapján, a lehető legmegfelelőbb weboldaldesign-t
                                                 készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján
-                                                (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).", 3) ?>
+                                                (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).", 3, "planning_icon.png") ?>
                                             </div>
-                                        </div>
-                                        <div class="row my-3">
-                                            <div class="my-3 col text-center">
-                                                <?php info_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és
+                                            <div class="my-3 col-lg-6 text-center">
+                                                <?php fejleszto_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és
                                                 a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
                                                 Minden weboldalról, amely nálunk készül el, szakképzett, és tapasztalt munkatársaink bizonyosodnak meg,
-                                                hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).', 3) ?>
+                                                hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).', 3, "color_circle_icon.png") ?>
                                             </div>
                                         </div>
                                         <div class="row my-3">
-                                            <div class="my-3 col text-center">
-                                                <?php info_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így a kis- és középvállalkozások könnyebben megtalálják az ügyfeleket. A hatékony SEO révén ügyfeleink weboldalai előkelőbb helyezést érnek el a keresési eredmények között. Bízza ránk weboldala optimalizálását, hogy Ön is előnyt élvezhessen a versenytársakkal szemben.", 3) ?>
+                                            <div class="my-3 col-lg-6 text-center">
+                                                <?php fejleszto_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így a 
+                                                kis- és középvállalkozások könnyebben megtalálják az ügyfeleket. A hatékony SEO révén ügyfeleink weboldalai előkelőbb helyezést érnek el a 
+                                                keresési eredmények között. Bízza ránk weboldala optimalizálását, hogy Ön is előnyt élvezhessen a versenytársakkal szemben.", 3,
+                                                "seo_icon.png") ?>
                                             </div>
-                                        </div>
-                                        <div class="row my-3">
-                                            <div class="my-3 col text-center">
-                                                <?php info_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weboldalt életre kelti.
+                                            <div class="my-3 col-lg-6 text-center">
+                                                <?php fejleszto_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weboldalt életre kelti.
                                                 A programozás minden apró kis szegleteiben jártas munkatársaink, ötletes megoldásokkal igyekeznek az Ön weboldalát, mind funkciók,
-                                                mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.", 3) ?>
+                                                mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.", 3, "thinking_icon.png") ?>
                                             </div>
                                         </div>
                                     </div>
@@ -203,13 +202,13 @@
 
             <?php if($isMob == false) { ?>
                 // Find the maximum height
-                let maxHeight = Math.max(child1Height, child2Height) *1.1;
+                let maxHeight = Math.max(child1Height, child2Height) *1.2;
             <?php } ?>
             
             <?php if($isMob == true) { ?>
 
                 // Find the maximum height
-                let maxHeight = Math.max(child1Height, child2Height) *1.05;
+                let maxHeight = Math.max(child1Height, child2Height) *1.15;
                 
                 let swipeArea = document.getElementById('shutter1');
 

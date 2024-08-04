@@ -100,3 +100,35 @@
 
 <?php
     }
+    function fejleszto_card($title, $disc, $circle=3, $img="logo.png") {
+
+        require("config.php");
+        
+        ?>
+        
+        <div class="kartya w-100 h-100 p-3 webcard text-dark rounded-<?php echo($circle); ?>" style="background-color: rgba(200, 200, 200, 0.9);" >
+            <div class="row my-3">
+                <div class="col">
+                    <img width=100 src="imgs/<?php echo($img);?>">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>
+                        <?php echo($title); ?>
+                    </h2>
+                </div>
+            </div>
+            <hr style=" background-color: #000000;
+                        color: black;
+                        height: 3px;">
+            <div class="row">
+                <div class="col">
+                    <p <?php require("config.php"); if($isMob){echo('style="text-align: center !important;"');} ?>>
+                        <?php echo($disc); ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<?php } ?>
