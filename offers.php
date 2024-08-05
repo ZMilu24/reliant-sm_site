@@ -55,10 +55,28 @@
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                            Csomagjaink kinézetének minősége eféleképpen változik növekvő sorrendben: Basic; Premium; Ultra.
-                                            A csomagok kérvényezésekor az Ügyfél a weboldalunkon belül, egy üzenetet tud írni nekünk, amelyben részletesen kifejtheti igényeit,
-                                            melyet csapatunk tagjai megkapnak és válaszképp visszaküldenek egy árajánlatot és a várható elkészülés időtartamát. Ha a feldolgozás vagy a folyamat közben félreértés esne, csapatunk tagja e-mailben
-                                            vagy telefonon fogja felkeresni Önt további egyeztetésért.
+                                        Cégünk különböző csomagjainak megjelenési minősége a következő kategóriákban érhető el, növekvő sorrendben: Basic, Premium és Ultra. Amikor az Ügyfél csomagot kérvényez, lehetősége van a weboldalunkon belül egy üzenetet írni nekünk, amelyben részletesen kifejtheti igényeit és elképzeléseit. Az üzenetet csapatunk minden tagja megkapja, és a beérkezett információk alapján elkészítünk egy személyre szabott árajánlatot, valamint meghatározzuk a várható elkészülési időtartamot.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <p>
+                                        A hatékony kommunikáció és az Ügyfél elégedettsége érdekében, amennyiben a feldolgozás vagy a gyártási folyamat során bármilyen félreértés vagy kérdés merülne fel, csapatunk egyik tagja közvetlenül e-mailben vagy telefonon fogja felkeresni az Ügyfelet további egyeztetés céljából. Ezzel biztosítjuk, hogy minden részlet pontosan és időben tisztázásra kerüljön, így garantálva a magas színvonalú szolgáltatást és a maximális Ügyfél elégedettséget.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <p>
+                                        Ezen túlmenően, nagy hangsúlyt fektetünk arra, hogy az Ügyfél minden lépésről részletes tájékoztatást kapjon, biztosítva ezzel az átláthatóságot és a folyamatok nyomon követhetőségét. Büszkék vagyunk arra, hogy rugalmasak vagyunk az Ügyfél egyedi igényeinek kielégítése terén, és mindent megteszünk annak érdekében, hogy a végtermék minden szempontból megfeleljen az elvárásoknak. Az ügyfélszolgálati csapatunk mindig készen áll a segítségnyújtásra és a kérdések megválaszolására, így bármikor bizalommal fordulhat hozzánk.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <p>
+                                        Szolgáltatásaink minőségének folyamatos fejlesztése érdekében rendszeresen visszajelzést kérünk Ügyfeleinktől, melyeket figyelembe véve igyekszünk még magasabb szintre emelni termékeink és szolgáltatásaink színvonalát. Célunk, hogy hosszú távú, elégedett Ügyfélkapcsolatokat építsünk, amelyek mindkét fél számára gyümölcsözőek.
                                         </p>
                                     </div>
                                 </div>
@@ -202,13 +220,13 @@
 
             <?php if($isMob == false) { ?>
                 // Find the maximum height
-                let maxHeight = Math.max(child1Height, child2Height) *1.35;
+                let maxHeight = Math.max(child1Height, child2Height) *1.15;
             <?php } ?>
             
             <?php if($isMob == true) { ?>
 
                 // Find the maximum height
-                let maxHeight = Math.max(child1Height, child2Height) *1.2;
+                let maxHeight = Math.max(child1Height, child2Height) *1.1;
                 
                 let swipeArea = document.getElementById('shutter1');
 
