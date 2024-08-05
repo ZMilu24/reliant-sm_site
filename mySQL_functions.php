@@ -149,11 +149,11 @@
                         $data["plan"] = "";
                     }
                     if (isset($data["plan"]) == false ) {
-                        $data["plan"] = "negyedéves";
+                        $data["plan"] = "Negyedéves terv";
                     }
                     $data["cim"] = password_hash($data["cim"], PASSWORD_BCRYPT);
-                    $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
-                    $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `comp`, `comment`, `cim`, `szamla`, `ado`) VALUES ('".$out."')";
+                    $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["plan"]."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
+                    $sql = "INSERT INTO members (`name`, `tel`, `email`, `tipe`, `plan`, `comp`, `comment`, `cim`, `szamla`, `ado`) VALUES ('".$out."')";
                     $this->DB->query($sql);
                     return(200);
             } catch (\Throwable $th) {
