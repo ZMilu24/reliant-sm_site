@@ -64,21 +64,47 @@
                 <?php if ($_GET["pac"] != "e") { ?>
                     <div class="row m-5">
                         <div class="col text-center">
-                            <button class="btn btn-dark m-3" onclick=plans(0)>Negyedéves terv</button>
+                            <button class="btn btn-dark m-3" onclick=plaan(0)>Negyedéves terv</button>
                         </div>
                         <div class="col text-center">
-                            <button class="btn btn-dark m-3" onclick=plans(1)>Fél éves terv</button>
+                            <button class="btn btn-dark m-3" onclick=plaan(1)>Fél éves terv</button>
                         </div>
                         <div class="col text-center">
-                            <button class="btn btn-dark m-3" onclick=plans(2)>Egy éves terv</button>
+                            <button class="btn btn-dark m-3" onclick=plaan(2)>Egy éves terv</button>
                         </div>
                         <div class="col text-center">
-                            <button class="btn btn-dark m-3" onclick=plans(3)>Két éves terv</button>
+                            <button class="btn btn-dark m-3" onclick=plaan(3)>Két éves terv</button>
                         </div>
                         <div class="col text-center">
-                            <button class="btn btn-dark m-3" onclick=plans(4)>Öt éves terv</button>
+                            <button class="btn btn-dark m-3" onclick=plaan(4)>Öt éves terv</button>
                         </div>
                     </div>
+                    <script>
+                        function plaan(id) {
+                            plans(id);
+                            switch (id) {
+                                case 0:
+                                    <?php $_POST["plan"] = "Negyedéves terv" ?>
+                                    break;
+                                case 1:
+                                    <?php $_POST["plan"] = "Fél éves terv" ?>
+                                    break;
+                                case 2:
+                                    <?php $_POST["plan"] = "Egy éves terv" ?>
+                                    break;
+                                case 3:
+                                    <?php $_POST["plan"] = "Két éves terv" ?>
+                                    break;
+                                case 4:
+                                    <?php $_POST["plan"] = "Öt éves terv" ?>
+                                    break;
+                            
+                                default:
+                                    <?php $_POST["plan"] = "Negyedéves terv" ?>
+                                    break;
+                            }
+                        }
+                    </script>
                 <?php } ?>
                 <div class="row">
                     <div class="col">

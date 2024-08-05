@@ -31,13 +31,14 @@ require_once(__DIR__."/../mySQL_functions.php");
                                         <td>Telcsi</td>
                                         <td>E-mail</td>
                                         <td>Tipus</td>
+                                        <td>Terv</td>
                                         <td>Cégnév</td>
                                         <td>Elképzelés</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                        $data = ["name", "tel", "email", "cim", "tipe", "comp", "ado", "szamla", "comment"];
+                                        $data = ["name", "tel", "email", "tipe", "plan", "comp", "comment"];
                 
                                         echo($DB->echo_table($DB->get_members(), $data));
                                         

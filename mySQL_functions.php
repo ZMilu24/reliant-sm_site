@@ -12,11 +12,12 @@
                 tel varchar(255),
                 email varchar(255),
                 tipe varchar(255),
+                plan varchar(255),
                 comp varchar(255),
                 cim varchar(255),
                 ado varchar(255),
                 szamla varchar(255),
-                comment varchar(10000)
+                comment varchar(10239)
             )");
             /*$this->DB->query("CREATE TABLE IF NOT EXISTS orders (
                 id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -143,6 +144,12 @@
                         $data["comment"] = $data["comment"];
                     } else {
                         $data["comment"] = null;
+                    }
+                    if ($tipe == "email") {
+                        $data["plan"] = "";
+                    }
+                    if (isset($data["plan"]) == false ) {
+                        $data["plan"] = "negyedéves";
                     }
                     $data["cim"] = password_hash($data["cim"], PASSWORD_BCRYPT);
                     $out=$data["name"]."', '".$data["tel"]."', '".$data["email"]."', '".$tipe."', '".$data["comp"]."', '".$data["comment"]."', '".$data["cim"]."', '".$data["szamla"]."', '".$data["ado"];
