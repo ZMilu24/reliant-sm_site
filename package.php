@@ -47,8 +47,14 @@
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <div class="col">
-                            <img class="rounded-5" width=100 src="imgs/img1.jpeg" >
+                        <div class="col text-center" style="margin-inline: auto !important;
+                        margin-left: auto;
+                        display: flex;
+                        margin-right: auto;
+                        justify-content: center;
+                        align-items: center;
+                        place-content: center;">
+                            <img class="rounded-5" width=300 src="imgs/img1.jpeg" >
                         </div>
                     </div>
                     <div class="row mt-5">
