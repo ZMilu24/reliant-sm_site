@@ -31,51 +31,26 @@
         <div class="container">
         <div class="row p-3">
             <div class="col text-left">
-                <div class="row">
-                    <div class="col text-left">
-                        <p>Az Ügyfél a fizetés megkezdése előtt három opció közül választhat:</p>
-                    </div>
-                    <div class="col text-left">
-                        <div class="row">
-                            <div class="col text-left">
-                                <ul>
-                                    <li>Havi</li>
-                                    <li>Féléves</li>
-                                    <li>Éves</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div id="package_main">
                     <div class="row">
                         <div class="col">
                             <p>
-                                Miután az Ügyfél megvásárolta a csomagot, onnantól az említett opciók behatásától függően
-kell fenntartási költséget fizetnie. Minnél nagyobb időtávra kíván leszerződni, annál nagyobb árkedvezvény szabható ki. Ezen lehetőségek kiválasztása (Havi terv; Fél éves terv; Éves terv), a “Részletek” gombra kattintva érhető el.
-Amennyiben Ügyfelünk részletekben kívánja fedezni a Fél éves -, illetve az Éves tervet, annak kiválasztását a “Részletek” menüpontban lelheti fel.
-
+                                Vásárolja meg a csomagját, és élvezze a kedvezményeket! Minél hosszabb időtávra kötelezi el magát, annál nagyobb árkedvezményt biztosítunk.
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                            <div class="col text-left">
-                                <p class="text-danger">Amennyiben a havi törlesztőrészlet önnönhibából származó okok miatt elmarad, a weboldal (illetve a többi szolgáltatás) működését megszüntetjük!</p>
-                            </div>
-                    </div>
-                    <div class="row">
                         <div class="col">
                             <p>
-                               Csomagjaink minőség szerint vannak listázva, és attól függően, mennyire kíván Ön átlag felüli szolgáltatást, annak megfelelően küldünk árajánlatot.
-Ennek a csomagnak részletességei és választható extrái, a “Részletek” gombra kattintva érhetőek el. Ezen felül található egy sablon oldal, amely lefedi, az e csomagtól elvárhatóakat.
+                            Csomagjainkat minőség szerint rangsoroltuk, így Ön az igényeinek megfelelő árajánlatot kapja. A csomag részleteit és választható extráit a "Részletek" gombra kattintva találja meg. Továbbá, egy minta oldal is rendelkezésére áll, amely bemutatja, mit várhat el az adott csomagtól.
                             </p>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col mt-5">
-                            <b>
+                            <i>
                                 Az első hónap fenntartási kölcségét Cégünk biztosítja.
-                            </b>
+                            </i>
                         </div>
                     </div>
                     <div class="row">

@@ -62,7 +62,7 @@
                             <div class="row">
                                 <div class="col">
                                     <p>
-                                        Ügyfeleinknek egy olyan programot biztosítunk, amely a cégéhez/vállalkozásához, a
+                                        Önnek egy olyan programot biztosítunk, amely a cégéhez/vállalkozásához, a
                                     </p>
                                     <ul>
                                         <li>promóciós;</li>
@@ -71,8 +71,7 @@
                                         <li>kedvezményes;</li>
                                     </ul>
                                     <p>
-                                        és sok más e-maileket automatikusan megszerkezti, majd kiküldi a regisztrált vásárlóknak.
-                                        A program többekközt innovatív Ai-t (arartificial intelligence) is használ, hogy minnél jobban megszerkeztett és egyben megfogalmazott e-maileket kapjanak a vásárlók.
+                                        A program többekközt Ai-t (arartificial intelligence) is használ, hogy minnél jobban megszerkeztett és megfogalmazott e-maileket kapjanak a vásárlók.
                                     </p>
                                 </div>
                             </div>
@@ -89,11 +88,7 @@
                             <div class="row">
                                 <div class="col">
                                     <p>
-                                    Egy program különböző módokon képes e-maileket kiküldeni, általában egy SMTP (Simple Mail Transfer Protocol) szerveren keresztül. 
-                                    Először is, a programnak csatlakoznia kell az SMTP szerverhez, amihez szükség van a megfelelő hitelesítési adatokra, mint például a 
-                                    felhasználónév és a jelszó. Ezt követően az e-mail tartalmát össze kell állítani, beleértve a címzettet, a tárgyat és a törzsszöveget. 
-                                    Miután az e-mail üzenet elkészült, a program elküldi azt az SMTP szervernek, 
-                                    amely továbbítja a címzett e-mail szerveréhez. Végül, az e-mail szerver kézbesíti az üzenetet a címzett postaládájába.
+                                    Küldjön professzionális e-maileket pillanatok alatt az új, intuitív email küldő programjával! Automatizálja kampányait, növelje elérhetőségét, és tartsa a kapcsolatot ügyfeleivel hatékonyan. Próbálja ki most, és tapasztalja meg, hogyan segíthet vállalkozása növekedésében!
                                     </p>
                                 </div>
                             </div>
@@ -128,9 +123,7 @@
                             <div class="row">
                                 <div class="col">
                                     <p>
-                                        Nálunk lehet olyan opció is, hogy ez az egész autómatikusan működik, a megíró és küldő, mid 1
-                                        programban. természetesen lehetséges vagy csak a küldő, vagy csak a megíró programot igényelni, viszont az
-                                        automatizálás során a kettő eegyüttes működésével egy teljesen automatikus rendszert kapunk
+                                    Az Email Automatizációs programmal pillanatok alatt küldhet professzionális e-maileket. Automatizálja kampányait, növelje elérhetőségét, és tartsa a kapcsolatot ügyfeleivel hatékonyan. Próbálja ki most, és tapasztalja meg, hogyan segíthet vállalkozása növekedésében!
                                     </p>
                                 </div>
                             </div>

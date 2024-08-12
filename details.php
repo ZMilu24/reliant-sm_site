@@ -90,14 +90,13 @@
                     <div class="col">
                         <div class="p-3 m-3">
                             <h3>Fizetési részletek</h3>
-                            <p>Miután az Ügyfél megrendelte a csomagot, és leírta igényeit, egy árajánlatot küldünk.
+                            <p>Miután az ön megrendelte a csomagot, és leírta igényeit, egy árajánlatot küldünk.
 Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két lehetőség állhat fenn:</p>
                             <ul>
-                                <li id="li1">Az Ügyfél az első hónapra  kifizeti a csomag árát, utána kettő hónapig egy meghatározott dátumon a fenntartási költségeket
+                                <li id="li1">Ön az első hónapra  kifizeti a csomag árát, utána kettő hónapig egy meghatározott dátumon a fenntartási költségeket
         vonjuk le (az árajánlat tartalmazza a havi fenntartási költségeket is).</li>
-                                <li id="li2">Az Ügyfél az árajánlatban megemlített összeget, egy utalás alatt fedezi, és Fél évre biztosítva van az oldala.</li>
+                                <li id="li2">Ön az árajánlatban megemlített összeget, egy utalás alatt fedezi, és Fél évre biztosítva van az oldala.</li>
                             </ul>
-                            <p>E két opció közül majd a "Fizetés" oldalunkon lehet választani, miután visszaküldtük Önnek az ajánlatunkat.</p>
                             <p id="extra-text"></p>
                         </div>
                     </div>

@@ -55,28 +55,21 @@
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                        Cégünk különböző csomagjainak megjelenési minősége a következő kategóriákban érhető el, növekvő sorrendben: Basic, Premium és Ultra. Amikor az Ügyfél csomagot kérvényez, lehetősége van a weboldalunkon belül egy üzenetet írni nekünk, amelyben részletesen kifejtheti igényeit és elképzeléseit. Az üzenetet csapatunk minden tagja megkapja, és a beérkezett információk alapján elkészítünk egy személyre szabott árajánlatot, valamint meghatározzuk a várható elkészülési időtartamot.
+                                            Cégünk különböző csomagjainak megjelenési minősége a következő kategóriákban érhető el, növekvő sorrendben: Basic, Premium és Ultra. Amikor ön csomagot kérvényez, lehetősége van a weboldalunkon belül egy üzenetet írni nekünk, amelyben részletesen kifejtheti igényeit és elképzeléseit.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                        A hatékony kommunikáció és az Ügyfél elégedettsége érdekében, amennyiben a feldolgozás vagy a gyártási folyamat során bármilyen félreértés vagy kérdés merülne fel, csapatunk egyik tagja közvetlenül e-mailben vagy telefonon fogja felkeresni az Ügyfelet további egyeztetés céljából. Ezzel biztosítjuk, hogy minden részlet pontosan és időben tisztázásra kerüljön, így garantálva a magas színvonalú szolgáltatást és a maximális Ügyfél elégedettséget.
+                                            Ezen túlmenően, nagy hangsúlyt fektetünk arra, hogy ön minden lépésről részletes tájékoztatást kapjon, biztosítva ezzel az átláthatóságot és a folyamatok nyomon követhetőségét. Büszkék vagyunk arra, hogy rugalmasak vagyunk az ön egyedi igényeinek kielégítése terén, és mindent megteszünk annak érdekében, hogy a végtermék minden szempontból megfeleljen az elvárásoknak.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                        Ezen túlmenően, nagy hangsúlyt fektetünk arra, hogy az Ügyfél minden lépésről részletes tájékoztatást kapjon, biztosítva ezzel az átláthatóságot és a folyamatok nyomon követhetőségét. Büszkék vagyunk arra, hogy rugalmasak vagyunk az Ügyfél egyedi igényeinek kielégítése terén, és mindent megteszünk annak érdekében, hogy a végtermék minden szempontból megfeleljen az elvárásoknak. Az ügyfélszolgálati csapatunk mindig készen áll a segítségnyújtásra és a kérdések megválaszolására, így bármikor bizalommal fordulhat hozzánk.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row my-3">
-                                    <div class="col">
-                                        <p>
-                                        Szolgáltatásaink minőségének folyamatos fejlesztése érdekében rendszeresen visszajelzést kérünk Ügyfeleinktől, melyeket figyelembe véve igyekszünk még magasabb szintre emelni termékeink és szolgáltatásaink színvonalát. Célunk, hogy hosszú távú, elégedett Ügyfélkapcsolatokat építsünk, amelyek mindkét fél számára gyümölcsözőek.
+                                            Szolgáltatásaink minőségének folyamatos fejlesztése érdekében rendszeresen visszajelzést kérünk Ügyfeleinktől, melyeket figyelembe véve igyekszünk még magasabb szintre emelni termékeink és szolgáltatásaink színvonalát. Célunk, hogy hosszú távú, elégedett építsünk, amelyek mindkét fél számára gyümölcsözőek.
                                         </p>
                                     </div>
                                 </div>
@@ -146,27 +139,26 @@
                                         <div class="row my-3">
                                             <div class="my-3 col-lg-6 text-center">
                                                 <?php fejleszto_card("Tervezés", "Csapatunk az Ön által megadott információk alapján, a lehető legmegfelelőbb weboldaldesign-t
-                                                készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján
-                                                (Az imént említett két lehetőség az oldalunk további részeiben még említve lesz).", 3, "planning_icon.png") ?>
+                                                készíti el, vagy kézzel a jobb minőség érdekében, vagypedig már létező sablon alapján.", 3, "planning_icon.png") ?>
                                             </div>
                                             <div class="my-3 col-lg-6 text-center">
-                                                <?php fejleszto_card("Webdesign", 'Cégünk design-ért felelős részlege, a "Tervezés" részben már említett módokon, élénk, élettelteli és
-                                                a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, mint Ügyfél a tőlünk telhető legjobbat nyújtsa.
+                                                <?php fejleszto_card("Webdesign", 'Cégünk design-ért felelős részlege, élénk, élettelteli és
+                                                a lehető legkorszerűbb kinézetre törekszik, hogy Önnek, a tőlünk telhető legjobbat nyújtsa.
                                                 Minden weboldalról, amely nálunk készül el, szakképzett, és tapasztalt munkatársaink bizonyosodnak meg,
-                                                hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki (Az ajánlattételről szó esik a "Kínálatunk" oldalunkon).', 3, "color_circle_icon.png") ?>
+                                                hogy az ajánlattételben elvártakból, a legjobbat hozzuk ki.', 3, "color_circle_icon.png") ?>
                                             </div>
                                         </div>
                                         <div class="row my-3">
                                             <div class="my-3 col-lg-6 text-center">
-                                                <?php fejleszto_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így a 
-                                                kis- és középvállalkozások könnyebben megtalálják az ügyfeleket. A hatékony SEO révén ügyfeleink weboldalai előkelőbb helyezést érnek el a 
-                                                keresési eredmények között. Bízza ránk weboldala optimalizálását, hogy Ön is előnyt élvezhessen a versenytársakkal szemben.", 3,
+                                                <?php fejleszto_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így ön 
+                                                könnyebben megtalálja az ügyfeleket. A hatékony SEO révén az ön weboldala előkelőbb helyezést érhet el a 
+                                                keresési eredmények között.", 3,
                                                 "seo_icon.png") ?>
                                             </div>
                                             <div class="my-3 col-lg-6 text-center">
                                                 <?php fejleszto_card("Webfejlesztés", "Cégünk fejlesztésért felelős részlege, a design osztályról megérkezett minta alapján, a weboldalt életre kelti.
                                                 A programozás minden apró kis szegleteiben jártas munkatársaink, ötletes megoldásokkal igyekeznek az Ön weboldalát, mind funkciók,
-                                                mind multikompatibilitás tekintetében tökéletessé tenni. Programozóink készségei lefedik az egész ipart, kezdve a javascript-től a php-ig.", 3, "thinking_icon.png") ?>
+                                                mind multikompatibilitás tekintetében tökéletessé tenni.", 3, "thinking_icon.png") ?>
                                             </div>
                                         </div>
                                     </div>

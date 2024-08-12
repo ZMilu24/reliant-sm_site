@@ -32,13 +32,13 @@
                 </div>
                 <div class="row">
                     <div class="my-3 col text-center">
-                        <?php info_card("Rólunk", "A Reliant Service Management 2024-ben alakult két jóbarát és csapatuk által. Azóta minden nap azon dolgozunk, hogy kis- és nagyvállalkozások számára nyújtsunk kiváló szolgáltatásokat, megkönnyítve és rendezettebbé téve működésüket. Célunk, hogy vállalkozása életét egyszerűbbé és hatékonyabbá tegyük. Cégünk azokra a problémákra talált megoldást, amely jellemző sok ország vállalataira, és kisvállalkozásaira, miszerint kevésbé
+                        <?php info_card("Rólunk", "A Reliant Service Management 2024-ben alakult két jóbarát és csapatuk által. Azóta minden nap azon dolgoznak, hogy kis- és nagyvállalkozások számára nyújtsanak kiváló szolgáltatásokat, megkönnyítve és rendezettebbé téve működésüket. Céluk, hogy vállalkozása életét egyszerűbbé és hatékonyabbá tegyük. Cégünk azokra a problémákra talált megoldást, amely jellemző sok ország vállalataira, és kisvállalkozásaira, miszerint kevésbé
                                     versenyképesek azokhoz a cégekhez képest, akiknek az informatikai infrastruktúrájukat már sikerült megalapozni és kiépíteni
                                     a modern világban.") ?>
                     </div>
                 <?php require("config.php"); if($isMob) {echo('</div><div class="row">');}?>
                     <div class="my-3 col text-center">
-                        <?php info_card("Tapasztalataink", "Csapatunk programozói több éves tapasztalattal rendelkeznek a webfejlesztés minden területén, beleértve a frontend és backend fejlesztést is. Rugalmasságuknak köszönhetően rövid időn belül képesek bármilyen igény szerint weboldalt építeni. A kész weboldalakkal növeljük ügyfeleink vállalatainak vásárlókörét és forgalmát, valamint pozitív irányba befolyásoljuk értékeléseik számát.") ?>
+                        <?php info_card("Tapasztalataink", "Csapatunk programozói több éves tapasztalattal rendelkeznek a webfejlesztés minden területén, beleértve a frontend és backend fejlesztést is. Rugalmasságunknak köszönhetően rövid időn belül képesek vagyunk bármilyen igény szerinti weboldalt építeni. A kész weboldalakkal növeljük ügyfeleink vállalatainak vásárlókörét és forgalmát, valamint pozitív irányba befolyásoljuk értékeléseik számát.") ?>
                     </div>
                 </div>
                 <div class="p-5">
