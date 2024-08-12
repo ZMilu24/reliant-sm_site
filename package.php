@@ -32,24 +32,24 @@
         <div class="row p-3">
             <div class="col text-left">
                 <div id="package_main">
-                    <div class="row">
+                    <div class="row mt-5">
                         <div class="col">
                             <p>
-                                Vásárolja meg a csomagját, és élvezze a kedvezményeket! Minél hosszabb időtávra kötelezi el magát, annál nagyobb árkedvezményt biztosítunk.
+                            Vásárolja meg csomagját most, és élvezze a különleges kedvezményeket, amelyeket kínálunk! Az elköteleződés hosszával arányosan egyre nagyobb árkedvezményeket biztosítunk, így minél hosszabb időtávra szerződik, annál többet spórolhat.
                             </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-5">
                         <div class="col">
                             <p>
-                            Csomagjainkat minőség szerint rangsoroltuk, így Ön az igényeinek megfelelő árajánlatot kapja. A csomag részleteit és választható extráit a "Részletek" gombra kattintva találja meg. Továbbá, egy minta oldal is rendelkezésére áll, amely bemutatja, mit várhat el az adott csomagtól.
+                            Csomagjainkat gondosan minőség szerint rangsoroltuk, hogy Ön a lehető legjobb árajánlatot kapja az igényeihez igazítva. A részletes információkat és választható extrákat a "Részletek" gombra kattintva találja meg.
                             </p>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col mt-5">
                             <i>
-                                Az első hónap fenntartási kölcségét Cégünk biztosítja.
+                            Emellett egy minta oldalt is biztosítunk, amely segít megismerni, milyen előnyökre számíthat a választott csomaggal. Ne habozzon, fedezze fel az Önnek legmegfelelőbb csomagot, és kezdje el élvezni a kiválasztott szolgáltatások előnyeit már ma!
                             </i>
                         </div>
                     </div>

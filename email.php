@@ -71,7 +71,7 @@
                                         <li>kedvezményes;</li>
                                     </ul>
                                     <p>
-                                        A program többekközt Ai-t (arartificial intelligence) is használ, hogy minnél jobban megszerkeztett és megfogalmazott e-maileket kapjanak a vásárlók.
+                                        A programunk fejlett mesterséges intelligenciát (AI) alkalmaz, hogy az ügyfelei számára tökéletesen megfogalmazott és professzionálisan szerkesztett e-maileket biztosítson.
                                     </p>
                                 </div>
                             </div>
