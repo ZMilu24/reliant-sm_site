@@ -47,13 +47,18 @@
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <div class="col mt-5">
+                        <div class="col">
+                            <img class="rounded-5" width=100 src="imgs/img1.jpeg" >
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
                             <i>
                             Emellett egy minta oldalt is biztosítunk, amely segít megismerni, milyen előnyökre számíthat a választott csomaggal. Ne habozzon, fedezze fel az Önnek legmegfelelőbb csomagot, és kezdje el élvezni a kiválasztott szolgáltatások előnyeit már ma!
                             </i>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-5">
                         <div class="col">
                             <p class="text-danger"><?php if ($_GET["p"] == "u") { echo($package["warning"]); }?></p>
                         </div>

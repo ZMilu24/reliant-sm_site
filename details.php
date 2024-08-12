@@ -90,7 +90,7 @@
                     <div class="col">
                         <div class="p-3 m-3">
                             <h3>Fizetési részletek</h3>
-                            <p>Miután az ön megrendelte a csomagot, és leírta igényeit, egy árajánlatot küldünk.
+                            <p>Miután az Ön megrendelte a csomagot, és leírta igényeit, egy árajánlatot küldünk.
 Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két lehetőség állhat fenn:</p>
                             <ul>
                                 <li id="li1">Ön az első hónapra  kifizeti a csomag árát, utána kettő hónapig egy meghatározott dátumon a fenntartási költségeket
@@ -106,7 +106,7 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                             <div class="p-3 m-3">
                                 <h3>Igényelhető specifikációk</h3>
                                 <ul>
-                                    <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt öntől</li>
+                                    <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt Öntől</li>
                                     <li>Animált kártyák/Animációk;</li>
                                     <li>Egyedi lábléc;</li>
                                     <li>Reszponzív design: Minden képernyőméreten (telefon, táblagép, számítógép) tökéletes megjelenésű oldal (<span class="text-danger">Ha Ön nem kéri, akkor csak számítógépes verziót készítünk</span>)</li>
@@ -339,7 +339,7 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                                         <div class="col">
                                             <div class="form-floating">
                                                 <textarea class="form-control" id="comment" name="comment" placeholder=""></textarea>
-                                                <label for="comment">Mi az ön elképzelése?</label>
+                                                <label for="comment">Mi az Ön elképzelése?</label>
                                             </div>
                                         </div>
                                     </div>

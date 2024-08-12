@@ -55,14 +55,14 @@
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                            Cégünk különböző csomagjainak megjelenési minősége a következő kategóriákban érhető el, növekvő sorrendben: Basic, Premium és Ultra. Amikor ön csomagot kérvényez, lehetősége van a weboldalunkon belül egy üzenetet írni nekünk, amelyben részletesen kifejtheti igényeit és elképzeléseit.
+                                            Cégünk különböző csomagjainak megjelenési minősége a következő kategóriákban érhető el, növekvő sorrendben: Basic, Premium és Ultra. Amikor Ön csomagot kérvényez, lehetősége van a weboldalunkon belül egy üzenetet írni nekünk, amelyben részletesen kifejtheti igényeit és elképzeléseit.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                            Ezen túlmenően, nagy hangsúlyt fektetünk arra, hogy ön minden lépésről részletes tájékoztatást kapjon, biztosítva ezzel az átláthatóságot és a folyamatok nyomon követhetőségét. Büszkék vagyunk arra, hogy rugalmasak vagyunk az ön egyedi igényeinek kielégítése terén, és mindent megteszünk annak érdekében, hogy a végtermék minden szempontból megfeleljen az elvárásoknak.
+                                            Ezen túlmenően, nagy hangsúlyt fektetünk arra, hogy Ön minden lépésről részletes tájékoztatást kapjon, biztosítva ezzel az átláthatóságot és a folyamatok nyomon követhetőségét. Büszkék vagyunk arra, hogy rugalmasak vagyunk az Ön egyedi igényeinek kielégítése terén, és mindent megteszünk annak érdekében, hogy a végtermék minden szempontból megfeleljen az elvárásoknak.
                                         </p>
                                     </div>
                                 </div>
@@ -150,8 +150,8 @@
                                         </div>
                                         <div class="row my-3">
                                             <div class="my-3 col-lg-6 text-center">
-                                                <?php fejleszto_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így ön 
-                                                könnyebben megtalálja az ügyfeleket. A hatékony SEO révén az ön weboldala előkelőbb helyezést érhet el a 
+                                                <?php fejleszto_card("SEO", "Az általunk készített és üzemeltetett weboldalakat a Google keresőmotorjához optimalizáljuk, így Ön 
+                                                könnyebben megtalálja az ügyfeleket. A hatékony SEO révén az Ön weboldala előkelőbb helyezést érhet el a 
                                                 keresési eredmények között.", 3,
                                                 "seo_icon.png") ?>
                                             </div>
