@@ -61,18 +61,18 @@
         ];
 
     $references = array();
-        /*$references["szechenyi_apartman_esztergom"] = [
+        $references["szechenyi_apartman_esztergom"] = [
             "name" => "Szécsényi Apartman Esztergom",
             "link" => "https://www.szechenyi.apartman.hu",
-            "image1" => "imgs/references/szechenyiapartman/logo2.png",
-            "image2" => "imgs/references/szechenyiapartman/logo.png"
-        ];*/
+            "image1" => "imgs/references/szechenyi-apartman/logo.png",
+            "image2" => "imgs/references/szechenyi-apartman/logo2.png"
+        ];
         /*$references["moony"] = [
             "name" => "Moony",
             "link" => "https://moony.com",
             "image1" => "imgs/references/noony/logo2.png",
             "image2" => "imgs/references/moony/logo.png"
-        ];*/
+        ];
         /*$references["pzbau"] = [
             "name" => "PZ-BAU KFT",
             "link" => "https://www.pzbau.com",

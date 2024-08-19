@@ -9,9 +9,9 @@
             <a href="<?php echo($data["link"]); ?>">
                 <h3><?php echo($data["name"]); ?></h3>
                 <div class="content">
-                    <img src="<?php echo($data["image1"]); ?>" alt="Referencia" class="image rounded-1" style="width:100%">
+                    <img src="<?php echo($data["image1"]); ?>" alt="Referencia" class="image rounded-1" height=100>
                     <div class="middle">
-                        <img src="<?php echo($data["image2"]); ?>" alt="Referencia" class="image rounded-1" style="width:100%">
+                        <img src="<?php echo($data["image2"]); ?>" alt="Referencia" class="image rounded-1" height=100>
                     </div>
                 </div>
             </a>
@@ -33,7 +33,7 @@
                         $i++;
                         if ($i % 2 == 1) {
                             ?>
-                                <div class="row <?php echo($isMob == false ? "mb-5" : ""); ?>">
+                                <div class="row <?php echo($isMob == false ? "mb-5" : ""); ?>" style="height:100%">
                             <?php
                         }
                         createReference($reference);

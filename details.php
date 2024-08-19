@@ -64,25 +64,25 @@
             <div class="container">
                 <?php if ($_GET["pac"] != "e") { ?>
                     <div class="row m-5">
-                        <div class="col text-center">
+                        <div class="col text-center center">
                             <!--<button class="btn btn-dark m-3" onclick=plans(0)>Negyedéves terv</button>-->
-                            <input class="btn btn-dark m-3" onclick=plans(0) name="plan" value="Negyedéves terv">
+                            <input type="button" class="btn btn-dark m-3 w-100" onclick=plans(0) name="plan" value="Negyedéves terv">
                         </div>
-                        <div class="col text-center">
+                        <div class="col text-center center">
                             <!--<button class="btn btn-dark m-3" onclick=plans(1)>Fél éves terv</button>-->
-                            <input class="btn btn-dark m-3" onclick=plans(0) name="plan" value="Fél éves terv">
+                            <input type="button" class="btn btn-dark m-3 w-100" onclick=plans(0) name="plan" value="Fél éves terv">
                         </div>
-                        <div class="col text-center">
+                        <div class="col text-center center">
                             <!--<button class="btn btn-dark m-3" onclick=plans(2)>Egy éves terv</button>-->
-                            <input class="btn btn-dark m-3" onclick=plans(0) name="plan" value="Egy éves terv">
+                            <input type="button" class="btn btn-dark m-3 w-100" onclick=plans(0) name="plan" value="Egy éves terv">
                         </div>
-                        <div class="col text-center">
+                        <div class="col text-center center">
                             <!--<button class="btn btn-dark m-3" onclick=plans(3)>Két éves terv</button>-->
-                            <input class="btn btn-dark m-3" onclick=plans(0) name="plan" value="Két éves terv">
+                            <input type="button" class="btn btn-dark m-3 w-100" onclick=plans(0) name="plan" value="Két éves terv">
                         </div>
-                        <div class="col text-center">
+                        <div class="col text-center center">
                             <!--<button class="btn btn-dark m-3" onclick=plans(4)>Öt éves terv</button>-->
-                            <input class="btn btn-dark m-3" onclick=plans(0) name="plan" value="Öt éves terv">
+                            <input type="button" class="btn btn-dark m-3 w-100" onclick=plans(0) name="plan" value="Öt éves terv">
                         </div>
                     </div>
                 <?php } ?>

@@ -8,6 +8,14 @@ html {
     font-family: "Rubik";
 }
 
+.center {margin-inline: auto !important;
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    place-content: center;}
+
 body {
     background-repeat: no-repeat;
     background-size: cover;
