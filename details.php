@@ -88,6 +88,25 @@
                 <?php } ?>
                 <div class="row">
                     <div class="col">
+                        <?php if ($_GET["pac"] == "b") { ?>
+                            <b>
+                                <!-- EZT A CSOMAGOT LE KELL HÚZNI, MERT NEM ÉRTIK MERT NEM OKOSAK (MUTER) -->
+                            </b>
+                        <?php}?>
+                        <?php if ($_GET["pac"] == "p") { ?>
+                            <b>
+                                <!-- EZT KÖZTES CSOMAGNAK KELL ÍRNI, MERT NEM ÉRTIK, MERT NEM OKOSAK (MUTER) -->
+                            </b>
+                        <?php}?>
+                        <?php if ($_GET["pac"] == "u") { ?>
+                            <b>
+                                <!-- EZT AGYON KELL DÍCSÉRNI, MERT NEM ÉRTIK MERT NEM OKOSAK (MUTER) -->
+                            </b>
+                        <?php}?>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
                         <div class="p-3 m-3">
                             <h3>Fizetési részletek</h3>
                             <p>Miután az Ön megrendelte a csomagot, és leírta igényeit, egy árajánlatot küldünk.
@@ -104,6 +123,21 @@ Ha a <i><span id="plan">Negyedéves</span> tervre</i> esett a választás, két 
                     <?php if ($_GET["pac"] != "e") { ?>
                         <div class="col">
                             <div class="p-3 m-3">
+                                <?php if ($_GET["pac"] == "b") { ?>
+                                    <h2>
+                                        Ez a legalacsonybb minőségű, de leghamarabb elkészülő csomagunk.
+                                    </h2>
+                                <?php}?>
+                                <?php if ($_GET["pac"] == "p") { ?>
+                                    <h2>
+                                        Prémium csomagunk a gyorsaság és a minőség tökéletes egyvelegét képezi, megfizethető áron.
+                                    </h2>
+                                <?php}?>
+                                <?php if ($_GET["pac"] == "u") { ?>
+                                    <h2>
+                                        Legmagasabb szintű csomagunk, magas minőség, látványos elemek, és tökéletes megvalósítés. Ennek a csomagnak a hátránya a hosszú elkészülési idő.
+                                    </h2>
+                                <?php}?>
                                 <h3>Igényelhető specifikációk</h3>
                                 <ul>
                                     <li>Saját admin felület: Megrendelések esetén itt láthatja ki és mit rendelt Öntől</li>

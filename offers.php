@@ -29,7 +29,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <p>
-                                            Ügyfeleink számára három külömböző “design” csomag érhető el, választható specifikáviókkal:
+                                            Ügyfeleink számára három külömböző “design” csomag érhető el, választható specifikációkkal:
                                         </p>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                            Cégünk különböző csomagjainak megjelenési minősége a következő kategóriákban érhető el, növekvő sorrendben: Basic, Premium és Ultra. Amikor Ön csomagot kérvényez, lehetősége van a weboldalunkon belül egy üzenetet írni nekünk, amelyben részletesen kifejtheti igényeit és elképzeléseit.
+                                            Amikor Ön csomagot kérvényez, lehetősége van a weboldalunkon belül egy üzenetet írni nekünk, amelyben részletesen kifejtheti igényeit és elképzeléseit.
                                         </p>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@
                                 <div class="row my-3">
                                     <div class="col">
                                         <p>
-                                            Szolgáltatásaink minőségének folyamatos fejlesztése érdekében rendszeresen visszajelzést kérünk Ügyfeleinktől, melyeket figyelembe véve igyekszünk még magasabb szintre emelni termékeink és szolgáltatásaink színvonalát. Célunk, hogy hosszú távú, elégedett építsünk, amelyek mindkét fél számára gyümölcsözőek.
+                                            Szolgáltatásaink minőségének folyamatos fejlesztése érdekében rendszeresen visszajelzést kérünk Ügyfeleinktől, melyeket figyelembe véve igyekszünk még magasabb szintre emelni termékeink és szolgáltatásaink színvonalát. Célunk, hogy hosszú távú, elégedett kapcsolatokat építsünk, amelyek mindkét fél számára gyümölcsözőek.
                                         </p>
                                     </div>
                                 </div>
