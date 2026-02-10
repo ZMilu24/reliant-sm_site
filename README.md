@@ -108,7 +108,6 @@ The website was tested manually in a browser during development.
 
 - No automated input validation or security hardening for all endpoints
 - Error handling and logging are minimal
-- No admin interface for managing content
 - No automated deployment or CI setup
 
 These limitations are acceptable for the project’s intended scope but should be addressed before production use.
@@ -119,7 +118,6 @@ These limitations are acceptable for the project’s intended scope but should b
 
 - Introduce prepared statements (PDO) for improved database security
 - Add input validation and sanitization
-- Create an admin panel for content management
 - Add logging and basic monitoring
 - Provide a database schema file for easier setup
 - Add automated tests
