@@ -5,7 +5,7 @@
         private $DB;
 
         function __construct() {
-            $this->DB = mysqli_connect("localhost", "ldxqgqca", "91AAmaMv:4c0:Q", "ldxqgqca_reliant");
+            $this->DB = mysqli_connect("localhost", "root", "", "ldxqgqca_reliant");
             $this->DB->query("CREATE TABLE IF NOT EXISTS members (
                 id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
                 name varchar(255),
